@@ -1,0 +1,21 @@
+# -----------------------------
+# Backend framework
+# -----------------------------
+fastapi==0.111.1
+uvicorn[standard]==0.23.2
+
+# -----------------------------
+# Speaker recognition
+# -----------------------------
+# Torch and torchaudio should be installed separately first:
+# pip install torch==2.1.0+cpu torchaudio==2.1.0+cpu --index-url https://download.pytorch.org/whl/cpu
+speechbrain==0.5.13
+huggingface_hub<1.17
+numpy<2
+
+# -----------------------------
+# Audio processing & data handling
+# -----------------------------
+pydub>=0.25.1
+requests>=2.31.0
+tqdm>=4.66.1

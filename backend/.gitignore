@@ -1,0 +1,27 @@
+# Python virtual environment
+venv/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environment variables
+*.env
+
+# Database files
+*.db
+*.sqlite3
+
+# Log files
+*.log
+
+# IDE / OS files
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+#data
+data/recitations_clips/
