@@ -1,68 +1,78 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+/* load Scheherazade font */
+@import "@fontsource/scheherazade-new/700.css";
+@import "@fontsource/scheherazade-new/400.css";
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --emerald-500: #059669;
+  --emerald-800: #064e3b;
+  --gold-500: #D4AF37;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+/* small decorative bismillah style */
+.bismillah {
+  font-family: "Scheherazade New", serif;
+  font-size: 1.1rem;
+  color: var(--emerald-800);
+  opacity: 0.9;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* make file inputs look nicer */
+.input-file {
+  transition: all .18s;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* subtle card border glow */
+.card-glow {
+  box-shadow: 0 6px 18px rgba(5,150,105,0.08);
+  border: 1px solid rgba(5, 150, 105, 0.07);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* pattern overlay helper */
+.pattern-fade {
+  background-image: url('/patterns/arabesque.png');
+  background-repeat: repeat;
+  background-size: 220px;
+  opacity: 1;
+}
+
+/* Custom Quranic-themed audio player */
+.rhap-theme-quranic {
+  @apply bg-emerald-50 border border-emerald-200 rounded-xl shadow-md;
+}
+
+.rhap-theme-quranic .rhap_main-controls-button {
+  @apply bg-emerald-600 text-white rounded-full shadow-md;
+}
+
+.rhap-theme-quranic .rhap_main-controls-button:hover {
+  @apply bg-emerald-700;
+}
+
+.rhap-theme-quranic .rhap_progress-filled {
+  @apply bg-emerald-800;
+}
+
+.rhap-theme-quranic .rhap_progress-bar {
+  @apply bg-emerald-200;
+}
+
+.rhap-theme-quranic .rhap_time {
+  @apply text-emerald-800;
+  font-family: "Scheherazade New", serif;
+}
+
+.rhap-theme-quranic .rhap_volume-bar {
+  @apply bg-emerald-100;
+}
+
+.rhap-theme-quranic .rhap_volume-indicator {
+  @apply bg-emerald-500;
+}
+
+.rhap-theme-quranic .rhap_repeat-button,
+.rhap-theme-quranic .rhap_rewind-button,
+.rhap-theme-quranic .rhap_forward-button {
+  @apply text-emerald-700 hover:text-emerald-900;
 }
