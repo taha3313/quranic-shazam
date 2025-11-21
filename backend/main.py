@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routes import reciter
+from app.routes import live_reciter
 
 app = FastAPI(title="Quranic Shazam - Reciter Identifier")
 
@@ -22,3 +23,4 @@ app.add_middleware(
 
 # Routes
 app.include_router(reciter.router)
+app.include_router(live_reciter.router)

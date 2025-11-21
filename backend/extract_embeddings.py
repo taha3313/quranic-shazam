@@ -5,6 +5,8 @@ import numpy as np
 import torchaudio
 from speechbrain.pretrained import EncoderClassifier
 from tqdm import tqdm
+import io
+import subprocess
 
 # -----------------------------
 # CONFIG
@@ -37,6 +39,71 @@ def compute_embedding(file_path):
     embedding = model.encode_batch(waveform).squeeze().detach().cpu().numpy()
     return embedding
 
+
+
+def extract_embedding(waveform, sr):
+    """Compute embedding from waveform tensor."""
+    # Example:
+    # emb = model.encode_batch(waveform).squeeze().detach().cpu().numpy()
+    # return emb
+
+    # ---- REMOVE THIS WHEN YOU ADD YOUR MODEL ----
+    # placeholder dummy embedding (128 dims)
+    return np.random.rand(128)
+    # ------------------------------------------------
+
+
+# ----------------------------------------------------
+# Helper: decode webm/opus chunks using FFmpeg
+# ----------------------------------------------------
+def decode_opus_webm(audio_bytes):
+    """Decode browser MediaRecorder WebM/Opus audio into PCM."""
+    process = subprocess.Popen(
+        [
+            "ffmpeg",
+            "-hide_banner",
+            "-loglevel", "error",
+            "-f", "webm",
+            "-i", "pipe:0",
+            "-ac", "1",
+            "-ar", "16000",
+            "-f", "wav",
+            "pipe:1",
+        ],
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+    )
+
+    try:
+        out, err = process.communicate(input=audio_bytes, timeout=2)
+    except subprocess.TimeoutExpired:
+        process.kill()
+        return None
+
+    if not out:
+        return None
+
+    try:
+        waveform, sr = torchaudio.load(io.BytesIO(out))
+        return waveform, sr
+    except:
+        return None
+
+
+
+def compute_embedding_chunk(chunk_bytes):
+    decoded = decode_opus_webm(chunk_bytes)
+    if decoded is None:
+        return None
+
+    waveform, sr = decoded
+
+    # Avoid too-short chunks (<0.2 s)
+    if waveform.shape[1] < 2000:
+        return None
+
+    return extract_embedding(waveform, sr)
 # -----------------------------
 # MAIN LOOP (RUN ONLY WHEN EXECUTED DIRECTLY)
 # -----------------------------

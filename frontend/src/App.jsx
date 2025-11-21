@@ -10,10 +10,10 @@ function App() {
       <div className="relative z-10 w-full">
         <header className="relative z-10 text-center mb-8">
           <h1 className="text-5xl font-extrabold text-emerald-800 tracking-wide font-scheherazade">
-            <span className="bg-white/70 px-2 rounded-md">القرآن Shazam</span>
+            <span className="bg-white/50 px-2 rounded-md">القرآن Shazam</span>
           </h1>
           <p className="mt-2 text-gray-600 text-lg">
-            <span className="bg-white/70 px-2 rounded-md">Identify the reciter using AI</span>
+            <span className="bg-white/50 px-2 rounded-md">Identify the reciter using AI</span>
           </p>
         </header>
 
