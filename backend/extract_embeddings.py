@@ -40,6 +40,32 @@ def compute_embedding(file_path):
     return embedding
 
 
+def compute_embedding_live(file_path):
+    # Load audio
+    waveform, sr = torchaudio.load(file_path)
+
+    # Convert to mono if needed
+    if waveform.shape[0] > 1:
+        waveform = torch.mean(waveform, dim=0, keepdim=True)
+
+    # Resample to 16 kHz (SpeechBrain models expect 16k)
+    if sr != 16000:
+        resampler = torchaudio.transforms.Resample(sr, 16000)
+        waveform = resampler(waveform)
+
+    # Prevent tiny/silent chunks from breaking embeddings
+    if waveform.numel() < 16000:      # less than 1 second
+        # Pad with small random noise to avoid crashes
+        pad_len = 16000 - waveform.numel()
+        pad = 0.0001 * torch.randn(1, pad_len)
+        waveform = torch.cat([waveform, pad], dim=1)
+
+    # Compute embedding
+    emb = model.encode_batch(waveform).squeeze().detach().cpu().numpy()
+
+    return emb
+
+
 
 def extract_embedding(waveform, sr):
     """Compute embedding from waveform tensor."""
