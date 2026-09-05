@@ -18,6 +18,9 @@ logger = logging.getLogger(__name__)
 
 _lock = threading.Lock()
 _db: dict[str, np.ndarray] | None = None
+# CPU inference does not parallelize (torch uses all cores per call); the
+# semaphore just prevents N concurrent requests from thrashing the machine.
+_infer_sem = threading.Semaphore(2)
 
 
 def get_database() -> dict[str, np.ndarray]:
@@ -62,5 +65,11 @@ def identify_waveform(waveform: torch.Tensor, sr: int, top_k: int) -> list[dict[
 
 
 def identify_upload_bytes(data: bytes, top_k: int) -> list[dict[str, float]]:
+    """Blocking identify, bounded by the inference semaphore.
+
+    Callers on the asyncio loop MUST run this via anyio.to_thread (the
+    routes do); it must never execute on the event loop itself.
+    """
     waveform, sr = decode_upload_bytes(data)
-    return identify_waveform(waveform, sr, top_k=top_k)
+    with _infer_sem:
+        return identify_waveform(waveform, sr, top_k=top_k)

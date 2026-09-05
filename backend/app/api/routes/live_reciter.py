@@ -7,8 +7,10 @@ replies with the top matches once the confidence threshold is reached.
 
 from __future__ import annotations
 
+import functools
 import logging
 
+import anyio.to_thread
 import torch
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect
 
@@ -42,7 +44,12 @@ async def live_reciter(ws: WebSocket):
                 continue
 
             try:
-                waveform, sr = decode_upload_bytes(data, target_sr=settings.sample_rate)
+                # Decode (may shell out to ffmpeg) must not block the loop.
+                waveform, sr = await anyio.to_thread.run_sync(
+                    functools.partial(
+                        decode_upload_bytes, data, target_sr=settings.sample_rate
+                    )
+                )
             except ValueError as exc:
                 await ws.send_json({"error": str(exc)})
                 continue
@@ -55,8 +62,13 @@ async def live_reciter(ws: WebSocket):
 
             merged = torch.cat([c.reshape(1, -1) for c in chunks], dim=1)
             try:
-                matches = reciter_service.identify_waveform(
-                    merged, settings.sample_rate, top_k=3
+                matches = await anyio.to_thread.run_sync(
+                    functools.partial(
+                        reciter_service.identify_waveform,
+                        merged,
+                        settings.sample_rate,
+                        top_k=3,
+                    )
                 )
             except FileNotFoundError as exc:
                 await ws.send_json({"error": str(exc)})

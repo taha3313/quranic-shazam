@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
+import functools
 import logging
 
+import anyio.to_thread
 from fastapi import APIRouter, File, HTTPException, Query, UploadFile
 
 from app.api.schemas import IdentifyResponse, ReciterMatch
@@ -34,7 +36,11 @@ async def identify_reciter(
         )
 
     try:
-        matches = reciter_service.identify_upload_bytes(data, top_k=top_k)
+        # Decode + ECAPA inference are blocking CPU work: keep them off the
+        # event loop so health checks and WebSocket sessions stay responsive.
+        matches = await anyio.to_thread.run_sync(
+            functools.partial(reciter_service.identify_upload_bytes, data, top_k)
+        )
     except FileNotFoundError as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
     except ValueError as exc:
