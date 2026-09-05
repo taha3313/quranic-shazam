@@ -58,3 +58,28 @@ def test_identify_missing_db_returns_503(wav_bytes, monkeypatch):
 def test_top_k_bounds_enforced(fake_env, wav_bytes):
     assert _upload(wav_bytes, top_k="0").status_code == 422
     assert _upload(wav_bytes, top_k="99").status_code == 422
+
+
+def test_long_audio_trimmed_to_max_duration(fake_env, monkeypatch):
+    import io
+
+    import numpy as np
+    import soundfile as sf
+
+    import app.services.reciter_service as svc
+
+    captured = {}
+
+    def fake_identify(waveform, sr, top_k):
+        captured["samples"] = waveform.shape[1]
+        return [{"reciter": "alpha", "display": "Alpha", "score": 0.9}]
+
+    monkeypatch.setattr(svc, "identify_waveform", fake_identify)
+
+    buf = io.BytesIO()
+    sf.write(buf, np.zeros(16000 * 35, dtype="float32"), 16000, format="wav")
+    resp = _upload(buf.getvalue())
+    assert resp.status_code == 200
+    from app.core.config import get_settings
+
+    assert captured["samples"] == get_settings().max_audio_sec * 16000

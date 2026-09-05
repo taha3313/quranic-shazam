@@ -19,10 +19,15 @@ class Settings(BaseSettings):
     # Model
     embedding_model_source: str = "speechbrain/spkrec-ecapa-voxceleb"
     embedding_dim_fallback: int = 192
+    # Load the embedding model during startup instead of on first request.
+    warm_model: bool = False
 
     # API
-    cors_origins: str = "http://localhost:5173,http://127.0.0.1:5173"
+    cors_origins: str = "http://localhost:5173,http://127.0.0.1:5173,http://localhost:8080,http://127.0.0.1:8080"
     max_upload_mb: int = 25
+    # Identify only the first N seconds of an upload; longer audio is a
+    # CPU DoS vector and adds no accuracy beyond this.
+    max_audio_sec: int = 30
     top_k_default: int = 3
 
     # Live recognition

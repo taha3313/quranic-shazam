@@ -14,7 +14,7 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from app.core.audio import ensure_min_length, load_audio_file, normalize, resample
+from app.core.audio import ensure_min_length, load_audio_file, normalize
 from app.core.config import get_settings
 
 logger = logging.getLogger(__name__)
@@ -44,11 +44,16 @@ def get_classifier():
         return _classifier
 
 
+def is_loaded() -> bool:
+    """True once the classifier singleton has been instantiated."""
+    return _classifier is not None
+
+
 @torch.no_grad()
 def embedding_from_waveform(waveform: torch.Tensor, sr: int = 16000) -> np.ndarray:
-    """Compute an embedding from an in-memory waveform tensor."""
+    """Compute an embedding from an in-memory 16 kHz mono waveform."""
     settings = get_settings()
-    waveform = resample(normalize(waveform), sr, settings.sample_rate)
+    waveform = normalize(waveform)
     waveform = ensure_min_length(waveform, min_samples=settings.sample_rate)
     classifier = get_classifier()
     emb = classifier.encode_batch(waveform).squeeze().detach().cpu().numpy()

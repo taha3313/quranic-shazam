@@ -26,12 +26,16 @@ def rank_reciters(
     query_emb: np.ndarray,
     database: dict[str, np.ndarray],
     top_k: int = 3,
-) -> list[dict[str, float]]:
-    """Return top-k ``{"reciter": name, "score": cosine}`` sorted by score desc."""
+    display_names: dict[str, str] | None = None,
+) -> list[dict]:
+    """Return top-k ``{"reciter", "display", "score"}`` sorted by score desc.
+
+    ``display_names`` maps DB keys to human-readable names; keys without
+    an entry fall back to their own key.
+    """
+    display_names = display_names or {}
     query = l2_normalize(query_emb)
     scored: list[dict] = []
-    from scripts.sources import RECITERS  # noqa: PLC0415 - display names for API
-
     for name, ref in database.items():
         ref_n = l2_normalize(np.asarray(ref))
         if ref_n.size == 0 or query.size == 0:
@@ -39,10 +43,9 @@ def rank_reciters(
         if ref_n.shape != query.shape:
             # Skip incompatible vectors instead of crashing the request.
             continue
-        spec = RECITERS.get(name)
         scored.append({
             "reciter": name,
-            "display": spec.display if spec else name,
+            "display": display_names.get(name, name),
             "score": cosine_similarity(query, ref_n),
         })
     scored.sort(key=lambda item: item["score"], reverse=True)

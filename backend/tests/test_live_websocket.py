@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import numpy as np
+import pytest
 from fastapi.testclient import TestClient
 
 from app.main import app
@@ -39,13 +40,17 @@ def test_live_result_frame_shape(fake_env):
 
 
 def test_live_no_identify_below_window(fake_env):
+    """Below the 5 s window the server stays silent, yet stays alive:
+    appending garbage (which ffmpeg tolerates by dropping) and then
+    enough audio to reach the window still yields a single result."""
     with client.websocket_connect("/live_reciter") as ws:
         ws.send_bytes(_wav_chunk(1.0))
-        # Server should stay silent; verify it is still responsive by
-        # sending garbage and expecting an error frame (not a close).
-        ws.send_bytes(b"garbage")
+        ws.send_bytes(b"garbage")  # tolerated/dropped, no frame expected
+        ws.send_bytes(_wav_chunk(4.5))  # decode trigger is every 3 chunks
+        ws.send_bytes(_wav_chunk(4.5))  # total 5.5 s decoded -> identify
         msg = ws.receive_json()
-        assert "error" in msg
+        assert "matches" in msg, f"expected result, got {msg}"
+        assert msg["matches"][0]["reciter"] == "alpha"
 
 
 def test_live_max_duration_not_sure(fake_env, monkeypatch):
@@ -70,3 +75,36 @@ def test_live_disconnect_is_clean(fake_env):
     # test suite still passes afterwards (other endpoints respond).
     resp = client.get("/health")
     assert resp.status_code == 200
+
+
+def _webm_bytes(seconds: float = 6.0) -> bytes:
+    """A real webm/opus stream of `seconds` length (ffmpeg-generated)."""
+    import shutil
+    import subprocess
+
+    if shutil.which("ffmpeg") is None:
+        pytest.skip("ffmpeg not installed")
+    proc = subprocess.run(
+        ["ffmpeg", "-hide_banner", "-loglevel", "error", "-f", "lavfi",
+         "-i", f"sine=frequency=440:duration={seconds}", "-c:a", "libopus",
+         "-f", "webm", "pipe:1"],
+        capture_output=True, timeout=30, check=True,
+    )
+    return proc.stdout
+
+
+def test_live_webm_stream_identifies(fake_env):
+    """C2 regression: webm chunks after the first have no header; the
+    server must decode cumulatively instead of per-chunk."""
+    raw = _webm_bytes(6.0)
+    assert len(raw) > 2000
+    parts = [raw[: len(raw) // 4]] + [
+        raw[i : i + max(len(raw) // 8, 1)]
+        for i in range(len(raw) // 4, len(raw), max(len(raw) // 8, 1))
+    ]
+    with client.websocket_connect("/live_reciter") as ws:
+        for part in parts:
+            ws.send_bytes(part)
+        msg = ws.receive_json()
+        assert "matches" in msg, f"expected result, got {msg}"
+        assert msg["matches"][0]["reciter"] == "alpha"

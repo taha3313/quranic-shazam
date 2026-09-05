@@ -16,6 +16,28 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter(tags=["reciter"])
 
+_UPLOAD_CHUNK = 1 << 20  # 1 MiB
+
+
+async def _read_capped(file: UploadFile, cap: int) -> bytes:
+    """Stream the upload into memory, refusing past `cap` bytes.
+
+    Checking before buffering the whole body prevents a multi-GB body
+    from being read into RAM just to be rejected.
+    """
+    buf = bytearray()
+    while True:
+        chunk = await file.read(_UPLOAD_CHUNK)
+        if not chunk:
+            break
+        buf.extend(chunk)
+        if len(buf) > cap:
+            raise HTTPException(
+                status_code=413,
+                detail=f"File too large (max {get_settings().max_upload_mb} MB).",
+            )
+    return bytes(buf)
+
 
 @router.post("/identify_reciter", response_model=IdentifyResponse)
 async def identify_reciter(
@@ -26,14 +48,9 @@ async def identify_reciter(
     if file is None or not file.filename:
         raise HTTPException(status_code=400, detail="Audio file is required.")
 
-    data = await file.read()
+    data = await _read_capped(file, settings.max_upload_bytes)
     if not data:
         raise HTTPException(status_code=400, detail="Uploaded file is empty.")
-    if len(data) > settings.max_upload_bytes:
-        raise HTTPException(
-            status_code=413,
-            detail=f"File too large (max {settings.max_upload_mb} MB).",
-        )
 
     try:
         # Decode + ECAPA inference are blocking CPU work: keep them off the

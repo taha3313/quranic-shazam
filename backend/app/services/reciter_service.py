@@ -18,6 +18,7 @@ logger = logging.getLogger(__name__)
 
 _lock = threading.Lock()
 _db: dict[str, np.ndarray] | None = None
+_display_names: dict[str, str] = {}
 # CPU inference does not parallelize (torch uses all cores per call); the
 # semaphore just prevents N concurrent requests from thrashing the machine.
 _infer_sem = threading.Semaphore(2)
@@ -44,7 +45,25 @@ def get_database() -> dict[str, np.ndarray]:
         except Exception as exc:  # noqa: BLE001
             logger.error("Failed to load embeddings from %s: %s", path, exc)
             _db = {}
+        _load_display_names()
         return _db
+
+
+def _load_display_names() -> None:
+    """Load key → display name from data/reciters.json (optional file)."""
+    global _display_names
+    settings = get_settings()
+    path = settings.data_dir / "reciters.json"
+    try:
+        import json
+
+        entries = json.loads(path.read_text())["reciters"]
+        _display_names = {
+            e["key"]: e["name"] for e in entries if e.get("key") and e.get("name")
+        }
+    except Exception as exc:  # noqa: BLE001 - metadata is optional
+        logger.warning("Could not load reciter metadata from %s: %s", path, exc)
+        _display_names = {}
 
 
 def reload_database() -> dict[str, np.ndarray]:
@@ -61,7 +80,7 @@ def identify_waveform(waveform: torch.Tensor, sr: int, top_k: int) -> list[dict[
             "No reciter embeddings loaded. Generate them first (make embeddings)."
         )
     query = embedding_from_waveform(waveform, sr)
-    return rank_reciters(query, db, top_k=top_k)
+    return rank_reciters(query, db, top_k=top_k, display_names=_display_names)
 
 
 def identify_upload_bytes(data: bytes, top_k: int) -> list[dict[str, float]]:
@@ -70,6 +89,10 @@ def identify_upload_bytes(data: bytes, top_k: int) -> list[dict[str, float]]:
     Callers on the asyncio loop MUST run this via anyio.to_thread (the
     routes do); it must never execute on the event loop itself.
     """
-    waveform, sr = decode_upload_bytes(data)
+    settings = get_settings()
+    waveform, sr = decode_upload_bytes(data, target_sr=settings.sample_rate)
+    max_samples = settings.max_audio_sec * settings.sample_rate
+    if waveform.shape[1] > max_samples:
+        waveform = waveform[:, :max_samples]
     with _infer_sem:
         return identify_waveform(waveform, sr, top_k=top_k)

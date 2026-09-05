@@ -1,8 +1,15 @@
 """WebSocket /live_reciter — sliding-window live reciter recognition.
 
-Client streams binary audio chunks (webm/opus from MediaRecorder or raw wav).
-Server accumulates ~``live_window_sec`` of audio, runs one embedding, and
-replies with the top matches once the confidence threshold is reached.
+Client streams binary audio chunks. Two chunk shapes are supported:
+
+- **Container streams** (webm/opus from MediaRecorder): only the first
+  chunk carries the container header, so the server decodes the *whole*
+  accumulated byte buffer cumulatively; a consumed-samples offset marks
+  what has already been identified.
+- **Self-contained chunks** (raw wav frames): cumulative decode of the
+  concatenation fails, so each chunk is decoded individually.
+
+Decoding and inference run in worker threads (never on the event loop).
 """
 
 from __future__ import annotations
@@ -23,14 +30,74 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter(tags=["live"])
 
+# Decode the accumulated buffer at most every N chunks (~300 ms each).
+_DECODE_EVERY_CHUNKS = 3
+# Hard cap on the raw byte buffer (headers must be preserved for webm).
+_RAW_BUFFER_CAP = 10_000_000
+
+
+def _decode_step(
+    raw_all: bytes, pending: list[bytes], target_sr: int
+) -> tuple[str, object, int]:
+    """Decode in a worker thread; returns (mode, payload, error_count).
+
+    Prefer per-chunk decoding (self-contained chunks such as raw wav
+    frames). Only when *every* pending chunk fails individually — the
+    signature of a headerless container stream like webm/opus — decode
+    the whole accumulated buffer cumulatively.
+
+    mode "cum": payload is the full decoded session waveform.
+    mode "chunk": payload is a list of per-chunk waveforms.
+    """
+    tensors: list[torch.Tensor] = []
+    errors = 0
+    for chunk in pending:
+        try:
+            waveform, _ = decode_upload_bytes(chunk, target_sr=target_sr)
+            tensors.append(normalize(waveform))
+        except ValueError:
+            errors += 1
+    if tensors or not errors:
+        return "chunk", tensors, errors
+    try:
+        waveform, _ = decode_upload_bytes(raw_all, target_sr=target_sr)
+        return "cum", normalize(waveform), 0
+    except ValueError:
+        return "chunk", [], errors
+
 
 @router.websocket("/live_reciter")
 async def live_reciter(ws: WebSocket):
     await ws.accept()
     settings = get_settings()
+    sr = settings.sample_rate
 
-    chunks: list[torch.Tensor] = []
-    buffered_sec = 0.0
+    raw_all = bytearray()
+    pending: list[bytes] = []
+    chunks_since_decode = 0
+
+    session: torch.Tensor | None = None  # "cum" mode: full decoded audio
+    consumed = 0                         # samples already identified
+    waveforms: list[torch.Tensor] = []   # "chunk" mode
+    identified_samples = 0               # chunk-mode samples already identified
+
+    def buffered_sec() -> float:
+        if session is not None:
+            return max((session.shape[1] - consumed) / sr, 0.0)
+        return sum(w.shape[1] for w in waveforms) / sr
+
+    def window_waveform() -> torch.Tensor | None:
+        if session is not None:
+            return session[:, consumed:]
+        if waveforms:
+            return torch.cat([w.reshape(1, -1) for w in waveforms], dim=1)
+        return None
+
+    async def send_matches(matches: list[dict]) -> None:
+        payload = IdentifyResponse(
+            matches=[ReciterMatch(**m) for m in matches]
+        ).model_dump()
+        await ws.send_json(payload)
 
     try:
         while True:
@@ -42,31 +109,50 @@ async def live_reciter(ws: WebSocket):
 
             if not data:
                 continue
+            if len(raw_all) < _RAW_BUFFER_CAP:
+                raw_all.extend(data)
+            pending.append(data)
+            chunks_since_decode += 1
 
+            decoded_yet = session is not None or waveforms
+            if decoded_yet and chunks_since_decode < _DECODE_EVERY_CHUNKS:
+                continue
+
+            chunks_since_decode = 0
             try:
-                # Decode (may shell out to ffmpeg) must not block the loop.
-                waveform, sr = await anyio.to_thread.run_sync(
+                mode, payload, errors = await anyio.to_thread.run_sync(
                     functools.partial(
-                        decode_upload_bytes, data, target_sr=settings.sample_rate
+                        _decode_step, bytes(raw_all), list(pending), sr
                     )
                 )
-            except ValueError as exc:
-                await ws.send_json({"error": str(exc)})
+            except Exception:  # noqa: BLE001
+                logger.exception("live decode crashed")
+                await ws.send_json({"error": "Decode failed."})
                 continue
 
-            chunks.append(normalize(waveform))
-            buffered_sec += waveform.shape[1] / settings.sample_rate
+            if mode == "cum":
+                session = payload
+                # Waveforms decoded before the switch are part of the
+                # session's timeline but have already been identified.
+                consumed = identified_samples
+                pending.clear()
+            else:
+                waveforms.extend(payload)
+                pending.clear()
+                if not waveforms and errors:
+                    await ws.send_json({"error": "Could not decode audio chunk."})
+                    continue
 
-            if buffered_sec < settings.live_window_sec:
+            if buffered_sec() < settings.live_window_sec:
                 continue
 
-            merged = torch.cat([c.reshape(1, -1) for c in chunks], dim=1)
+            merged = window_waveform()
             try:
                 matches = await anyio.to_thread.run_sync(
                     functools.partial(
                         reciter_service.identify_waveform,
                         merged,
-                        settings.sample_rate,
+                        sr,
                         top_k=3,
                     )
                 )
@@ -76,7 +162,12 @@ async def live_reciter(ws: WebSocket):
             except Exception:  # noqa: BLE001
                 logger.exception("live embedding failed")
                 await ws.send_json({"error": "Embedding failed."})
-                chunks, buffered_sec = [], 0.0
+                # Skip the broken window instead of retrying it forever.
+                if session is not None:
+                    consumed = session.shape[1]
+                else:
+                    identified_samples += sum(w.shape[1] for w in waveforms)
+                    waveforms = []
                 continue
 
             if not matches:
@@ -84,12 +175,13 @@ async def live_reciter(ws: WebSocket):
                 break
 
             if matches[0]["score"] >= settings.live_confidence_threshold:
-                payload = IdentifyResponse(
-                    matches=[ReciterMatch(**m) for m in matches]
-                ).model_dump()
-                await ws.send_json(payload)
-                chunks, buffered_sec = [], 0.0
-            elif buffered_sec >= settings.live_max_duration_sec:
+                await send_matches(matches)
+                if session is not None:
+                    consumed = session.shape[1]
+                else:
+                    identified_samples += sum(w.shape[1] for w in waveforms)
+                    waveforms = []
+            elif buffered_sec() >= settings.live_max_duration_sec:
                 await ws.send_json(
                     {"matches": [{"reciter": "Not sure", "score": 0.0}]}
                 )
