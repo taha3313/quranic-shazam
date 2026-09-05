@@ -1,27 +1,33 @@
-# Python virtual environment
+# Python / uv
+.venv/
 venv/
-
-# Byte-compiled / cache
 __pycache__/
 *.py[cod]
 *.pyo
-*.pyd
+.uv/
+*.egg-info/
 
-# Environment variables
+# Env / secrets
+.env
 *.env
 
-# Database files
+# Data & models (regenerate with make data / make embeddings)
+data/recitations_clips/
+data/test_clips/
+pretrained_models/
+*.wav
+*.mp3
+*.webm
+!**/public/**/*.mp3
+
+# Logs / DBs
+*.log
 *.db
 *.sqlite3
 
-# Log files
-*.log
-
-# IDE / OS files
+# IDE / OS
 .vscode/
 .idea/
 *.iml
 .DS_Store
 Thumbs.db
-#data
-data/recitations_clips/

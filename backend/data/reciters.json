@@ -1,9 +1,104 @@
 {
   "reciters": [
-    {"name": "Mishary Rashid Alafasy", "id": 7},
-    {"name": "Abdul Basit Abdul Samad", "id": 8},
-    {"name": "Saad Al Ghamdi", "id": 9},
-    {"name": "Maher Al Muaiqly", "id": 10},
-    {"name": "Abdullah Al-Juhany", "id": 11}
+    {
+      "name": "Abdulbaset Abdussamad",
+      "key": "abdulbaset",
+      "id": 1
+    },
+    {
+      "name": "Idris Abkar",
+      "key": "abkar",
+      "id": 2
+    },
+    {
+      "name": "Ahmed Al-Ajmy",
+      "key": "ajmy",
+      "id": 3
+    },
+    {
+      "name": "Mishary Alafasy",
+      "key": "alafasy",
+      "id": 4
+    },
+    {
+      "name": "Mahmoud Ali Al-Banna",
+      "key": "banna",
+      "id": 5
+    },
+    {
+      "name": "Yasser Al-Dosari",
+      "key": "dosari",
+      "id": 6
+    },
+    {
+      "name": "Fares Abbad",
+      "key": "fares",
+      "id": 7
+    },
+    {
+      "name": "Saad Al-Ghamdi",
+      "key": "ghamdi",
+      "id": 8
+    },
+    {
+      "name": "Hani Ar-Rifai",
+      "key": "hani",
+      "id": 9
+    },
+    {
+      "name": "Mahmoud Al-Hussary",
+      "key": "husary",
+      "id": 10
+    },
+    {
+      "name": "Abdullah Al-Juhany",
+      "key": "juhany",
+      "id": 11
+    },
+    {
+      "name": "Raad Al-Kurdi",
+      "key": "kurdi",
+      "id": 12
+    },
+    {
+      "name": "Maher Al-Muaiqly",
+      "key": "maher",
+      "id": 13
+    },
+    {
+      "name": "Mohamed Al-Minshawi",
+      "key": "minshawi",
+      "id": 14
+    },
+    {
+      "name": "Mustafa Ismail",
+      "key": "mustafa",
+      "id": 15
+    },
+    {
+      "name": "Abdul Rahman Al-Ossi",
+      "key": "ossi",
+      "id": 16
+    },
+    {
+      "name": "Nasser Al-Qatami",
+      "key": "qatami",
+      "id": 17
+    },
+    {
+      "name": "Saud Al-Shuraim",
+      "key": "shuraim",
+      "id": 18
+    },
+    {
+      "name": "Abdurrahman As-Sudais",
+      "key": "sudais",
+      "id": 19
+    },
+    {
+      "name": "Khalifa Al-Tunaiji",
+      "key": "tunaiji",
+      "id": 20
+    }
   ]
 }

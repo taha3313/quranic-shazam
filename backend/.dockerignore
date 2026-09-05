@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+data/recitations_clips/
+data/test_clips/
+pretrained_models/
+*.wav
+*.mp3
+*.webm
+.env

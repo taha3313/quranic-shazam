@@ -1,0 +1,12 @@
+# Normalize to LF so Windows + WSL Ubuntu checkouts stay consistent.
+* text=auto eol=lf
+
+# Binary assets
+*.png binary
+*.jpg binary
+*.svg text
+*.wav binary
+*.mp3 binary
+*.webm binary
+*.npy binary
+*.ckpt binary
