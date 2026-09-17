@@ -41,14 +41,22 @@ def _decode_step(
 ) -> tuple[str, object, int]:
     """Decode in a worker thread; returns (mode, payload, error_count).
 
-    Prefer per-chunk decoding (self-contained chunks such as raw wav
-    frames). Only when *every* pending chunk fails individually — the
-    signature of a headerless container stream like webm/opus — decode
-    the whole accumulated buffer cumulatively.
+    Decode recognized webm containers cumulatively, waiting for more
+    bytes when the header is incomplete. Otherwise prefer self-contained
+    chunks such as wav, falling back to cumulative decoding when all fail.
 
     mode "cum": payload is the full decoded session waveform.
     mode "chunk": payload is a list of per-chunk waveforms.
     """
+    # Browser webm fragments share one header. Even the first fragment
+    # may contain only an incomplete container: wait for more bytes.
+    if raw_all.startswith(b"\x1a\x45\xdf\xa3"):
+        try:
+            waveform, _ = decode_upload_bytes(raw_all, target_sr=target_sr)
+            return "cum", normalize(waveform), 0
+        except ValueError:
+            return "pending", None, 0
+
     tensors: list[torch.Tensor] = []
     errors = 0
     for chunk in pending:
@@ -130,6 +138,9 @@ async def live_reciter(ws: WebSocket):
                 await ws.send_json({"error": "Decode failed."})
                 continue
 
+            if mode == "pending":
+                pending.clear()
+                continue
             if mode == "cum":
                 session = payload
                 # Waveforms decoded before the switch are part of the

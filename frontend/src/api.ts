@@ -1,6 +1,6 @@
 /** Centralized backend communication (REST + WebSocket URL builders). */
 
-import type { IdentifyResponse } from './types';
+import type { IdentifyResponse, IdentifyVerseResponse } from './types';
 
 const rawApiUrl = import.meta.env.VITE_API_URL as string | undefined;
 const rawWsUrl = import.meta.env.VITE_WS_URL as string | undefined;
@@ -22,6 +22,7 @@ export const WS_BASE_URL: string = rawWsUrl ?? defaultWsUrl();
 
 export const IDENTIFY_URL = `${API_BASE_URL}/identify_reciter`;
 export const LIVE_WS_URL = `${WS_BASE_URL}/live_reciter`;
+export const IDENTIFY_VERSE_URL = `${API_BASE_URL}/identify_verse`;
 
 export async function identifyReciter(
   audio: File | Blob,
@@ -49,4 +50,38 @@ export async function identifyReciter(
   }
 
   return (await response.json()) as IdentifyResponse;
+}
+
+export async function identifyVerse(
+  audio: File | Blob,
+  filename = 'recording.wav',
+  topK = 3,
+  includeTranscript = true,
+  progressive = false,
+): Promise<IdentifyVerseResponse> {
+  const formData = new FormData();
+  const file = audio instanceof File ? audio : new File([audio], filename);
+  formData.append('file', file);
+
+  const params = new URLSearchParams({
+    top_k: String(topK),
+    include_transcript: String(includeTranscript),
+  });
+  const response = await fetch(`${progressive ? IDENTIFY_VERSE_URL + '_progressive' : IDENTIFY_VERSE_URL}?${params}`, {
+    method: 'POST',
+    body: formData,
+  });
+
+  if (!response.ok) {
+    let detail = 'Verse identification failed';
+    try {
+      const body = (await response.json()) as { detail?: string };
+      if (body.detail) detail = body.detail;
+    } catch {
+      /* keep generic message */
+    }
+    throw new Error(detail);
+  }
+
+  return (await response.json()) as IdentifyVerseResponse;
 }

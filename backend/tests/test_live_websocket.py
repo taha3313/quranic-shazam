@@ -108,3 +108,13 @@ def test_live_webm_stream_identifies(fake_env):
         msg = ws.receive_json()
         assert "matches" in msg, f"expected result, got {msg}"
         assert msg["matches"][0]["reciter"] == "alpha"
+
+
+def test_live_incomplete_webm_header_waits_for_more(fake_env):
+    raw = _webm_bytes(6.0)
+    with client.websocket_connect("/live_reciter") as ws:
+        ws.send_bytes(raw[:32])
+        ws.send_bytes(raw[32:])
+        msg = ws.receive_json()
+        assert "matches" in msg, f"unexpected provisional decode error: {msg}"
+        assert msg["matches"][0]["reciter"] == "alpha"

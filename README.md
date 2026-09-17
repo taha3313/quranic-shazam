@@ -54,8 +54,12 @@ Abdul Basit · Minshawi · Husary · Mustafa Ismail · Al-Banna · Sudais · Shu
 ## API
 
 - `POST /identify_reciter?top_k=3` (multipart audio ≤ 25 MB) → `{ "matches": [{ "reciter", "display", "score" }] }`
+- `POST /identify_verse?top_k=3&include_transcript=false` (multipart audio ≤ 25 MB, first 20 s used) → `{ "transcript?", "confident", "matches": [{ "surah", "surah_name", "ayah_start", "ayah_end", "score", "words_matched", "words_total", "text" }] }` — Quranic Whisper ASR (tarteel whisper-base-ar-quran, CT2 int8) + normalized fuzzy matching over the 6,236-verse corpus (Imla'i text, alquran.cloud/Tanzil); supports partial verses and jointly ranked ayah ranges; ambiguous locations return confident=false
+- `POST /identify_verse_progressive` — accumulate context in ASR windows of at most 20 seconds, stop at a clear match or 60 seconds; returns `needs_more_audio`, `listen_limit_reached`, and `audio_seconds`. Microphone verse recognition checks automatically and keeps listening while uncertain.
 - `WS /live_reciter` — stream binary audio chunks; replies `{ "matches": [...] }` on confidence, or `"Not sure"` after 30 s
 - `GET /health` → `{ "status", "reciters_loaded", "model_loaded" }`
+
+Verse-identification setup (one-time): `cd backend && uv run python scripts/build_verse_corpus.py` (regenerates `data/quran_verses.json`). The ASR model (~145 MB) downloads automatically on first `/identify_verse` call. See [docs/AYAH_ID_RESEARCH.md](docs/AYAH_ID_RESEARCH.md) for the model/retrieval investigation behind this feature.
 
 ---
 

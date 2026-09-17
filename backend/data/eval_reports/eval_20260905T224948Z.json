@@ -1,0 +1,5202 @@
+{
+ "generated": "20260905T224948Z",
+ "args": {
+  "reciters": [
+   "dosari",
+   "abkar"
+  ],
+  "surahs": null,
+  "clip_ms": 10000,
+  "overlap_ms": 5000,
+  "max_clips_per_surah": 12,
+  "durations": [
+   10.0,
+   5.0
+  ],
+  "seed": 42,
+  "out_dir": "data/eval_reports"
+ },
+ "aggregate": {
+  "baseline_top1": 0.9867,
+  "top3": 0.9867,
+  "top5": 1.0,
+  "n_baseline": 75,
+  "per_reciter": {
+   "abkar": {
+    "n": 38,
+    "top1": 1.0,
+    "top3": 1.0,
+    "top5": 1.0,
+    "precision": 1.0,
+    "main_confusion": []
+   },
+   "dosari": {
+    "n": 37,
+    "top1": 0.973,
+    "top3": 0.973,
+    "top5": 1.0,
+    "precision": 1.0,
+    "main_confusion": [
+     [
+      "husary",
+      1
+     ]
+    ]
+   }
+  },
+  "confusion_matrix": {
+   "abkar": {
+    "abkar": 38,
+    "dosari": 0
+   },
+   "dosari": {
+    "abkar": 0,
+    "dosari": 36,
+    "husary": 1
+   },
+   "husary": {
+    "abkar": 0,
+    "dosari": 0
+   }
+  },
+  "score_stats": {
+   "correct_mean": 0.7449,
+   "correct_min": 0.4164,
+   "wrong_mean": 0.2925,
+   "wrong_max": 0.2925,
+   "margin_mean": 0.3064,
+   "margin_p10": 0.3415
+  },
+  "by_surah": {
+   "78": {
+    "top1": 0.9583,
+    "n": 24
+   },
+   "87": {
+    "top1": 1.0,
+    "n": 24
+   },
+   "93": {
+    "top1": 1.0,
+    "n": 21
+   },
+   "112": {
+    "top1": 1.0,
+    "n": 6
+   }
+  },
+  "by_duration": {
+   "10s": {
+    "n": 75,
+    "top1": 0.9867
+   },
+   "5s": {
+    "n": 75,
+    "top1": 0.9733
+   }
+  },
+  "latency_ms_p50": 1357.4
+ },
+ "records": [
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 1,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "husary",
+     "display": "Mahmoud Al-Hussary",
+     "score": 0.29247071314521694
+    },
+    {
+     "reciter": "alafasy",
+     "display": "Mishary Alafasy",
+     "score": 0.2192977822530502
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.16993347059875025
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.1695447504177255
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.161120841061551
+    }
+   ],
+   "latency_ms": 6124.3
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 1,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "husary",
+     "display": "Mahmoud Al-Hussary",
+     "score": 0.19563941416454453
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.08131788767265437
+    },
+    {
+     "reciter": "fares",
+     "display": "Fares Abbad",
+     "score": 0.05982479905281579
+    },
+    {
+     "reciter": "ghamdi",
+     "display": "Saad Al-Ghamdi",
+     "score": 0.038167251268406796
+    },
+    {
+     "reciter": "alafasy",
+     "display": "Mishary Alafasy",
+     "score": 0.0352877791967077
+    }
+   ],
+   "latency_ms": 754.7
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 2,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.6403683991925525
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.5019482550709478
+    },
+    {
+     "reciter": "alafasy",
+     "display": "Mishary Alafasy",
+     "score": 0.4529321116176206
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.45279739933174706
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4423657307762612
+    }
+   ],
+   "latency_ms": 1335.3
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 2,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.5257349685434071
+    },
+    {
+     "reciter": "alafasy",
+     "display": "Mishary Alafasy",
+     "score": 0.49304796083140534
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.42926058164176933
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.4245554430997073
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.3788930952252673
+    }
+   ],
+   "latency_ms": 670.4
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 3,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.744013570688146
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.42383493373639813
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.41131562006190375
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.40604855688153196
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.39103351150946697
+    }
+   ],
+   "latency_ms": 1295.1
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 3,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.5030860003558237
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.4313405555939571
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4145077365329448
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.40034423726941315
+    },
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.3589267530514535
+    }
+   ],
+   "latency_ms": 730.1
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 4,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7302206957654825
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.419468646645363
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3973032524810839
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.3887174596358519
+    },
+    {
+     "reciter": "alafasy",
+     "display": "Mishary Alafasy",
+     "score": 0.38646727083286997
+    }
+   ],
+   "latency_ms": 1432.5
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 4,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.6601403446976831
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.39113371297201666
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.334782265800995
+    },
+    {
+     "reciter": "tunaiji",
+     "display": "Khalifa Al-Tunaiji",
+     "score": 0.32159458959900883
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3171618554876911
+    }
+   ],
+   "latency_ms": 703.9
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 5,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7532829777885388
+    },
+    {
+     "reciter": "alafasy",
+     "display": "Mishary Alafasy",
+     "score": 0.42300283075639816
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4216858526601467
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.4188835408829871
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.4128481970920029
+    }
+   ],
+   "latency_ms": 1365.3
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 5,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.5966826456447729
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.41852301416290294
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.4144439983311336
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.40753805102433893
+    },
+    {
+     "reciter": "alafasy",
+     "display": "Mishary Alafasy",
+     "score": 0.3959695528666532
+    }
+   ],
+   "latency_ms": 720.2
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 6,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.8364777482655135
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.48061160281317616
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.42115956415765754
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.40617182098753607
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.39618884937799337
+    }
+   ],
+   "latency_ms": 1497.5
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 6,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7397100261996045
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3942136356465312
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.36503380237008914
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.34939952017878434
+    },
+    {
+     "reciter": "alafasy",
+     "display": "Mishary Alafasy",
+     "score": 0.34895613197663883
+    }
+   ],
+   "latency_ms": 731.8
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 7,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.8047367127706869
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.4586151516238617
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.4189635444044305
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.40981045674750016
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.39746016001234624
+    }
+   ],
+   "latency_ms": 1332.9
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 7,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7703246248293225
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.45655212626996033
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3971606627381637
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.38603662999878563
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.38291978093982093
+    }
+   ],
+   "latency_ms": 695.8
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 8,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7242509493726149
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3827583614293979
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.37105925605138523
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.36141336358864806
+    },
+    {
+     "reciter": "hani",
+     "display": "Hani Ar-Rifai",
+     "score": 0.3575192215764544
+    }
+   ],
+   "latency_ms": 1406.2
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 8,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.6565527041919234
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.36089533192211914
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.34705378020223887
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3315113706030778
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.32881247911303074
+    }
+   ],
+   "latency_ms": 672.0
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 9,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7500910814689742
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3712443774751527
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.36204004438394144
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.35738217744147693
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.351777609290186
+    }
+   ],
+   "latency_ms": 1319.7
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 9,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.6413351349046427
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3567014896696334
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.319912803439236
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.31470448501859893
+    },
+    {
+     "reciter": "hani",
+     "display": "Hani Ar-Rifai",
+     "score": 0.2974213591803106
+    }
+   ],
+   "latency_ms": 690.6
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 10,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.767518726714847
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.38007072365753997
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.3733511130856815
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.37021181131227177
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.36770547336892756
+    }
+   ],
+   "latency_ms": 1363.0
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 10,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7143586995274257
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.4144837974806048
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.36840429526718854
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3453691830249996
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.34173446060618146
+    }
+   ],
+   "latency_ms": 800.5
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 11,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.6995753218629168
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.4622507454014503
+    },
+    {
+     "reciter": "hani",
+     "display": "Hani Ar-Rifai",
+     "score": 0.4501525101296652
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4236460547103026
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.3875781157081787
+    }
+   ],
+   "latency_ms": 1443.7
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 11,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.6956762520859092
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.4204292552006398
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.40553657073323357
+    },
+    {
+     "reciter": "hani",
+     "display": "Hani Ar-Rifai",
+     "score": 0.40091843008350125
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3632852398967855
+    }
+   ],
+   "latency_ms": 693.9
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 12,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7310256465401394
+    },
+    {
+     "reciter": "hani",
+     "display": "Hani Ar-Rifai",
+     "score": 0.5739603604422705
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.5158964534591131
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.48329206169987154
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.45334024528627126
+    }
+   ],
+   "latency_ms": 1391.3
+  },
+  {
+   "reciter": "dosari",
+   "surah": 78,
+   "clip": 12,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.6207194177767391
+    },
+    {
+     "reciter": "hani",
+     "display": "Hani Ar-Rifai",
+     "score": 0.517643881519169
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.48555581506526785
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4557451611855325
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.4169772469659937
+    }
+   ],
+   "latency_ms": 692.3
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 1,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7308867962609752
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.39095644045977995
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.37977198116869815
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.3693115571328515
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.35608767452066425
+    }
+   ],
+   "latency_ms": 1386.3
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 1,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.701513438927164
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.3808181122039207
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.35224348376144254
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.3377112585880434
+    },
+    {
+     "reciter": "tunaiji",
+     "display": "Khalifa Al-Tunaiji",
+     "score": 0.3279990790792566
+    }
+   ],
+   "latency_ms": 650.0
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 2,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7721532352509578
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.4083297164392048
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.3858617423197638
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.37425110675193474
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.3401404026622078
+    }
+   ],
+   "latency_ms": 1514.6
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 2,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7138837800847984
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.4122244703709629
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.40883699857386835
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.38882446986950514
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.34821324327111475
+    }
+   ],
+   "latency_ms": 835.6
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 3,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.790831876789285
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.4192299807837746
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.36368923582670976
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.3509329266389233
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3485979743149402
+    }
+   ],
+   "latency_ms": 1595.3
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 3,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7384952904617023
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.39024269075257606
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.30176507986030177
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.29258465906297026
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.2887551783291487
+    }
+   ],
+   "latency_ms": 787.5
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 4,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.8251609893879045
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.483144938380426
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.44416061494084513
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.42489010993885257
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.4152051097878203
+    }
+   ],
+   "latency_ms": 1404.9
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 4,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7807482966034999
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.3995370918724339
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.38876438137043445
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3865392593940346
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.38429479765364266
+    }
+   ],
+   "latency_ms": 679.3
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 5,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.8137271133918301
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.4366941547590447
+    },
+    {
+     "reciter": "alafasy",
+     "display": "Mishary Alafasy",
+     "score": 0.42730228858942376
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.4214632304494809
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.3821711087286396
+    }
+   ],
+   "latency_ms": 1289.2
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 5,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.6622755484247277
+    },
+    {
+     "reciter": "alafasy",
+     "display": "Mishary Alafasy",
+     "score": 0.5016706475587609
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.4382774849112511
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.3982363968546271
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.3982301163509175
+    }
+   ],
+   "latency_ms": 700.7
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 6,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.8083180545785217
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.4203544758223928
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.4178437828078954
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.36914928212757814
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.34270958964880127
+    }
+   ],
+   "latency_ms": 1325.4
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 6,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7754512376831033
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.3941754146158425
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.366416268787737
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3618319648822563
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.34475267103627844
+    }
+   ],
+   "latency_ms": 712.4
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 7,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7698579346970414
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.40644795610303797
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3902347166748731
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.33307727509903645
+    },
+    {
+     "reciter": "tunaiji",
+     "display": "Khalifa Al-Tunaiji",
+     "score": 0.30962204380755315
+    }
+   ],
+   "latency_ms": 1340.4
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 7,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7113534904517533
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.38783085178148147
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.37712876628685643
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.3222102885623649
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.291096922973964
+    }
+   ],
+   "latency_ms": 667.8
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 8,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7813435344640409
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.3981293441214291
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3921267770955513
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3575027707371011
+    },
+    {
+     "reciter": "tunaiji",
+     "display": "Khalifa Al-Tunaiji",
+     "score": 0.3203601405954278
+    }
+   ],
+   "latency_ms": 1307.1
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 8,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7304887928033342
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.37688280440430444
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3464982455960466
+    },
+    {
+     "reciter": "tunaiji",
+     "display": "Khalifa Al-Tunaiji",
+     "score": 0.3296060602167486
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.32620872038353593
+    }
+   ],
+   "latency_ms": 758.0
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 9,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.8022441288663911
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.4265993741750718
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.40868740278658916
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.38286193244019834
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.3582017109103485
+    }
+   ],
+   "latency_ms": 1422.3
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 9,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.742599598287938
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3981986422410089
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.37786028514507325
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.35015969459826957
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.3403834955228507
+    }
+   ],
+   "latency_ms": 694.0
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 10,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.8134202209529933
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.4605182099658458
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.4140062162447178
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.4010251360651137
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.3998959301697965
+    }
+   ],
+   "latency_ms": 1306.6
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 10,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7590277138444088
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.4509101086712746
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.38403783998955004
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.34936164508453077
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.3226998149756009
+    }
+   ],
+   "latency_ms": 759.7
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 11,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.795028102958541
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.4146430775876316
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.4088617153257381
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.40365050142156805
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.35651189663318134
+    }
+   ],
+   "latency_ms": 1443.2
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 11,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.74717754620362
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.4088383552501192
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.38494198768925997
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.37221320569749045
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3567401991306928
+    }
+   ],
+   "latency_ms": 721.5
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 12,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.8057794108015358
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.4808865581176791
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.4352048993644053
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.4147953241462873
+    },
+    {
+     "reciter": "hani",
+     "display": "Hani Ar-Rifai",
+     "score": 0.34373831501540875
+    }
+   ],
+   "latency_ms": 1398.8
+  },
+  {
+   "reciter": "dosari",
+   "surah": 87,
+   "clip": 12,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7023557974561669
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3678237698593235
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.3362100573775114
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.31090248801020154
+    },
+    {
+     "reciter": "tunaiji",
+     "display": "Khalifa Al-Tunaiji",
+     "score": 0.27371044472522826
+    }
+   ],
+   "latency_ms": 707.0
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 1,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.812845143577287
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.43580297812472324
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3971820974005846
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.3779594713811188
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.3578109199554606
+    }
+   ],
+   "latency_ms": 1490.9
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 1,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7568005196918802
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.4374656415208348
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.40419991927563775
+    },
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.3866433837066141
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.3844893326269926
+    }
+   ],
+   "latency_ms": 702.7
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 2,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7788977700031158
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3609237465446461
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3496245705420956
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.3342816984372576
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.3117912329276638
+    }
+   ],
+   "latency_ms": 1383.8
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 2,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7215878841141609
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3568017193747551
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.3440556235651458
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.34330334894449716
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.27723466041451666
+    }
+   ],
+   "latency_ms": 662.6
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 3,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.8080967716389195
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.40153014388813063
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.37144708257343356
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.34631883111331074
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.344629859495869
+    }
+   ],
+   "latency_ms": 1311.6
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 3,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.733346954331897
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.3391683959987887
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3247848799473065
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.3196073227645414
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.31284272607245045
+    }
+   ],
+   "latency_ms": 664.4
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 4,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.8354701165902889
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.46030919228307
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.4485116901429201
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.41114825344844047
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.41085723196057367
+    }
+   ],
+   "latency_ms": 1393.3
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 4,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7863123503958159
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.4257821778855766
+    },
+    {
+     "reciter": "hani",
+     "display": "Hani Ar-Rifai",
+     "score": 0.4218063226836926
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.41980574746941396
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.39185634181479173
+    }
+   ],
+   "latency_ms": 710.6
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 5,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.778682978048617
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.45811390972837684
+    },
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.4530034807787323
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.4295274063450145
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.4208860104499052
+    }
+   ],
+   "latency_ms": 1372.2
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 5,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7005826253237075
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3997555037853175
+    },
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.39210269783230084
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.3674271516016942
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.36453917294820243
+    }
+   ],
+   "latency_ms": 689.6
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 6,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.8366725573433805
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.45082771356876944
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.44054449475613616
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4373918616603877
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.42921258425405284
+    }
+   ],
+   "latency_ms": 1348.0
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 6,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7396229625796893
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.47850056981428146
+    },
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.47125798327315915
+    },
+    {
+     "reciter": "hani",
+     "display": "Hani Ar-Rifai",
+     "score": 0.4288540348552332
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.4131234236850769
+    }
+   ],
+   "latency_ms": 658.4
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 7,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.8489838517891625
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.46169999918956384
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.4383848291450516
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.43457815248890086
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.40768292885748514
+    }
+   ],
+   "latency_ms": 1457.5
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 7,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7238834627086559
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.41669451870511026
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.3928102075949128
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.3917420636949336
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3488762657054456
+    }
+   ],
+   "latency_ms": 688.2
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 8,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.8574115310205507
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.4736682375368507
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.41703999408647885
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.40125236609589277
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3761224307620499
+    }
+   ],
+   "latency_ms": 1303.9
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 8,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.8500844028781606
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.458736300290586
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.44490425078894014
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.42831955019678253
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.4025868415041437
+    }
+   ],
+   "latency_ms": 666.0
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 9,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7636427465374577
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.4367563424863271
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.3938695675647219
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3432907105773985
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.3260757648379995
+    }
+   ],
+   "latency_ms": 942.3
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 9,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7597629812968628
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.4263787389207244
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.3817438742180037
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.330813560190109
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.32083280533693553
+    }
+   ],
+   "latency_ms": 711.2
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 10,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.5641911155261418
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.3586436733886139
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.3119523124321961
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.29630135545538683
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.2774098044104638
+    }
+   ],
+   "latency_ms": 311.4
+  },
+  {
+   "reciter": "dosari",
+   "surah": 93,
+   "clip": 10,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.5641911155261418
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.3586436733886139
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.3119523124321961
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.29630135545538683
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.2774098044104638
+    }
+   ],
+   "latency_ms": 294.6
+  },
+  {
+   "reciter": "dosari",
+   "surah": 112,
+   "clip": 1,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7701775175435395
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.4360981540196658
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.409501664375839
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.40549525969663647
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.3956189129271288
+    }
+   ],
+   "latency_ms": 1382.6
+  },
+  {
+   "reciter": "dosari",
+   "surah": 112,
+   "clip": 1,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.6959308052499725
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.41275763284670686
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.4026250965496953
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.4014873525855157
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.382960777590846
+    }
+   ],
+   "latency_ms": 723.4
+  },
+  {
+   "reciter": "dosari",
+   "surah": 112,
+   "clip": 2,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7249428953259786
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.4444359343232992
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.42149716160841993
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.4126863208166898
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.3671215488000971
+    }
+   ],
+   "latency_ms": 876.1
+  },
+  {
+   "reciter": "dosari",
+   "surah": 112,
+   "clip": 2,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.7281235914780614
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.4379589403276066
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3796094748823736
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.37844403258110004
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.34260279754933515
+    }
+   ],
+   "latency_ms": 657.8
+  },
+  {
+   "reciter": "dosari",
+   "surah": 112,
+   "clip": 3,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.4164197449796495
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.34900029446787484
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.32077943044100654
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.2982286283230333
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.2554749364582811
+    }
+   ],
+   "latency_ms": 224.5
+  },
+  {
+   "reciter": "dosari",
+   "surah": 112,
+   "clip": 3,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.4164197449796495
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.34900029446787484
+    },
+    {
+     "reciter": "abdulbaset",
+     "display": "Abdulbaset Abdussamad",
+     "score": 0.32077943044100654
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.2982286283230333
+    },
+    {
+     "reciter": "maher",
+     "display": "Maher Al-Muaiqly",
+     "score": 0.2554749364582811
+    }
+   ],
+   "latency_ms": 231.8
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 1,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.5994457035952051
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.43642015533233475
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.41897066936073635
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.4018469872242227
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3927506139166156
+    }
+   ],
+   "latency_ms": 1413.4
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 1,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.3447374652947379
+    },
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.3293250311042237
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.29085321008911885
+    },
+    {
+     "reciter": "ajmy",
+     "display": "Ahmed Al-Ajmy",
+     "score": 0.2431443033763591
+    },
+    {
+     "reciter": "husary",
+     "display": "Mahmoud Al-Hussary",
+     "score": 0.24103024353282615
+    }
+   ],
+   "latency_ms": 726.7
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 2,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6651418267735223
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.4391901432877669
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.41717595128988083
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.3859282587216676
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.3538183531915898
+    }
+   ],
+   "latency_ms": 1342.1
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 2,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.5830695211468411
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.33861024618626023
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.33701019956628303
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.3229701894915009
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3219392952304915
+    }
+   ],
+   "latency_ms": 731.9
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 3,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6332237851364254
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.4156993520938879
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.41039267257626316
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.361576778552901
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.34381419288324927
+    }
+   ],
+   "latency_ms": 1325.7
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 3,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.5821350840306205
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.4371566900643809
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3957223066074834
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.30801521896575856
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.30196002001789424
+    }
+   ],
+   "latency_ms": 721.2
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 4,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6577268640809897
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4120644671225
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.40329521188299655
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.39374787906976744
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.3674295971216246
+    }
+   ],
+   "latency_ms": 1313.9
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 4,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.5618445990574515
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.3491933045731915
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.31826983970070943
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3113947266275733
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.3019202096904516
+    }
+   ],
+   "latency_ms": 747.4
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 5,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.690036965246098
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.4323039682291072
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4021738638580345
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.4003347199897354
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.39049792821284357
+    }
+   ],
+   "latency_ms": 1390.5
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 5,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6457041202326372
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.4084704562494142
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.3990932302794927
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.38403374816951713
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.36627046560669424
+    }
+   ],
+   "latency_ms": 731.0
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 6,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6920567721979256
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4186495878681292
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3861473261983879
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.3802191155208931
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.35676127553535153
+    }
+   ],
+   "latency_ms": 1360.0
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 6,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6626612802758327
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3707511623560658
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.3693875252338452
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.3686849158478093
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.34145075744578074
+    }
+   ],
+   "latency_ms": 671.1
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 7,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6701414862593515
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.395550064405434
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3836116346350134
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3721273457215402
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.36883937396327854
+    }
+   ],
+   "latency_ms": 1357.4
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 7,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6497415728813976
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.41667158970858686
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.36388581819850185
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3598205778988655
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.31376188673357197
+    }
+   ],
+   "latency_ms": 701.7
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 8,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6413434267986684
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.40956629349061635
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.40492983404521354
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.37808541564009973
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.32129720948951335
+    }
+   ],
+   "latency_ms": 1507.1
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 8,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.5529324547244663
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3702551505580574
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3070673257439355
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.296164664383565
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.2952488270246309
+    }
+   ],
+   "latency_ms": 841.6
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 9,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6626228321050205
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.43708649193779325
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3825839703635704
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3792711308270089
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.3373944319525836
+    }
+   ],
+   "latency_ms": 1710.7
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 9,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6194079572129257
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4518053856082004
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3831270951598339
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3830206552252174
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.3133837189914707
+    }
+   ],
+   "latency_ms": 701.1
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 10,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7166124727845753
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4467856046586355
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.4188083830454471
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.390643208787277
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.36171207144018236
+    }
+   ],
+   "latency_ms": 1508.9
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 10,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6196247392582507
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.36234418828145976
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.324203623566215
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.32100601022106384
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.31034697142000983
+    }
+   ],
+   "latency_ms": 787.0
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 11,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.745103900717375
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.48376295321306695
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.44845716147309156
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.43027732334361374
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.3540206686226721
+    }
+   ],
+   "latency_ms": 1403.6
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 11,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6675346046430722
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4312981450103395
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3931247265471277
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.36911360465419873
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3405339947877578
+    }
+   ],
+   "latency_ms": 792.0
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 12,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7048625903607078
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.42063511860953945
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.41217497037160394
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3929779003836705
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.32686290623938774
+    }
+   ],
+   "latency_ms": 1533.1
+  },
+  {
+   "reciter": "abkar",
+   "surah": 78,
+   "clip": 12,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6695683470058946
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.4425748856049234
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.3980204650272332
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.36815982969364797
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.30618654745689095
+    }
+   ],
+   "latency_ms": 677.4
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 1,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7998701625209204
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.46850573039699456
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.46264260120888434
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.453270975403775
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.44064469879494955
+    }
+   ],
+   "latency_ms": 1332.6
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 1,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6982813539792978
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.4164905353607605
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.41517809596334293
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.3970990681548411
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.3936539780800668
+    }
+   ],
+   "latency_ms": 662.5
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 2,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7877246662928789
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4648165174510093
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.4570897516953185
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.37558591299412547
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3743223933262139
+    }
+   ],
+   "latency_ms": 1319.5
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 2,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7116686362382276
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4222491793157861
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.40668072360235824
+    },
+    {
+     "reciter": "hani",
+     "display": "Hani Ar-Rifai",
+     "score": 0.353628286799745
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.34274230284500784
+    }
+   ],
+   "latency_ms": 693.0
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 3,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.8067192610732036
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.5043044485186482
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.4205851508613572
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.36690383216268335
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.3582402310534135
+    }
+   ],
+   "latency_ms": 1393.4
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 3,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7328251757198815
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.42291485995846656
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.42071096209234526
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.3934864922526933
+    },
+    {
+     "reciter": "ossi",
+     "display": "Abdul Rahman Al-Ossi",
+     "score": 0.37026761248498996
+    }
+   ],
+   "latency_ms": 681.9
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 4,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7886727918423541
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.44780909171249866
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3431805976459588
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.33696109547906616
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.3340254563328078
+    }
+   ],
+   "latency_ms": 1314.6
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 4,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7688344056685245
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.5148468883525694
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.35071886872368746
+    },
+    {
+     "reciter": "hani",
+     "display": "Hani Ar-Rifai",
+     "score": 0.3402406380315139
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.3224368085611187
+    }
+   ],
+   "latency_ms": 675.3
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 5,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7557109632973419
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4823854891145881
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.34819730074483934
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.34396969619795315
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.338695194537854
+    }
+   ],
+   "latency_ms": 1461.6
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 5,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6881770711303621
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.35366829069927375
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.3261956876938343
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.31462938050249095
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.2718957924651871
+    }
+   ],
+   "latency_ms": 793.4
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 6,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.780917719542739
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.5246103636062929
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.411518629792939
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.4077032483189594
+    },
+    {
+     "reciter": "hani",
+     "display": "Hani Ar-Rifai",
+     "score": 0.380626547634189
+    }
+   ],
+   "latency_ms": 1337.5
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 6,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6489702470283978
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.5484317865911472
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.3613585139464664
+    },
+    {
+     "reciter": "hani",
+     "display": "Hani Ar-Rifai",
+     "score": 0.35842880970263485
+    },
+    {
+     "reciter": "ghamdi",
+     "display": "Saad Al-Ghamdi",
+     "score": 0.35735262317667377
+    }
+   ],
+   "latency_ms": 679.3
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 7,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7325034526946778
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.3860809618673931
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.38053797377766774
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.3441418497832063
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3386864253744452
+    }
+   ],
+   "latency_ms": 1404.5
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 7,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.675055709976774
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.37611566004156527
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3689955212585777
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3271042014628787
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.30583235740904174
+    }
+   ],
+   "latency_ms": 823.3
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 8,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7399844291157599
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.41256922968757603
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3669176773664475
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.34034260542162587
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3047725057611175
+    }
+   ],
+   "latency_ms": 1514.8
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 8,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6893240362279166
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3563944408857865
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.34776226395587345
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3475677410716689
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.3193116252055597
+    }
+   ],
+   "latency_ms": 682.8
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 9,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7685806639699896
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.47250174242123755
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3859478968136303
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.37508864081044396
+    },
+    {
+     "reciter": "hani",
+     "display": "Hani Ar-Rifai",
+     "score": 0.3548824135234479
+    }
+   ],
+   "latency_ms": 1348.2
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 9,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6430954669937399
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.3868418235421229
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.2924458433468157
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.28648435566753466
+    },
+    {
+     "reciter": "hani",
+     "display": "Hani Ar-Rifai",
+     "score": 0.27958690574877176
+    }
+   ],
+   "latency_ms": 723.6
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 10,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7810805327588378
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.48656797711086464
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.4053142860132953
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.38881666384138713
+    },
+    {
+     "reciter": "hani",
+     "display": "Hani Ar-Rifai",
+     "score": 0.3693594019103129
+    }
+   ],
+   "latency_ms": 1299.1
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 10,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7445342392142965
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.44325693847621417
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.40617804510128097
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.36339985331169533
+    },
+    {
+     "reciter": "hani",
+     "display": "Hani Ar-Rifai",
+     "score": 0.33552727240553915
+    }
+   ],
+   "latency_ms": 639.0
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 11,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7995634358505848
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.49457595036175606
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.41497983972044045
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.38691930330242424
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3628016202797196
+    }
+   ],
+   "latency_ms": 1342.0
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 11,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7340226703109749
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4621767300647872
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.3817097970896212
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3478724146143151
+    },
+    {
+     "reciter": "hani",
+     "display": "Hani Ar-Rifai",
+     "score": 0.34238154629207807
+    }
+   ],
+   "latency_ms": 710.5
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 12,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7580742735976359
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4455653747827503
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.4049737388839301
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.38960246702131457
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.3578623393755916
+    }
+   ],
+   "latency_ms": 1377.7
+  },
+  {
+   "reciter": "abkar",
+   "surah": 87,
+   "clip": 12,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7091439905453804
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.40216373189513
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.34919312485184456
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.34743127766388227
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.32393717682920325
+    }
+   ],
+   "latency_ms": 758.1
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 1,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.758426927476997
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.42491454074934776
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4025600993334364
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.386757337438332
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.37479308300849046
+    }
+   ],
+   "latency_ms": 1321.9
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 1,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7138717267539743
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4454137646275639
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.4168024845302611
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.3988675160460369
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.34538066557835945
+    }
+   ],
+   "latency_ms": 689.4
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 2,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7108307975318057
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.4513116584331972
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.35373078216841075
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.30534561188207004
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.2893860401037208
+    }
+   ],
+   "latency_ms": 1451.0
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 2,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6835552334691142
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3703501158797466
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3635626810099582
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.30419649206670585
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.2874919340471843
+    }
+   ],
+   "latency_ms": 696.7
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 3,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6866005817285453
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.4817078004298028
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.33480724496010333
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.2847025659590881
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.2527431416040537
+    }
+   ],
+   "latency_ms": 1451.4
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 3,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6397845098624163
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.4646176612474638
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.2941438245565296
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.24728385444900672
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.24442383550771005
+    }
+   ],
+   "latency_ms": 763.9
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 4,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7338016338320433
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.4595187795902119
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3950113205315058
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.3061343184397377
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.29844691429767417
+    }
+   ],
+   "latency_ms": 1304.2
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 4,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6183450380490245
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.4258397207976138
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.323433175585911
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.26006377150484195
+    },
+    {
+     "reciter": "kurdi",
+     "display": "Raad Al-Kurdi",
+     "score": 0.2164318280465058
+    }
+   ],
+   "latency_ms": 659.4
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 5,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.8002261941385077
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.45130164624428326
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.43880727133036757
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.33939971473035835
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.33831686531671334
+    }
+   ],
+   "latency_ms": 1329.7
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 5,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.739296514190898
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.4315467008772932
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.4110470184052197
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.32794397628103467
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.3042222370320006
+    }
+   ],
+   "latency_ms": 669.6
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 6,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7357879218147471
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.40564504445718524
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3803437815393892
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.3723005235005715
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.303613577740923
+    }
+   ],
+   "latency_ms": 1464.1
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 6,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7324017575474512
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.41675488649582104
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.393314801967747
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.345485786383322
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.3380503415543599
+    }
+   ],
+   "latency_ms": 849.9
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 7,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7688375810205891
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4343689654566575
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3905763356327399
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.3839567327591291
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3693141757519484
+    }
+   ],
+   "latency_ms": 1276.1
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 7,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6672982804604599
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.3704334151721459
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3619329865751397
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3188325876982219
+    },
+    {
+     "reciter": "mustafa",
+     "display": "Mustafa Ismail",
+     "score": 0.263006430530357
+    }
+   ],
+   "latency_ms": 640.5
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 8,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.8039514094796699
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4429504318482594
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.426965899605728
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.40975639581900325
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3999716514088926
+    }
+   ],
+   "latency_ms": 1294.1
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 8,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7090877538209566
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.41818351379607094
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4173012284008546
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.35531183439616415
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.33539599752117644
+    }
+   ],
+   "latency_ms": 674.5
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 9,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7899366475896414
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.42377009981112396
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.41573336987226067
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.41228316488136385
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.3688082961346766
+    }
+   ],
+   "latency_ms": 1355.8
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 9,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7848489374741956
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.42804760327097746
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.427060099415214
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.4039279963197313
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.3528259077382745
+    }
+   ],
+   "latency_ms": 815.1
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 10,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.6949723618649526
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3894206598293775
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.3641764851449077
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.3473399971927107
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.33613044401929976
+    }
+   ],
+   "latency_ms": 977.2
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 10,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7179356578491521
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3977095342440775
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.36850289532077185
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.34776244730218364
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.33455694066974806
+    }
+   ],
+   "latency_ms": 729.5
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 11,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.5317179528622806
+    },
+    {
+     "reciter": "tunaiji",
+     "display": "Khalifa Al-Tunaiji",
+     "score": 0.3165201306330478
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.2943949265120473
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.29194186688199303
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.22424911975779094
+    }
+   ],
+   "latency_ms": 333.5
+  },
+  {
+   "reciter": "abkar",
+   "surah": 93,
+   "clip": 11,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.5317179528622806
+    },
+    {
+     "reciter": "tunaiji",
+     "display": "Khalifa Al-Tunaiji",
+     "score": 0.3165201306330478
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.2943949265120473
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.29194186688199303
+    },
+    {
+     "reciter": "banna",
+     "display": "Mahmoud Ali Al-Banna",
+     "score": 0.22424911975779094
+    }
+   ],
+   "latency_ms": 333.4
+  },
+  {
+   "reciter": "abkar",
+   "surah": 112,
+   "clip": 1,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7776683512789085
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.454120812663731
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.4290591680932205
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.40115054919389936
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.387040761207548
+    }
+   ],
+   "latency_ms": 1301.7
+  },
+  {
+   "reciter": "abkar",
+   "surah": 112,
+   "clip": 1,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7254874354411296
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.4584787515013219
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.43291571921014205
+    },
+    {
+     "reciter": "dosari",
+     "display": "Yasser Al-Dosari",
+     "score": 0.4128902818068314
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3562975337604458
+    }
+   ],
+   "latency_ms": 636.5
+  },
+  {
+   "reciter": "abkar",
+   "surah": 112,
+   "clip": 2,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.761582799471405
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.41001038717520155
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.39662561952627223
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3867360843511372
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.36383078105190353
+    }
+   ],
+   "latency_ms": 1269.3
+  },
+  {
+   "reciter": "abkar",
+   "surah": 112,
+   "clip": 2,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.733879922832129
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.38665408511508065
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.38452595684024754
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.37689095739972156
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.36779525780647276
+    }
+   ],
+   "latency_ms": 702.0
+  },
+  {
+   "reciter": "abkar",
+   "surah": 112,
+   "clip": 3,
+   "duration_sec": 10.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.704646998283989
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.3803542529520364
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.36175958028289856
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.3394903105426972
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.3364118670808424
+    }
+   ],
+   "latency_ms": 686.2
+  },
+  {
+   "reciter": "abkar",
+   "surah": 112,
+   "clip": 3,
+   "duration_sec": 5.0,
+   "matches": [
+    {
+     "reciter": "abkar",
+     "display": "Idris Abkar",
+     "score": 0.7069290348204249
+    },
+    {
+     "reciter": "sudais",
+     "display": "Abdurrahman As-Sudais",
+     "score": 0.38192926215766215
+    },
+    {
+     "reciter": "minshawi",
+     "display": "Mohamed Al-Minshawi",
+     "score": 0.36379539310267667
+    },
+    {
+     "reciter": "shuraim",
+     "display": "Saud Al-Shuraim",
+     "score": 0.34142199407844626
+    },
+    {
+     "reciter": "qatami",
+     "display": "Nasser Al-Qatami",
+     "score": 0.34123772485874804
+    }
+   ],
+   "latency_ms": 673.6
+  }
+ ]
+}

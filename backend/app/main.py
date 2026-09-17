@@ -10,6 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.routes.live_reciter import router as live_router
 from app.api.routes.reciter import router as reciter_router
+from app.api.routes.verse import router as verse_router
 from app.api.schemas import HealthResponse
 from app.core.config import get_settings
 
@@ -68,6 +69,7 @@ def create_app() -> FastAPI:
     app.include_router(health_router)
     app.include_router(reciter_router)
     app.include_router(live_router)
+    app.include_router(verse_router)
     return app
 
 

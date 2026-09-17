@@ -1,0 +1,248 @@
+[
+  {
+    "reciter": "Alafasy_128kbps",
+    "kind": "refrain_only",
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ فَبِعَانِ فَبِعَانِ فَبِعَانِ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.5714,
+        "words_matched": 4,
+        "words_total": 7,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.5714,
+        "words_matched": 4,
+        "words_total": 7,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.5714,
+        "words_matched": 4,
+        "words_total": 7,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": false,
+    "needs_more_audio": true,
+    "listen_limit_reached": false,
+    "audio_seconds": 9.5848125
+  },
+  {
+    "reciter": "Alafasy_128kbps",
+    "kind": "with_next_ayah",
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ خَلَقَ الْإِنْسَانَ مِنْ صَلْصَالٍ كَالْفَخَّارِ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 14,
+        "score": 1.0,
+        "words_matched": 9,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان خلق الإنسان من صلصال كالفخار"
+      },
+      {
+        "surah": 15,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.6005,
+        "words_matched": 2,
+        "words_total": 9,
+        "surah_name": "الحجر",
+        "text": "وإذ قال ربك للملائكة إني خالق بشرا من صلصال من حمإ مسنون"
+      },
+      {
+        "surah": 41,
+        "ayah_start": 49,
+        "ayah_end": 49,
+        "score": 0.5587,
+        "words_matched": 2,
+        "words_total": 9,
+        "surah_name": "فصلت",
+        "text": "لا يسأم الإنسان من دعاء الخير وإن مسه الشر فيئوس قنوط"
+      }
+    ],
+    "confident": true,
+    "needs_more_audio": false,
+    "listen_limit_reached": false,
+    "audio_seconds": 20.0
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "kind": "refrain_only",
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ مَا تُكَذِّبَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.6742,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.6742,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.6742,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": false,
+    "needs_more_audio": true,
+    "listen_limit_reached": false,
+    "audio_seconds": 14.6025
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "kind": "with_next_ayah",
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ خَلَقَ الْإِنْسَانَ مِنْ صَلٍّ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 14,
+        "score": 0.875,
+        "words_matched": 7,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان خلق الإنسان من صلصال كالفخار"
+      },
+      {
+        "surah": 32,
+        "ayah_start": 7,
+        "ayah_end": 7,
+        "score": 0.6196,
+        "words_matched": 3,
+        "words_total": 8,
+        "surah_name": "السجده",
+        "text": "الذي أحسن كل شيء خلقه ۖ وبدأ خلق الإنسان من طين"
+      },
+      {
+        "surah": 15,
+        "ayah_start": 26,
+        "ayah_end": 26,
+        "score": 0.5994,
+        "words_matched": 2,
+        "words_total": 8,
+        "surah_name": "الحجر",
+        "text": "ولقد خلقنا الإنسان من صلصال من حمإ مسنون"
+      }
+    ],
+    "confident": true,
+    "needs_more_audio": false,
+    "listen_limit_reached": false,
+    "audio_seconds": 20.0
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "kind": "refrain_only",
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ فَبِعِينَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": false,
+    "needs_more_audio": true,
+    "listen_limit_reached": false,
+    "audio_seconds": 6.6345
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "kind": "with_next_ayah",
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ خَلَقَ الْإِنْسَانَ مِنْ صَلْصَالٍ كَالْفَخَّارِ مِنْ صَلْصَالٍ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 14,
+        "score": 0.8182,
+        "words_matched": 9,
+        "words_total": 11,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان خلق الإنسان من صلصال كالفخار"
+      },
+      {
+        "surah": 15,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.5674,
+        "words_matched": 3,
+        "words_total": 11,
+        "surah_name": "الحجر",
+        "text": "وإذ قال ربك للملائكة إني خالق بشرا من صلصال من حمإ مسنون"
+      },
+      {
+        "surah": 76,
+        "ayah_start": 2,
+        "ayah_end": 2,
+        "score": 0.5594,
+        "words_matched": 2,
+        "words_total": 11,
+        "surah_name": "الانسان",
+        "text": "إنا خلقنا الإنسان من نطفة أمشاج نبتليه فجعلناه سميعا بصيرا"
+      }
+    ],
+    "confident": true,
+    "needs_more_audio": false,
+    "listen_limit_reached": false,
+    "audio_seconds": 13.7390625
+  }
+]

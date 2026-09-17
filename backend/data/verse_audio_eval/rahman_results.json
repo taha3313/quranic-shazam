@@ -1,0 +1,3014 @@
+[
+  {
+    "reciter": "Alafasy_128kbps",
+    "source_ayah": 16,
+    "kind": "refrain_only",
+    "expected": "uncertain",
+    "predicted": [
+      55,
+      13,
+      13
+    ],
+    "passed": true,
+    "seconds": 7.0,
+    "sources": [
+      "https://everyayah.com/data/Alafasy_128kbps/055016.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ فَبِعِينَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 21,
+        "ayah_end": 21,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 23,
+        "ayah_end": 23,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 30,
+        "ayah_end": 30,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 32,
+        "ayah_end": 32,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 34,
+        "ayah_end": 34,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": false,
+    "needs_more_audio": true,
+    "listen_limit_reached": false,
+    "audio_seconds": 8.6990625
+  },
+  {
+    "reciter": "Alafasy_128kbps",
+    "source_ayah": 16,
+    "kind": "with_next_ayah",
+    "expected": [
+      55,
+      16,
+      17
+    ],
+    "predicted": [
+      55,
+      16,
+      17
+    ],
+    "passed": true,
+    "seconds": 4.68,
+    "sources": [
+      "https://everyayah.com/data/Alafasy_128kbps/055016.mp3",
+      "https://everyayah.com/data/Alafasy_128kbps/055017.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ رَبُّ الْمَشْرِقَيْنِ وَرَبُّ الْمَغْرِبَيْنِ رَبُّ الْمَشْرِقَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 17,
+        "score": 0.8,
+        "words_matched": 8,
+        "words_total": 10,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان رب المشرقين ورب المغربين"
+      },
+      {
+        "surah": 26,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.4795,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "الشعرا",
+        "text": "قال رب المشرق والمغرب وما بينهما ۖ إن كنتم تعقلون"
+      },
+      {
+        "surah": 19,
+        "ayah_start": 4,
+        "ayah_end": 4,
+        "score": 0.4732,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "مريم",
+        "text": "قال رب إني وهن العظم مني واشتعل الرأس شيبا ولم أكن بدعائك رب شقيا"
+      },
+      {
+        "surah": 43,
+        "ayah_start": 38,
+        "ayah_end": 38,
+        "score": 0.468,
+        "words_matched": 1,
+        "words_total": 10,
+        "surah_name": "الزخرف",
+        "text": "حتى إذا جاءنا قال يا ليت بيني وبينك بعد المشرقين فبئس القرين"
+      },
+      {
+        "surah": 9,
+        "ayah_start": 129,
+        "ayah_end": 129,
+        "score": 0.4602,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "التوبه",
+        "text": "فإن تولوا فقل حسبي الله لا إله إلا هو ۖ عليه توكلت ۖ وهو رب العرش العظيم"
+      },
+      {
+        "surah": 40,
+        "ayah_start": 65,
+        "ayah_end": 65,
+        "score": 0.4582,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "غافر",
+        "text": "هو الحي لا إله إلا هو فادعوه مخلصين له الدين ۗ الحمد لله رب العالمين"
+      },
+      {
+        "surah": 23,
+        "ayah_start": 116,
+        "ayah_end": 116,
+        "score": 0.456,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "المؤمنون",
+        "text": "فتعالى الله الملك الحق ۖ لا إله إلا هو رب العرش الكريم"
+      },
+      {
+        "surah": 26,
+        "ayah_start": 109,
+        "ayah_end": 109,
+        "score": 0.4526,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "الشعرا",
+        "text": "وما أسألكم عليه من أجر ۖ إن أجري إلا على رب العالمين"
+      },
+      {
+        "surah": 26,
+        "ayah_start": 127,
+        "ayah_end": 127,
+        "score": 0.4526,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "الشعرا",
+        "text": "وما أسألكم عليه من أجر ۖ إن أجري إلا على رب العالمين"
+      },
+      {
+        "surah": 26,
+        "ayah_start": 145,
+        "ayah_end": 145,
+        "score": 0.4526,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "الشعرا",
+        "text": "وما أسألكم عليه من أجر ۖ إن أجري إلا على رب العالمين"
+      }
+    ],
+    "confident": true,
+    "needs_more_audio": false,
+    "listen_limit_reached": false,
+    "audio_seconds": 15.269625
+  },
+  {
+    "reciter": "Alafasy_128kbps",
+    "source_ayah": 59,
+    "kind": "refrain_only",
+    "expected": "uncertain",
+    "predicted": [
+      55,
+      13,
+      13
+    ],
+    "passed": true,
+    "seconds": 6.83,
+    "sources": [
+      "https://everyayah.com/data/Alafasy_128kbps/055059.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ فَبِعِينَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 21,
+        "ayah_end": 21,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 23,
+        "ayah_end": 23,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 30,
+        "ayah_end": 30,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 32,
+        "ayah_end": 32,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 34,
+        "ayah_end": 34,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": false,
+    "needs_more_audio": true,
+    "listen_limit_reached": false,
+    "audio_seconds": 8.646125
+  },
+  {
+    "reciter": "Alafasy_128kbps",
+    "source_ayah": 59,
+    "kind": "with_next_ayah",
+    "expected": [
+      55,
+      59,
+      60
+    ],
+    "predicted": [
+      55,
+      59,
+      60
+    ],
+    "passed": true,
+    "seconds": 7.44,
+    "sources": [
+      "https://everyayah.com/data/Alafasy_128kbps/055059.mp3",
+      "https://everyayah.com/data/Alafasy_128kbps/055060.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ هَلْ جَزَاءُ الْإِحْسَانِ إِلَّا الْإِحْسَانُ الْإِحْسَانُ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 59,
+        "ayah_end": 60,
+        "score": 0.9,
+        "words_matched": 9,
+        "words_total": 10,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان هل جزاء الإحسان إلا الإحسان"
+      },
+      {
+        "surah": 21,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.5309,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "الانبيا",
+        "text": "وما أرسلنا من قبلك من رسول إلا نوحي إليه أنه لا إله إلا أنا فاعبدون"
+      },
+      {
+        "surah": 10,
+        "ayah_start": 55,
+        "ayah_end": 55,
+        "score": 0.5171,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "يونس",
+        "text": "ألا إن لله ما في السماوات والأرض ۗ ألا إن وعد الله حق ولكن أكثرهم لا يعلمون"
+      },
+      {
+        "surah": 46,
+        "ayah_start": 9,
+        "ayah_end": 9,
+        "score": 0.511,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "الاحقاف",
+        "text": "قل ما كنت بدعا من الرسل وما أدري ما يفعل بي ولا بكم ۖ إن أتبع إلا ما يوحى إلي وما أنا إلا نذير مبين"
+      },
+      {
+        "surah": 27,
+        "ayah_start": 90,
+        "ayah_end": 90,
+        "score": 0.5072,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "النمل",
+        "text": "ومن جاء بالسيئة فكبت وجوههم في النار هل تجزون إلا ما كنتم تعملون"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 60,
+        "ayah_end": 60,
+        "score": 0.5,
+        "words_matched": 5,
+        "words_total": 10,
+        "surah_name": "الرحمن",
+        "text": "هل جزاء الإحسان إلا الإحسان"
+      },
+      {
+        "surah": 5,
+        "ayah_start": 59,
+        "ayah_end": 59,
+        "score": 0.4951,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "المائده",
+        "text": "قل يا أهل الكتاب هل تنقمون منا إلا أن آمنا بالله وما أنزل إلينا وما أنزل من قبل وأن أكثركم فاسقون"
+      },
+      {
+        "surah": 2,
+        "ayah_start": 78,
+        "ayah_end": 78,
+        "score": 0.4943,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "البقره",
+        "text": "ومنهم أميون لا يعلمون الكتاب إلا أماني وإن هم إلا يظنون"
+      },
+      {
+        "surah": 7,
+        "ayah_start": 5,
+        "ayah_end": 5,
+        "score": 0.493,
+        "words_matched": 1,
+        "words_total": 10,
+        "surah_name": "الاعراف",
+        "text": "فما كان دعواهم إذ جاءهم بأسنا إلا أن قالوا إنا كنا ظالمين"
+      },
+      {
+        "surah": 36,
+        "ayah_start": 15,
+        "ayah_end": 15,
+        "score": 0.4873,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "يس",
+        "text": "قالوا ما أنتم إلا بشر مثلنا وما أنزل الرحمن من شيء إن أنتم إلا تكذبون"
+      }
+    ],
+    "confident": true,
+    "needs_more_audio": false,
+    "listen_limit_reached": false,
+    "audio_seconds": 17.041125
+  },
+  {
+    "reciter": "Alafasy_128kbps",
+    "source_ayah": 77,
+    "kind": "refrain_only",
+    "expected": "uncertain",
+    "predicted": [
+      55,
+      13,
+      13
+    ],
+    "passed": true,
+    "seconds": 7.24,
+    "sources": [
+      "https://everyayah.com/data/Alafasy_128kbps/055077.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ فَبِعَانِ فَبِعَانِ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 21,
+        "ayah_end": 21,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 23,
+        "ayah_end": 23,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 30,
+        "ayah_end": 30,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 32,
+        "ayah_end": 32,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 34,
+        "ayah_end": 34,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": false,
+    "needs_more_audio": true,
+    "listen_limit_reached": false,
+    "audio_seconds": 8.8576875
+  },
+  {
+    "reciter": "Alafasy_128kbps",
+    "source_ayah": 77,
+    "kind": "with_next_ayah",
+    "expected": [
+      55,
+      77,
+      78
+    ],
+    "predicted": [
+      55,
+      77,
+      78
+    ],
+    "passed": true,
+    "seconds": 8.25,
+    "sources": [
+      "https://everyayah.com/data/Alafasy_128kbps/055077.mp3",
+      "https://everyayah.com/data/Alafasy_128kbps/055078.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ تَبَارَكَ اسْمُ رَبِّكَ ذِي الْجَلَالِ وَالْإِكْرَامِ ذِي الْمُؤْمِنِينَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 77,
+        "ayah_end": 78,
+        "score": 0.8333,
+        "words_matched": 10,
+        "words_total": 12,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان تبارك اسم ربك ذي الجلال والإكرام"
+      },
+      {
+        "surah": 24,
+        "ayah_start": 3,
+        "ayah_end": 3,
+        "score": 0.5333,
+        "words_matched": 2,
+        "words_total": 12,
+        "surah_name": "النور",
+        "text": "الزاني لا ينكح إلا زانية أو مشركة والزانية لا ينكحها إلا زان أو مشرك ۚ وحرم ذلك على المؤمنين"
+      },
+      {
+        "surah": 11,
+        "ayah_start": 107,
+        "ayah_end": 107,
+        "score": 0.5308,
+        "words_matched": 2,
+        "words_total": 12,
+        "surah_name": "هود",
+        "text": "خالدين فيها ما دامت السماوات والأرض إلا ما شاء ربك ۚ إن ربك فعال لما يريد"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 78,
+        "ayah_end": 78,
+        "score": 0.5,
+        "words_matched": 6,
+        "words_total": 12,
+        "surah_name": "الرحمن",
+        "text": "تبارك اسم ربك ذي الجلال والإكرام"
+      },
+      {
+        "surah": 28,
+        "ayah_start": 86,
+        "ayah_end": 86,
+        "score": 0.4699,
+        "words_matched": 2,
+        "words_total": 12,
+        "surah_name": "القصص",
+        "text": "وما كنت ترجو أن يلقى إليك الكتاب إلا رحمة من ربك ۖ فلا تكونن ظهيرا للكافرين"
+      },
+      {
+        "surah": 8,
+        "ayah_start": 5,
+        "ayah_end": 5,
+        "score": 0.4678,
+        "words_matched": 2,
+        "words_total": 12,
+        "surah_name": "الانفال",
+        "text": "كما أخرجك ربك من بيتك بالحق وإن فريقا من المؤمنين لكارهون"
+      },
+      {
+        "surah": 18,
+        "ayah_start": 24,
+        "ayah_end": 24,
+        "score": 0.4672,
+        "words_matched": 2,
+        "words_total": 12,
+        "surah_name": "الكهف",
+        "text": "إلا أن يشاء الله ۚ واذكر ربك إذا نسيت وقل عسى أن يهدين ربي لأقرب من هذا رشدا"
+      },
+      {
+        "surah": 41,
+        "ayah_start": 38,
+        "ayah_end": 38,
+        "score": 0.4664,
+        "words_matched": 1,
+        "words_total": 12,
+        "surah_name": "فصلت",
+        "text": "فإن استكبروا فالذين عند ربك يسبحون له بالليل والنهار وهم لا يسأمون ۩"
+      },
+      {
+        "surah": 19,
+        "ayah_start": 64,
+        "ayah_end": 64,
+        "score": 0.4662,
+        "words_matched": 2,
+        "words_total": 12,
+        "surah_name": "مريم",
+        "text": "وما نتنزل إلا بأمر ربك ۖ له ما بين أيدينا وما خلفنا وما بين ذلك ۚ وما كان ربك نسيا"
+      },
+      {
+        "surah": 4,
+        "ayah_start": 146,
+        "ayah_end": 146,
+        "score": 0.4643,
+        "words_matched": 2,
+        "words_total": 12,
+        "surah_name": "النسا",
+        "text": "إلا الذين تابوا وأصلحوا واعتصموا بالله وأخلصوا دينهم لله فأولئك مع المؤمنين ۖ وسوف يؤت الله المؤمنين أجرا عظيما"
+      }
+    ],
+    "confident": true,
+    "needs_more_audio": false,
+    "listen_limit_reached": false,
+    "audio_seconds": 19.05975
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "source_ayah": 16,
+    "kind": "refrain_only",
+    "expected": "uncertain",
+    "predicted": [
+      55,
+      13,
+      13
+    ],
+    "passed": true,
+    "seconds": 5.47,
+    "sources": [
+      "https://everyayah.com/data/Husary_128kbps/055016.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ فَبِعِينَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 21,
+        "ayah_end": 21,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 23,
+        "ayah_end": 23,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 30,
+        "ayah_end": 30,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 32,
+        "ayah_end": 32,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 34,
+        "ayah_end": 34,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": false,
+    "needs_more_audio": true,
+    "listen_limit_reached": false,
+    "audio_seconds": 13.5836875
+  },
+  {
+    "reciter": "Alafasy_128kbps",
+    "source_ayah": 30,
+    "kind": "refrain_only",
+    "expected": "uncertain",
+    "predicted": [
+      55,
+      13,
+      13
+    ],
+    "passed": true,
+    "seconds": 8.57,
+    "sources": [
+      "https://everyayah.com/data/Alafasy_128kbps/055030.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ فَبُرُونَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 21,
+        "ayah_end": 21,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 23,
+        "ayah_end": 23,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 30,
+        "ayah_end": 30,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 32,
+        "ayah_end": 32,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 34,
+        "ayah_end": 34,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": false,
+    "needs_more_audio": true,
+    "listen_limit_reached": false,
+    "audio_seconds": 8.778375
+  },
+  {
+    "reciter": "Alafasy_128kbps",
+    "source_ayah": 30,
+    "kind": "with_next_ayah",
+    "expected": [
+      55,
+      30,
+      31
+    ],
+    "predicted": [
+      55,
+      30,
+      31
+    ],
+    "passed": true,
+    "seconds": 5.02,
+    "sources": [
+      "https://everyayah.com/data/Alafasy_128kbps/055030.mp3",
+      "https://everyayah.com/data/Alafasy_128kbps/055031.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ سَنَفْرُغُ لَكُمْ أَيُّهَ الثَّقَلَانِ سَنَفْسَهُ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 30,
+        "ayah_end": 31,
+        "score": 0.8889,
+        "words_matched": 8,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان سنفرغ لكم أيه الثقلان"
+      },
+      {
+        "surah": 16,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.4453,
+        "words_matched": 1,
+        "words_total": 9,
+        "surah_name": "النحل",
+        "text": "وما ذرأ لكم في الأرض مختلفا ألوانه ۗ إن في ذلك لآية لقوم يذكرون"
+      },
+      {
+        "surah": 40,
+        "ayah_start": 62,
+        "ayah_end": 62,
+        "score": 0.445,
+        "words_matched": 1,
+        "words_total": 9,
+        "surah_name": "غافر",
+        "text": "ذلكم الله ربكم خالق كل شيء لا إله إلا هو ۖ فأنى تؤفكون"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.4444,
+        "words_matched": 4,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.4444,
+        "words_matched": 4,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.4444,
+        "words_matched": 4,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 21,
+        "ayah_end": 21,
+        "score": 0.4444,
+        "words_matched": 4,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 23,
+        "ayah_end": 23,
+        "score": 0.4444,
+        "words_matched": 4,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.4444,
+        "words_matched": 4,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.4444,
+        "words_matched": 4,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": true,
+    "needs_more_audio": false,
+    "listen_limit_reached": false,
+    "audio_seconds": 15.269625
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "source_ayah": 16,
+    "kind": "with_next_ayah",
+    "expected": [
+      55,
+      16,
+      17
+    ],
+    "predicted": [
+      55,
+      16,
+      17
+    ],
+    "passed": true,
+    "seconds": 7.69,
+    "sources": [
+      "https://everyayah.com/data/Husary_128kbps/055016.mp3",
+      "https://everyayah.com/data/Husary_128kbps/055017.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ رَبُّ الْمَشْرِقَيْنِ وَرَبُّ الْمَغَرِّقَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 17,
+        "score": 0.875,
+        "words_matched": 7,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان رب المشرقين ورب المغربين"
+      },
+      {
+        "surah": 45,
+        "ayah_start": 36,
+        "ayah_end": 36,
+        "score": 0.5647,
+        "words_matched": 2,
+        "words_total": 8,
+        "surah_name": "الجاثيه",
+        "text": "فلله الحمد رب السماوات ورب الأرض رب العالمين"
+      },
+      {
+        "surah": 37,
+        "ayah_start": 5,
+        "ayah_end": 5,
+        "score": 0.5597,
+        "words_matched": 2,
+        "words_total": 8,
+        "surah_name": "الصافات",
+        "text": "رب السماوات والأرض وما بينهما ورب المشارق"
+      },
+      {
+        "surah": 23,
+        "ayah_start": 116,
+        "ayah_end": 116,
+        "score": 0.5026,
+        "words_matched": 2,
+        "words_total": 8,
+        "surah_name": "المؤمنون",
+        "text": "فتعالى الله الملك الحق ۖ لا إله إلا هو رب العرش الكريم"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 21,
+        "ayah_end": 21,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 23,
+        "ayah_end": 23,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": true,
+    "needs_more_audio": false,
+    "listen_limit_reached": false,
+    "audio_seconds": 20.0
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "source_ayah": 30,
+    "kind": "refrain_only",
+    "expected": "uncertain",
+    "predicted": [
+      55,
+      13,
+      13
+    ],
+    "passed": true,
+    "seconds": 5.67,
+    "sources": [
+      "https://everyayah.com/data/Husary_128kbps/055030.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ فَبِعِينَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 21,
+        "ayah_end": 21,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 23,
+        "ayah_end": 23,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 30,
+        "ayah_end": 30,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 32,
+        "ayah_end": 32,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 34,
+        "ayah_end": 34,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": false,
+    "needs_more_audio": true,
+    "listen_limit_reached": false,
+    "audio_seconds": 13.8449375
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "source_ayah": 30,
+    "kind": "with_next_ayah",
+    "expected": [
+      55,
+      30,
+      31
+    ],
+    "predicted": [
+      55,
+      30,
+      31
+    ],
+    "passed": true,
+    "seconds": 4.94,
+    "sources": [
+      "https://everyayah.com/data/Husary_128kbps/055030.mp3",
+      "https://everyayah.com/data/Husary_128kbps/055031.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ سَنَفْرُغُ لَكُمْ أَيُّهَ الثَّقَلُ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 30,
+        "ayah_end": 31,
+        "score": 0.875,
+        "words_matched": 7,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان سنفرغ لكم أيه الثقلان"
+      },
+      {
+        "surah": 11,
+        "ayah_start": 2,
+        "ayah_end": 2,
+        "score": 0.5075,
+        "words_matched": 2,
+        "words_total": 8,
+        "surah_name": "هود",
+        "text": "ألا تعبدوا إلا الله ۚ إنني لكم منه نذير وبشير"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 21,
+        "ayah_end": 21,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 23,
+        "ayah_end": 23,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 30,
+        "ayah_end": 30,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": true,
+    "needs_more_audio": false,
+    "listen_limit_reached": false,
+    "audio_seconds": 20.0
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "source_ayah": 59,
+    "kind": "refrain_only",
+    "expected": "uncertain",
+    "predicted": [
+      55,
+      13,
+      13
+    ],
+    "passed": true,
+    "seconds": 4.37,
+    "sources": [
+      "https://everyayah.com/data/Husary_128kbps/055059.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ فَبِعِينَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 21,
+        "ayah_end": 21,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 23,
+        "ayah_end": 23,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 30,
+        "ayah_end": 30,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 32,
+        "ayah_end": 32,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 34,
+        "ayah_end": 34,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": false,
+    "needs_more_audio": true,
+    "listen_limit_reached": false,
+    "audio_seconds": 13.7404375
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "source_ayah": 59,
+    "kind": "with_next_ayah",
+    "expected": [
+      55,
+      59,
+      60
+    ],
+    "predicted": [
+      55,
+      59,
+      60
+    ],
+    "passed": true,
+    "seconds": 3.83,
+    "sources": [
+      "https://everyayah.com/data/Husary_128kbps/055059.mp3",
+      "https://everyayah.com/data/Husary_128kbps/055060.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ هَلْ جَزَاءُ الْإِحْسَانِ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 59,
+        "ayah_end": 60,
+        "score": 1.0,
+        "words_matched": 7,
+        "words_total": 7,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان هل جزاء الإحسان إلا الإحسان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.5714,
+        "words_matched": 4,
+        "words_total": 7,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.5714,
+        "words_matched": 4,
+        "words_total": 7,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.5714,
+        "words_matched": 4,
+        "words_total": 7,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 21,
+        "ayah_end": 21,
+        "score": 0.5714,
+        "words_matched": 4,
+        "words_total": 7,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 23,
+        "ayah_end": 23,
+        "score": 0.5714,
+        "words_matched": 4,
+        "words_total": 7,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.5714,
+        "words_matched": 4,
+        "words_total": 7,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.5714,
+        "words_matched": 4,
+        "words_total": 7,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 30,
+        "ayah_end": 30,
+        "score": 0.5714,
+        "words_matched": 4,
+        "words_total": 7,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 32,
+        "ayah_end": 32,
+        "score": 0.5714,
+        "words_matched": 4,
+        "words_total": 7,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": true,
+    "needs_more_audio": false,
+    "listen_limit_reached": false,
+    "audio_seconds": 20.0
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "source_ayah": 77,
+    "kind": "refrain_only",
+    "expected": "uncertain",
+    "predicted": [
+      55,
+      13,
+      13
+    ],
+    "passed": true,
+    "seconds": 4.91,
+    "sources": [
+      "https://everyayah.com/data/Husary_128kbps/055077.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ فَبِعِينَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 21,
+        "ayah_end": 21,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 23,
+        "ayah_end": 23,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 30,
+        "ayah_end": 30,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 32,
+        "ayah_end": 32,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 34,
+        "ayah_end": 34,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": false,
+    "needs_more_audio": true,
+    "listen_limit_reached": false,
+    "audio_seconds": 14.44575
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "source_ayah": 77,
+    "kind": "with_next_ayah",
+    "expected": [
+      55,
+      77,
+      78
+    ],
+    "predicted": [
+      55,
+      77,
+      78
+    ],
+    "passed": true,
+    "seconds": 4.75,
+    "sources": [
+      "https://everyayah.com/data/Husary_128kbps/055077.mp3",
+      "https://everyayah.com/data/Husary_128kbps/055078.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ تَبَارَكَ اسْمُ رَبِّكَ ذِي الْجَبِّ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 77,
+        "ayah_end": 78,
+        "score": 0.8889,
+        "words_matched": 8,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان تبارك اسم ربك ذي الجلال والإكرام"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 78,
+        "ayah_end": 78,
+        "score": 0.5257,
+        "words_matched": 4,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "تبارك اسم ربك ذي الجلال والإكرام"
+      },
+      {
+        "surah": 11,
+        "ayah_start": 107,
+        "ayah_end": 107,
+        "score": 0.4908,
+        "words_matched": 2,
+        "words_total": 9,
+        "surah_name": "هود",
+        "text": "خالدين فيها ما دامت السماوات والأرض إلا ما شاء ربك ۚ إن ربك فعال لما يريد"
+      },
+      {
+        "surah": 19,
+        "ayah_start": 24,
+        "ayah_end": 24,
+        "score": 0.4818,
+        "words_matched": 2,
+        "words_total": 9,
+        "surah_name": "مريم",
+        "text": "فناداها من تحتها ألا تحزني قد جعل ربك تحتك سريا"
+      },
+      {
+        "surah": 19,
+        "ayah_start": 71,
+        "ayah_end": 71,
+        "score": 0.4789,
+        "words_matched": 2,
+        "words_total": 9,
+        "surah_name": "مريم",
+        "text": "وإن منكم إلا واردها ۚ كان على ربك حتما مقضيا"
+      },
+      {
+        "surah": 19,
+        "ayah_start": 64,
+        "ayah_end": 64,
+        "score": 0.477,
+        "words_matched": 2,
+        "words_total": 9,
+        "surah_name": "مريم",
+        "text": "وما نتنزل إلا بأمر ربك ۖ له ما بين أيدينا وما خلفنا وما بين ذلك ۚ وما كان ربك نسيا"
+      },
+      {
+        "surah": 6,
+        "ayah_start": 128,
+        "ayah_end": 128,
+        "score": 0.4705,
+        "words_matched": 2,
+        "words_total": 9,
+        "surah_name": "الانعام",
+        "text": "ويوم يحشرهم جميعا يا معشر الجن قد استكثرتم من الإنس ۖ وقال أولياؤهم من الإنس ربنا استمتع بعضنا ببعض وبلغنا أجلنا الذي أجلت لنا ۚ قال النار مثواكم خالدين فيها إلا ما شاء الله ۗ إن ربك حكيم عليم"
+      },
+      {
+        "surah": 11,
+        "ayah_start": 119,
+        "ayah_end": 119,
+        "score": 0.4611,
+        "words_matched": 2,
+        "words_total": 9,
+        "surah_name": "هود",
+        "text": "إلا من رحم ربك ۚ ولذلك خلقهم ۗ وتمت كلمة ربك لأملأن جهنم من الجنة والناس أجمعين"
+      },
+      {
+        "surah": 3,
+        "ayah_start": 41,
+        "ayah_end": 41,
+        "score": 0.4592,
+        "words_matched": 2,
+        "words_total": 9,
+        "surah_name": "ال عمران",
+        "text": "قال رب اجعل لي آية ۖ قال آيتك ألا تكلم الناس ثلاثة أيام إلا رمزا ۗ واذكر ربك كثيرا وسبح بالعشي والإبكار"
+      },
+      {
+        "surah": 7,
+        "ayah_start": 54,
+        "ayah_end": 54,
+        "score": 0.4527,
+        "words_matched": 2,
+        "words_total": 9,
+        "surah_name": "الاعراف",
+        "text": "إن ربكم الله الذي خلق السماوات والأرض في ستة أيام ثم استوى على العرش يغشي الليل النهار يطلبه حثيثا والشمس والقمر والنجوم مسخرات بأمره ۗ ألا له الخلق والأمر ۗ تبارك الله رب العالمين"
+      }
+    ],
+    "confident": true,
+    "needs_more_audio": false,
+    "listen_limit_reached": false,
+    "audio_seconds": 20.0
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "source_ayah": 16,
+    "kind": "refrain_only",
+    "expected": "uncertain",
+    "predicted": [
+      55,
+      13,
+      13
+    ],
+    "passed": true,
+    "seconds": 6.79,
+    "sources": [
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/055016.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ فَبِعِينَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 21,
+        "ayah_end": 21,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 23,
+        "ayah_end": 23,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 30,
+        "ayah_end": 30,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 32,
+        "ayah_end": 32,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 34,
+        "ayah_end": 34,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": false,
+    "needs_more_audio": true,
+    "listen_limit_reached": false,
+    "audio_seconds": 6.8434375
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "source_ayah": 16,
+    "kind": "with_next_ayah",
+    "expected": [
+      55,
+      16,
+      17
+    ],
+    "predicted": [
+      55,
+      16,
+      17
+    ],
+    "passed": true,
+    "seconds": 5.44,
+    "sources": [
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/055016.mp3",
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/055017.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ رَبُّ الْمَشْرِقَيْنِ وَرَبُّ الْمَغْرِبَيْنِ وَرَبُّ الْمَغْرِبَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 17,
+        "score": 0.8,
+        "words_matched": 8,
+        "words_total": 10,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان رب المشرقين ورب المغربين"
+      },
+      {
+        "surah": 43,
+        "ayah_start": 38,
+        "ayah_end": 38,
+        "score": 0.4655,
+        "words_matched": 1,
+        "words_total": 10,
+        "surah_name": "الزخرف",
+        "text": "حتى إذا جاءنا قال يا ليت بيني وبينك بعد المشرقين فبئس القرين"
+      },
+      {
+        "surah": 9,
+        "ayah_start": 129,
+        "ayah_end": 129,
+        "score": 0.4578,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "التوبه",
+        "text": "فإن تولوا فقل حسبي الله لا إله إلا هو ۖ عليه توكلت ۖ وهو رب العرش العظيم"
+      },
+      {
+        "surah": 40,
+        "ayah_start": 65,
+        "ayah_end": 65,
+        "score": 0.4575,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "غافر",
+        "text": "هو الحي لا إله إلا هو فادعوه مخلصين له الدين ۗ الحمد لله رب العالمين"
+      },
+      {
+        "surah": 17,
+        "ayah_start": 102,
+        "ayah_end": 102,
+        "score": 0.45,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "الاسرا",
+        "text": "قال لقد علمت ما أنزل هؤلاء إلا رب السماوات والأرض بصائر وإني لأظنك يا فرعون مثبورا"
+      },
+      {
+        "surah": 23,
+        "ayah_start": 116,
+        "ayah_end": 116,
+        "score": 0.4461,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "المؤمنون",
+        "text": "فتعالى الله الملك الحق ۖ لا إله إلا هو رب العرش الكريم"
+      },
+      {
+        "surah": 11,
+        "ayah_start": 107,
+        "ayah_end": 107,
+        "score": 0.4437,
+        "words_matched": 1,
+        "words_total": 10,
+        "surah_name": "هود",
+        "text": "خالدين فيها ما دامت السماوات والأرض إلا ما شاء ربك ۚ إن ربك فعال لما يريد"
+      },
+      {
+        "surah": 26,
+        "ayah_start": 109,
+        "ayah_end": 109,
+        "score": 0.4428,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "الشعرا",
+        "text": "وما أسألكم عليه من أجر ۖ إن أجري إلا على رب العالمين"
+      },
+      {
+        "surah": 26,
+        "ayah_start": 127,
+        "ayah_end": 127,
+        "score": 0.4428,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "الشعرا",
+        "text": "وما أسألكم عليه من أجر ۖ إن أجري إلا على رب العالمين"
+      },
+      {
+        "surah": 26,
+        "ayah_start": 145,
+        "ayah_end": 145,
+        "score": 0.4428,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "الشعرا",
+        "text": "وما أسألكم عليه من أجر ۖ إن أجري إلا على رب العالمين"
+      }
+    ],
+    "confident": true,
+    "needs_more_audio": false,
+    "listen_limit_reached": false,
+    "audio_seconds": 11.937375
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "source_ayah": 30,
+    "kind": "refrain_only",
+    "expected": "uncertain",
+    "predicted": [
+      55,
+      13,
+      13
+    ],
+    "passed": true,
+    "seconds": 7.65,
+    "sources": [
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/055030.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ فَبِعِينَ فَبِعِينَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 21,
+        "ayah_end": 21,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 23,
+        "ayah_end": 23,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 30,
+        "ayah_end": 30,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 32,
+        "ayah_end": 32,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 34,
+        "ayah_end": 34,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": false,
+    "needs_more_audio": true,
+    "listen_limit_reached": false,
+    "audio_seconds": 7.104625
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "source_ayah": 30,
+    "kind": "with_next_ayah",
+    "expected": [
+      55,
+      30,
+      31
+    ],
+    "predicted": [
+      55,
+      30,
+      31
+    ],
+    "passed": true,
+    "seconds": 4.41,
+    "sources": [
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/055030.mp3",
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/055031.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ سَنَفْرُغُ لَكُمْ أَيُّهَ الثَّقَلَانِ سَنَفْسَهُ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 30,
+        "ayah_end": 31,
+        "score": 0.8889,
+        "words_matched": 8,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان سنفرغ لكم أيه الثقلان"
+      },
+      {
+        "surah": 16,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.4453,
+        "words_matched": 1,
+        "words_total": 9,
+        "surah_name": "النحل",
+        "text": "وما ذرأ لكم في الأرض مختلفا ألوانه ۗ إن في ذلك لآية لقوم يذكرون"
+      },
+      {
+        "surah": 40,
+        "ayah_start": 62,
+        "ayah_end": 62,
+        "score": 0.445,
+        "words_matched": 1,
+        "words_total": 9,
+        "surah_name": "غافر",
+        "text": "ذلكم الله ربكم خالق كل شيء لا إله إلا هو ۖ فأنى تؤفكون"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.4444,
+        "words_matched": 4,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.4444,
+        "words_matched": 4,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.4444,
+        "words_matched": 4,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 21,
+        "ayah_end": 21,
+        "score": 0.4444,
+        "words_matched": 4,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 23,
+        "ayah_end": 23,
+        "score": 0.4444,
+        "words_matched": 4,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.4444,
+        "words_matched": 4,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.4444,
+        "words_matched": 4,
+        "words_total": 9,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": true,
+    "needs_more_audio": false,
+    "listen_limit_reached": false,
+    "audio_seconds": 11.49275
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "source_ayah": 59,
+    "kind": "refrain_only",
+    "expected": "uncertain",
+    "predicted": [
+      55,
+      13,
+      13
+    ],
+    "passed": true,
+    "seconds": 7.29,
+    "sources": [
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/055059.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ فَبِعِينَ فَبِعِينَ فَبِعِينَ فَرِينَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 21,
+        "ayah_end": 21,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 23,
+        "ayah_end": 23,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 30,
+        "ayah_end": 30,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 32,
+        "ayah_end": 32,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 34,
+        "ayah_end": 34,
+        "score": 0.5,
+        "words_matched": 4,
+        "words_total": 8,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": false,
+    "needs_more_audio": true,
+    "listen_limit_reached": false,
+    "audio_seconds": 6.6345
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "source_ayah": 59,
+    "kind": "with_next_ayah",
+    "expected": [
+      55,
+      59,
+      60
+    ],
+    "predicted": [
+      55,
+      59,
+      60
+    ],
+    "passed": true,
+    "seconds": 4.37,
+    "sources": [
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/055059.mp3",
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/055060.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ هَلْ جَزَاءُ الْإِحْسَانِ إِلَّا الْإِحْسَانُ تُكَذِّبَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 59,
+        "ayah_end": 60,
+        "score": 0.9,
+        "words_matched": 9,
+        "words_total": 10,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان هل جزاء الإحسان إلا الإحسان"
+      },
+      {
+        "surah": 10,
+        "ayah_start": 55,
+        "ayah_end": 55,
+        "score": 0.5208,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "يونس",
+        "text": "ألا إن لله ما في السماوات والأرض ۗ ألا إن وعد الله حق ولكن أكثرهم لا يعلمون"
+      },
+      {
+        "surah": 46,
+        "ayah_start": 9,
+        "ayah_end": 9,
+        "score": 0.5186,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "الاحقاف",
+        "text": "قل ما كنت بدعا من الرسل وما أدري ما يفعل بي ولا بكم ۖ إن أتبع إلا ما يوحى إلي وما أنا إلا نذير مبين"
+      },
+      {
+        "surah": 36,
+        "ayah_start": 15,
+        "ayah_end": 15,
+        "score": 0.517,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "يس",
+        "text": "قالوا ما أنتم إلا بشر مثلنا وما أنزل الرحمن من شيء إن أنتم إلا تكذبون"
+      },
+      {
+        "surah": 10,
+        "ayah_start": 52,
+        "ayah_end": 52,
+        "score": 0.5056,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "يونس",
+        "text": "ثم قيل للذين ظلموا ذوقوا عذاب الخلد هل تجزون إلا بما كنتم تكسبون"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 60,
+        "ayah_end": 60,
+        "score": 0.5,
+        "words_matched": 5,
+        "words_total": 10,
+        "surah_name": "الرحمن",
+        "text": "هل جزاء الإحسان إلا الإحسان"
+      },
+      {
+        "surah": 27,
+        "ayah_start": 90,
+        "ayah_end": 90,
+        "score": 0.4963,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "النمل",
+        "text": "ومن جاء بالسيئة فكبت وجوههم في النار هل تجزون إلا ما كنتم تعملون"
+      },
+      {
+        "surah": 8,
+        "ayah_start": 34,
+        "ayah_end": 34,
+        "score": 0.4915,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "الانفال",
+        "text": "وما لهم ألا يعذبهم الله وهم يصدون عن المسجد الحرام وما كانوا أولياءه ۚ إن أولياؤه إلا المتقون ولكن أكثرهم لا يعلمون"
+      },
+      {
+        "surah": 17,
+        "ayah_start": 59,
+        "ayah_end": 59,
+        "score": 0.4915,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "الاسرا",
+        "text": "وما منعنا أن نرسل بالآيات إلا أن كذب بها الأولون ۚ وآتينا ثمود الناقة مبصرة فظلموا بها ۚ وما نرسل بالآيات إلا تخويفا"
+      },
+      {
+        "surah": 21,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.4849,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "الانبيا",
+        "text": "وما أرسلنا من قبلك من رسول إلا نوحي إليه أنه لا إله إلا أنا فاعبدون"
+      }
+    ],
+    "confident": true,
+    "needs_more_audio": false,
+    "listen_limit_reached": false,
+    "audio_seconds": 13.6085
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "source_ayah": 77,
+    "kind": "refrain_only",
+    "expected": "uncertain",
+    "predicted": [
+      55,
+      13,
+      13
+    ],
+    "passed": true,
+    "seconds": 4.77,
+    "sources": [
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/055077.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ فَبِعِينَ فَبِعِينَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 21,
+        "ayah_end": 21,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 23,
+        "ayah_end": 23,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 25,
+        "ayah_end": 25,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 30,
+        "ayah_end": 30,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 32,
+        "ayah_end": 32,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 34,
+        "ayah_end": 34,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "confident": false,
+    "needs_more_audio": true,
+    "listen_limit_reached": false,
+    "audio_seconds": 6.451625
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "source_ayah": 77,
+    "kind": "with_next_ayah",
+    "expected": [
+      55,
+      77,
+      78
+    ],
+    "predicted": [
+      55,
+      77,
+      78
+    ],
+    "passed": true,
+    "seconds": 5.93,
+    "sources": [
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/055077.mp3",
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/055078.mp3"
+    ],
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ تَبَارَكَ اسْمُ رَبِّكَ ذِي الْجَلَالِ وَالْإِكْرَامِ وَالْإِكْرَامِ وَالْإِكْرَامِ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 77,
+        "ayah_end": 78,
+        "score": 0.8333,
+        "words_matched": 10,
+        "words_total": 12,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان تبارك اسم ربك ذي الجلال والإكرام"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 78,
+        "ayah_end": 78,
+        "score": 0.5,
+        "words_matched": 6,
+        "words_total": 12,
+        "surah_name": "الرحمن",
+        "text": "تبارك اسم ربك ذي الجلال والإكرام"
+      },
+      {
+        "surah": 28,
+        "ayah_start": 86,
+        "ayah_end": 86,
+        "score": 0.4983,
+        "words_matched": 2,
+        "words_total": 12,
+        "surah_name": "القصص",
+        "text": "وما كنت ترجو أن يلقى إليك الكتاب إلا رحمة من ربك ۖ فلا تكونن ظهيرا للكافرين"
+      },
+      {
+        "surah": 3,
+        "ayah_start": 41,
+        "ayah_end": 41,
+        "score": 0.4888,
+        "words_matched": 2,
+        "words_total": 12,
+        "surah_name": "ال عمران",
+        "text": "قال رب اجعل لي آية ۖ قال آيتك ألا تكلم الناس ثلاثة أيام إلا رمزا ۗ واذكر ربك كثيرا وسبح بالعشي والإبكار"
+      },
+      {
+        "surah": 19,
+        "ayah_start": 64,
+        "ayah_end": 64,
+        "score": 0.4764,
+        "words_matched": 2,
+        "words_total": 12,
+        "surah_name": "مريم",
+        "text": "وما نتنزل إلا بأمر ربك ۖ له ما بين أيدينا وما خلفنا وما بين ذلك ۚ وما كان ربك نسيا"
+      },
+      {
+        "surah": 11,
+        "ayah_start": 119,
+        "ayah_end": 119,
+        "score": 0.4626,
+        "words_matched": 2,
+        "words_total": 12,
+        "surah_name": "هود",
+        "text": "إلا من رحم ربك ۚ ولذلك خلقهم ۗ وتمت كلمة ربك لأملأن جهنم من الجنة والناس أجمعين"
+      },
+      {
+        "surah": 11,
+        "ayah_start": 108,
+        "ayah_end": 108,
+        "score": 0.4614,
+        "words_matched": 2,
+        "words_total": 12,
+        "surah_name": "هود",
+        "text": "۞ وأما الذين سعدوا ففي الجنة خالدين فيها ما دامت السماوات والأرض إلا ما شاء ربك ۖ عطاء غير مجذوذ"
+      },
+      {
+        "surah": 25,
+        "ayah_start": 20,
+        "ayah_end": 20,
+        "score": 0.4569,
+        "words_matched": 2,
+        "words_total": 12,
+        "surah_name": "الفرقان",
+        "text": "وما أرسلنا قبلك من المرسلين إلا إنهم ليأكلون الطعام ويمشون في الأسواق ۗ وجعلنا بعضكم لبعض فتنة أتصبرون ۗ وكان ربك بصيرا"
+      },
+      {
+        "surah": 13,
+        "ayah_start": 1,
+        "ayah_end": 1,
+        "score": 0.456,
+        "words_matched": 1,
+        "words_total": 12,
+        "surah_name": "الرعد",
+        "text": "المر ۚ تلك آيات الكتاب ۗ والذي أنزل إليك من ربك الحق ولكن أكثر الناس لا يؤمنون"
+      },
+      {
+        "surah": 53,
+        "ayah_start": 32,
+        "ayah_end": 32,
+        "score": 0.4556,
+        "words_matched": 2,
+        "words_total": 12,
+        "surah_name": "النجم",
+        "text": "الذين يجتنبون كبائر الإثم والفواحش إلا اللمم ۚ إن ربك واسع المغفرة ۚ هو أعلم بكم إذ أنشأكم من الأرض وإذ أنتم أجنة في بطون أمهاتكم ۖ فلا تزكوا أنفسكم ۖ هو أعلم بمن اتقى"
+      }
+    ],
+    "confident": true,
+    "needs_more_audio": false,
+    "listen_limit_reached": false,
+    "audio_seconds": 12.3024375
+  }
+]

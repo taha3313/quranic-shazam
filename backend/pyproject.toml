@@ -21,6 +21,9 @@ dependencies = [
   "requests>=2.31",
   "tqdm>=4.66",
   "torchcodec==0.8.1",
+  "onnxruntime<1.21",
+  "faster-whisper<1.2",
+  "rapidfuzz>=3.14.5",
 ]
 
 [dependency-groups]

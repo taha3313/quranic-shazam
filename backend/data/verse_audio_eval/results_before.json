@@ -1,0 +1,1466 @@
+[
+  {
+    "reciter": "Alafasy_128kbps",
+    "kind": "single",
+    "expected": [
+      1,
+      5,
+      5
+    ],
+    "predicted": [
+      1,
+      5,
+      5
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 8.58,
+    "transcript": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ وَالْمُؤْمِنِينَ",
+    "matches": [
+      {
+        "surah": 1,
+        "ayah_start": 5,
+        "ayah_end": 5,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الفاتحه",
+        "text": "إياك نعبد وإياك نستعين"
+      },
+      {
+        "surah": 26,
+        "ayah_start": 215,
+        "ayah_end": 215,
+        "score": 0.4388,
+        "words_matched": 0,
+        "words_total": 5,
+        "surah_name": "الشعرا",
+        "text": "واخفض جناحك لمن اتبعك من المؤمنين"
+      },
+      {
+        "surah": 26,
+        "ayah_start": 71,
+        "ayah_end": 71,
+        "score": 0.4218,
+        "words_matched": 1,
+        "words_total": 5,
+        "surah_name": "الشعرا",
+        "text": "قالوا نعبد أصناما فنظل لها عاكفين"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Alafasy_128kbps/001005.mp3"
+    ]
+  },
+  {
+    "reciter": "Alafasy_128kbps",
+    "kind": "single",
+    "expected": [
+      112,
+      1,
+      1
+    ],
+    "predicted": [
+      112,
+      1,
+      1
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": false,
+    "seconds": 5.0,
+    "transcript": "قُلْ هُوَ اللَّهُ أَحَدٌ قُطْ قُطْ",
+    "matches": [
+      {
+        "surah": 112,
+        "ayah_start": 1,
+        "ayah_end": 1,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الاخلاص",
+        "text": "قل هو الله أحد"
+      },
+      {
+        "surah": 39,
+        "ayah_start": 14,
+        "ayah_end": 14,
+        "score": 0.6282,
+        "words_matched": 2,
+        "words_total": 6,
+        "surah_name": "الزمر",
+        "text": "قل الله أعبد مخلصا له ديني"
+      },
+      {
+        "surah": 39,
+        "ayah_start": 4,
+        "ayah_end": 4,
+        "score": 0.5705,
+        "words_matched": 2,
+        "words_total": 6,
+        "surah_name": "الزمر",
+        "text": "لو أراد الله أن يتخذ ولدا لاصطفى مما يخلق ما يشاء ۚ سبحانه ۖ هو الله الواحد القهار"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Alafasy_128kbps/112001.mp3"
+    ]
+  },
+  {
+    "reciter": "Alafasy_128kbps",
+    "kind": "single",
+    "expected": [
+      97,
+      3,
+      3
+    ],
+    "predicted": [
+      97,
+      3,
+      3
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": false,
+    "seconds": 6.56,
+    "transcript": "لَيْلَةُ الْقَدْرِ خَيْرٌ مِنْ أَلْفِ شَهْرٍ مِنْ أَجْرٍ مِنْ أَجْرٍ",
+    "matches": [
+      {
+        "surah": 97,
+        "ayah_start": 3,
+        "ayah_end": 3,
+        "score": 0.6,
+        "words_matched": 6,
+        "words_total": 10,
+        "surah_name": "القدر",
+        "text": "ليلة القدر خير من ألف شهر"
+      },
+      {
+        "surah": 26,
+        "ayah_start": 109,
+        "ayah_end": 109,
+        "score": 0.5559,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "الشعرا",
+        "text": "وما أسألكم عليه من أجر ۖ إن أجري إلا على رب العالمين"
+      },
+      {
+        "surah": 26,
+        "ayah_start": 127,
+        "ayah_end": 127,
+        "score": 0.5559,
+        "words_matched": 2,
+        "words_total": 10,
+        "surah_name": "الشعرا",
+        "text": "وما أسألكم عليه من أجر ۖ إن أجري إلا على رب العالمين"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Alafasy_128kbps/097003.mp3"
+    ]
+  },
+  {
+    "reciter": "Alafasy_128kbps",
+    "kind": "single",
+    "expected": [
+      36,
+      58,
+      58
+    ],
+    "predicted": [
+      36,
+      58,
+      58
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 5.41,
+    "transcript": "سَلَامٌ قَوْلًا مِنْ رَبٍّ رَحِيمٍ مِنْ رَبٍّ",
+    "matches": [
+      {
+        "surah": 36,
+        "ayah_start": 58,
+        "ayah_end": 58,
+        "score": 0.7249,
+        "words_matched": 5,
+        "words_total": 7,
+        "surah_name": "يس",
+        "text": "سلام قولا من رب رحيم"
+      },
+      {
+        "surah": 32,
+        "ayah_start": 2,
+        "ayah_end": 2,
+        "score": 0.5668,
+        "words_matched": 2,
+        "words_total": 7,
+        "surah_name": "السجده",
+        "text": "تنزيل الكتاب لا ريب فيه من رب العالمين"
+      },
+      {
+        "surah": 72,
+        "ayah_start": 27,
+        "ayah_end": 27,
+        "score": 0.564,
+        "words_matched": 2,
+        "words_total": 7,
+        "surah_name": "الجن",
+        "text": "إلا من ارتضى من رسول فإنه يسلك من بين يديه ومن خلفه رصدا"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Alafasy_128kbps/036058.mp3"
+    ]
+  },
+  {
+    "reciter": "Alafasy_128kbps",
+    "kind": "single",
+    "expected": [
+      55,
+      14,
+      14
+    ],
+    "predicted": [
+      55,
+      14,
+      14
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 5.17,
+    "transcript": "خَلَقَ الْإِنْسَانَ مِنْ صَلْصَالٍ كَالْفَخَّارِ خَوْا",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 14,
+        "ayah_end": 14,
+        "score": 0.8477,
+        "words_matched": 5,
+        "words_total": 6,
+        "surah_name": "الرحمن",
+        "text": "خلق الإنسان من صلصال كالفخار"
+      },
+      {
+        "surah": 15,
+        "ayah_start": 26,
+        "ayah_end": 26,
+        "score": 0.6828,
+        "words_matched": 3,
+        "words_total": 6,
+        "surah_name": "الحجر",
+        "text": "ولقد خلقنا الإنسان من صلصال من حمإ مسنون"
+      },
+      {
+        "surah": 21,
+        "ayah_start": 37,
+        "ayah_end": 37,
+        "score": 0.6633,
+        "words_matched": 3,
+        "words_total": 6,
+        "surah_name": "الانبيا",
+        "text": "خلق الإنسان من عجل ۚ سأريكم آياتي فلا تستعجلون"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Alafasy_128kbps/055014.mp3"
+    ]
+  },
+  {
+    "reciter": "Alafasy_128kbps",
+    "kind": "single",
+    "expected": [
+      2,
+      255,
+      255
+    ],
+    "predicted": [
+      2,
+      255,
+      255
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 4.85,
+    "transcript": "اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي",
+    "matches": [
+      {
+        "surah": 2,
+        "ayah_start": 255,
+        "ayah_end": 255,
+        "score": 0.8485,
+        "words_matched": 22,
+        "words_total": 22,
+        "surah_name": "البقره",
+        "text": "الله لا إله إلا هو الحي القيوم ۚ لا تأخذه سنة ولا نوم ۚ له ما في السماوات وما في الأرض ۗ من ذا الذي يشفع عنده إلا بإذنه ۚ يعلم ما بين أيديهم وما خلفهم ۖ ولا يحيطون بشيء من علمه إلا بما شاء ۚ وسع كرسيه السماوات والأرض ۖ ولا يئوده حفظهما ۚ وهو العلي العظيم"
+      },
+      {
+        "surah": 59,
+        "ayah_start": 24,
+        "ayah_end": 24,
+        "score": 0.6339,
+        "words_matched": 5,
+        "words_total": 22,
+        "surah_name": "الحشر",
+        "text": "هو الله الخالق البارئ المصور ۖ له الأسماء الحسنى ۚ يسبح له ما في السماوات والأرض ۖ وهو العزيز الحكيم"
+      },
+      {
+        "surah": 10,
+        "ayah_start": 68,
+        "ayah_end": 68,
+        "score": 0.633,
+        "words_matched": 10,
+        "words_total": 22,
+        "surah_name": "يونس",
+        "text": "قالوا اتخذ الله ولدا ۗ سبحانه ۖ هو الغني ۖ له ما في السماوات وما في الأرض ۚ إن عندكم من سلطان بهذا ۚ أتقولون على الله ما لا تعلمون"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Alafasy_128kbps/002255.mp3"
+    ]
+  },
+  {
+    "reciter": "Alafasy_128kbps",
+    "kind": "single",
+    "expected": [
+      55,
+      13,
+      13
+    ],
+    "predicted": [
+      55,
+      13,
+      13
+    ],
+    "exact": true,
+    "ambiguous": true,
+    "confident": false,
+    "seconds": 5.59,
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ فَبِعَانِ فَبِعَانِ فَبِعَانِ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.5714,
+        "words_matched": 4,
+        "words_total": 7,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.5714,
+        "words_matched": 4,
+        "words_total": 7,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.5714,
+        "words_matched": 4,
+        "words_total": 7,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Alafasy_128kbps/055013.mp3"
+    ]
+  },
+  {
+    "reciter": "Alafasy_128kbps",
+    "kind": "partial",
+    "expected": [
+      2,
+      255,
+      255
+    ],
+    "predicted": [
+      20,
+      110,
+      110
+    ],
+    "exact": false,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 4.26,
+    "transcript": "يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمٍ",
+    "matches": [
+      {
+        "surah": 20,
+        "ayah_start": 110,
+        "ayah_end": 110,
+        "score": 0.8655,
+        "words_matched": 8,
+        "words_total": 11,
+        "surah_name": "طه",
+        "text": "يعلم ما بين أيديهم وما خلفهم ولا يحيطون به علما"
+      },
+      {
+        "surah": 2,
+        "ayah_start": 255,
+        "ayah_end": 255,
+        "score": 0.803,
+        "words_matched": 10,
+        "words_total": 11,
+        "surah_name": "البقره",
+        "text": "الله لا إله إلا هو الحي القيوم ۚ لا تأخذه سنة ولا نوم ۚ له ما في السماوات وما في الأرض ۗ من ذا الذي يشفع عنده إلا بإذنه ۚ يعلم ما بين أيديهم وما خلفهم ۖ ولا يحيطون بشيء من علمه إلا بما شاء ۚ وسع كرسيه السماوات والأرض ۖ ولا يئوده حفظهما ۚ وهو العلي العظيم"
+      },
+      {
+        "surah": 22,
+        "ayah_start": 76,
+        "ayah_end": 76,
+        "score": 0.7952,
+        "words_matched": 6,
+        "words_total": 11,
+        "surah_name": "الحج",
+        "text": "يعلم ما بين أيديهم وما خلفهم ۗ وإلى الله ترجع الأمور"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Alafasy_128kbps/002255.mp3"
+    ]
+  },
+  {
+    "reciter": "Alafasy_128kbps",
+    "kind": "range",
+    "expected": [
+      112,
+      2,
+      4
+    ],
+    "predicted": [
+      112,
+      2,
+      4
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 5.93,
+    "transcript": "اللَّهُ الصَّمَدُ لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ مَنْ يُؤْمِنُونَ",
+    "matches": [
+      {
+        "surah": 112,
+        "ayah_start": 2,
+        "ayah_end": 4,
+        "score": 0.8462,
+        "words_matched": 11,
+        "words_total": 13,
+        "surah_name": "الاخلاص",
+        "text": "الله الصمد لم يلد ولم يولد ولم يكن له كفوا أحد"
+      },
+      {
+        "surah": 112,
+        "ayah_start": 3,
+        "ayah_end": 4,
+        "score": 0.6923,
+        "words_matched": 9,
+        "words_total": 13,
+        "surah_name": "الاخلاص",
+        "text": "لم يلد ولم يولد ولم يكن له كفوا أحد"
+      },
+      {
+        "surah": 17,
+        "ayah_start": 111,
+        "ayah_end": 111,
+        "score": 0.5961,
+        "words_matched": 5,
+        "words_total": 13,
+        "surah_name": "الاسرا",
+        "text": "وقل الحمد لله الذي لم يتخذ ولدا ولم يكن له شريك في الملك ولم يكن له ولي من الذل ۖ وكبره تكبيرا"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Alafasy_128kbps/112002.mp3",
+      "https://everyayah.com/data/Alafasy_128kbps/112003.mp3",
+      "https://everyayah.com/data/Alafasy_128kbps/112004.mp3"
+    ]
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "kind": "single",
+    "expected": [
+      1,
+      5,
+      5
+    ],
+    "predicted": [
+      1,
+      5,
+      5
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 5.55,
+    "transcript": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ وَالْمُؤْمِنِينَ وَالْمُؤْمِنِينَ",
+    "matches": [
+      {
+        "surah": 1,
+        "ayah_start": 5,
+        "ayah_end": 5,
+        "score": 0.6667,
+        "words_matched": 4,
+        "words_total": 6,
+        "surah_name": "الفاتحه",
+        "text": "إياك نعبد وإياك نستعين"
+      },
+      {
+        "surah": 33,
+        "ayah_start": 35,
+        "ayah_end": 35,
+        "score": 0.4326,
+        "words_matched": 1,
+        "words_total": 6,
+        "surah_name": "الاحزاب",
+        "text": "إن المسلمين والمسلمات والمؤمنين والمؤمنات والقانتين والقانتات والصادقين والصادقات والصابرين والصابرات والخاشعين والخاشعات والمتصدقين والمتصدقات والصائمين والصائمات والحافظين فروجهم والحافظات والذاكرين الله كثيرا والذاكرات أعد الله لهم مغفرة وأجرا عظيما"
+      },
+      {
+        "surah": 85,
+        "ayah_start": 10,
+        "ayah_end": 10,
+        "score": 0.4241,
+        "words_matched": 0,
+        "words_total": 6,
+        "surah_name": "البروج",
+        "text": "إن الذين فتنوا المؤمنين والمؤمنات ثم لم يتوبوا فلهم عذاب جهنم ولهم عذاب الحريق"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Husary_128kbps/001005.mp3"
+    ]
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "kind": "single",
+    "expected": [
+      112,
+      1,
+      1
+    ],
+    "predicted": [
+      112,
+      1,
+      1
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 3.77,
+    "transcript": "قُلْ هُوَ اللَّهُ أَحَدٌ قُطْ",
+    "matches": [
+      {
+        "surah": 112,
+        "ayah_start": 1,
+        "ayah_end": 1,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الاخلاص",
+        "text": "قل هو الله أحد"
+      },
+      {
+        "surah": 39,
+        "ayah_start": 14,
+        "ayah_end": 14,
+        "score": 0.6699,
+        "words_matched": 2,
+        "words_total": 5,
+        "surah_name": "الزمر",
+        "text": "قل الله أعبد مخلصا له ديني"
+      },
+      {
+        "surah": 39,
+        "ayah_start": 4,
+        "ayah_end": 4,
+        "score": 0.6157,
+        "words_matched": 2,
+        "words_total": 5,
+        "surah_name": "الزمر",
+        "text": "لو أراد الله أن يتخذ ولدا لاصطفى مما يخلق ما يشاء ۚ سبحانه ۖ هو الله الواحد القهار"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Husary_128kbps/112001.mp3"
+    ]
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "kind": "single",
+    "expected": [
+      97,
+      3,
+      3
+    ],
+    "predicted": [
+      97,
+      3,
+      3
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 4.81,
+    "transcript": "لَيْلَةُ الْقَدْرِ خَيْرٌ مِنْ أَلْفِ شَهْرٍ مِنْ أَجْرٍ",
+    "matches": [
+      {
+        "surah": 97,
+        "ayah_start": 3,
+        "ayah_end": 3,
+        "score": 0.75,
+        "words_matched": 6,
+        "words_total": 8,
+        "surah_name": "القدر",
+        "text": "ليلة القدر خير من ألف شهر"
+      },
+      {
+        "surah": 97,
+        "ayah_start": 3,
+        "ayah_end": 4,
+        "score": 0.6731,
+        "words_matched": 7,
+        "words_total": 8,
+        "surah_name": "القدر",
+        "text": "ليلة القدر خير من ألف شهر تنزل الملائكة والروح فيها بإذن ربهم من كل أمر"
+      },
+      {
+        "surah": 43,
+        "ayah_start": 52,
+        "ayah_end": 52,
+        "score": 0.5533,
+        "words_matched": 2,
+        "words_total": 8,
+        "surah_name": "الزخرف",
+        "text": "أم أنا خير من هذا الذي هو مهين ولا يكاد يبين"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Husary_128kbps/097003.mp3"
+    ]
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "kind": "single",
+    "expected": [
+      36,
+      58,
+      58
+    ],
+    "predicted": [
+      36,
+      58,
+      58
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 5.34,
+    "transcript": "سَلَامٌ قَوْلًا مِنْ رَبٍّ رَحِيمٍ مِنْ رَحِيمٍ",
+    "matches": [
+      {
+        "surah": 36,
+        "ayah_start": 58,
+        "ayah_end": 58,
+        "score": 0.7143,
+        "words_matched": 5,
+        "words_total": 7,
+        "surah_name": "يس",
+        "text": "سلام قولا من رب رحيم"
+      },
+      {
+        "surah": 72,
+        "ayah_start": 27,
+        "ayah_end": 27,
+        "score": 0.5444,
+        "words_matched": 2,
+        "words_total": 7,
+        "surah_name": "الجن",
+        "text": "إلا من ارتضى من رسول فإنه يسلك من بين يديه ومن خلفه رصدا"
+      },
+      {
+        "surah": 32,
+        "ayah_start": 8,
+        "ayah_end": 8,
+        "score": 0.5357,
+        "words_matched": 2,
+        "words_total": 7,
+        "surah_name": "السجده",
+        "text": "ثم جعل نسله من سلالة من ماء مهين"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Husary_128kbps/036058.mp3"
+    ]
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "kind": "single",
+    "expected": [
+      55,
+      14,
+      14
+    ],
+    "predicted": [
+      55,
+      14,
+      14
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 5.66,
+    "transcript": "خَلَقَ الْإِنْسَانَ مِنْ صَلْصَالٍ كَالْفَخَّارِ خَلَقَ الْخَلَقَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 14,
+        "ayah_end": 14,
+        "score": 0.7143,
+        "words_matched": 5,
+        "words_total": 7,
+        "surah_name": "الرحمن",
+        "text": "خلق الإنسان من صلصال كالفخار"
+      },
+      {
+        "surah": 15,
+        "ayah_start": 26,
+        "ayah_end": 26,
+        "score": 0.6309,
+        "words_matched": 3,
+        "words_total": 7,
+        "surah_name": "الحجر",
+        "text": "ولقد خلقنا الإنسان من صلصال من حمإ مسنون"
+      },
+      {
+        "surah": 21,
+        "ayah_start": 37,
+        "ayah_end": 37,
+        "score": 0.6241,
+        "words_matched": 3,
+        "words_total": 7,
+        "surah_name": "الانبيا",
+        "text": "خلق الإنسان من عجل ۚ سأريكم آياتي فلا تستعجلون"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Husary_128kbps/055014.mp3"
+    ]
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "kind": "single",
+    "expected": [
+      2,
+      255,
+      255
+    ],
+    "predicted": [
+      2,
+      255,
+      255
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 5.59,
+    "transcript": "اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا خِلَّتْ",
+    "matches": [
+      {
+        "surah": 2,
+        "ayah_start": 255,
+        "ayah_end": 255,
+        "score": 0.815,
+        "words_matched": 17,
+        "words_total": 18,
+        "surah_name": "البقره",
+        "text": "الله لا إله إلا هو الحي القيوم ۚ لا تأخذه سنة ولا نوم ۚ له ما في السماوات وما في الأرض ۗ من ذا الذي يشفع عنده إلا بإذنه ۚ يعلم ما بين أيديهم وما خلفهم ۖ ولا يحيطون بشيء من علمه إلا بما شاء ۚ وسع كرسيه السماوات والأرض ۖ ولا يئوده حفظهما ۚ وهو العلي العظيم"
+      },
+      {
+        "surah": 4,
+        "ayah_start": 87,
+        "ayah_end": 87,
+        "score": 0.6567,
+        "words_matched": 6,
+        "words_total": 18,
+        "surah_name": "النسا",
+        "text": "الله لا إله إلا هو ۚ ليجمعنكم إلى يوم القيامة لا ريب فيه ۗ ومن أصدق من الله حديثا"
+      },
+      {
+        "surah": 59,
+        "ayah_start": 24,
+        "ayah_end": 24,
+        "score": 0.6166,
+        "words_matched": 5,
+        "words_total": 18,
+        "surah_name": "الحشر",
+        "text": "هو الله الخالق البارئ المصور ۖ له الأسماء الحسنى ۚ يسبح له ما في السماوات والأرض ۖ وهو العزيز الحكيم"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Husary_128kbps/002255.mp3"
+    ]
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "kind": "single",
+    "expected": [
+      55,
+      13,
+      13
+    ],
+    "predicted": [
+      55,
+      13,
+      13
+    ],
+    "exact": true,
+    "ambiguous": true,
+    "confident": false,
+    "seconds": 5.34,
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ وَالْمُؤْمِنِينَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Husary_128kbps/055013.mp3"
+    ]
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "kind": "partial",
+    "expected": [
+      2,
+      255,
+      255
+    ],
+    "predicted": [
+      20,
+      110,
+      110
+    ],
+    "exact": false,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 4.74,
+    "transcript": "يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ",
+    "matches": [
+      {
+        "surah": 20,
+        "ayah_start": 110,
+        "ayah_end": 110,
+        "score": 0.9554,
+        "words_matched": 8,
+        "words_total": 9,
+        "surah_name": "طه",
+        "text": "يعلم ما بين أيديهم وما خلفهم ولا يحيطون به علما"
+      },
+      {
+        "surah": 22,
+        "ayah_start": 76,
+        "ayah_end": 76,
+        "score": 0.8271,
+        "words_matched": 6,
+        "words_total": 9,
+        "surah_name": "الحج",
+        "text": "يعلم ما بين أيديهم وما خلفهم ۗ وإلى الله ترجع الأمور"
+      },
+      {
+        "surah": 21,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.8052,
+        "words_matched": 7,
+        "words_total": 9,
+        "surah_name": "الانبيا",
+        "text": "يعلم ما بين أيديهم وما خلفهم ولا يشفعون إلا لمن ارتضى وهم من خشيته مشفقون"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Husary_128kbps/002255.mp3"
+    ]
+  },
+  {
+    "reciter": "Husary_128kbps",
+    "kind": "range",
+    "expected": [
+      112,
+      2,
+      4
+    ],
+    "predicted": [
+      112,
+      2,
+      4
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 4.78,
+    "transcript": "اللَّهُ الصَّمَدُ لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ مَا يَكُنْ لَهُ",
+    "matches": [
+      {
+        "surah": 112,
+        "ayah_start": 2,
+        "ayah_end": 4,
+        "score": 0.7857,
+        "words_matched": 11,
+        "words_total": 14,
+        "surah_name": "الاخلاص",
+        "text": "الله الصمد لم يلد ولم يولد ولم يكن له كفوا أحد"
+      },
+      {
+        "surah": 112,
+        "ayah_start": 3,
+        "ayah_end": 4,
+        "score": 0.6429,
+        "words_matched": 9,
+        "words_total": 14,
+        "surah_name": "الاخلاص",
+        "text": "لم يلد ولم يولد ولم يكن له كفوا أحد"
+      },
+      {
+        "surah": 17,
+        "ayah_start": 111,
+        "ayah_end": 111,
+        "score": 0.6283,
+        "words_matched": 6,
+        "words_total": 14,
+        "surah_name": "الاسرا",
+        "text": "وقل الحمد لله الذي لم يتخذ ولدا ولم يكن له شريك في الملك ولم يكن له ولي من الذل ۖ وكبره تكبيرا"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Husary_128kbps/112002.mp3",
+      "https://everyayah.com/data/Husary_128kbps/112003.mp3",
+      "https://everyayah.com/data/Husary_128kbps/112004.mp3"
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "kind": "single",
+    "expected": [
+      1,
+      5,
+      5
+    ],
+    "predicted": [
+      1,
+      5,
+      5
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 4.68,
+    "transcript": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ وَالْمُؤْمِنِينَ",
+    "matches": [
+      {
+        "surah": 1,
+        "ayah_start": 5,
+        "ayah_end": 5,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الفاتحه",
+        "text": "إياك نعبد وإياك نستعين"
+      },
+      {
+        "surah": 26,
+        "ayah_start": 215,
+        "ayah_end": 215,
+        "score": 0.4388,
+        "words_matched": 0,
+        "words_total": 5,
+        "surah_name": "الشعرا",
+        "text": "واخفض جناحك لمن اتبعك من المؤمنين"
+      },
+      {
+        "surah": 26,
+        "ayah_start": 71,
+        "ayah_end": 71,
+        "score": 0.4218,
+        "words_matched": 1,
+        "words_total": 5,
+        "surah_name": "الشعرا",
+        "text": "قالوا نعبد أصناما فنظل لها عاكفين"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/001005.mp3"
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "kind": "single",
+    "expected": [
+      112,
+      1,
+      1
+    ],
+    "predicted": [
+      112,
+      1,
+      1
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": false,
+    "seconds": 7.5,
+    "transcript": "قُلْ هُوَ اللَّهُ أَحَدٌ قُطُوا قُطُوا قُطُوا",
+    "matches": [
+      {
+        "surah": 112,
+        "ayah_start": 1,
+        "ayah_end": 1,
+        "score": 0.5714,
+        "words_matched": 4,
+        "words_total": 7,
+        "surah_name": "الاخلاص",
+        "text": "قل هو الله أحد"
+      },
+      {
+        "surah": 18,
+        "ayah_start": 38,
+        "ayah_end": 38,
+        "score": 0.563,
+        "words_matched": 2,
+        "words_total": 7,
+        "surah_name": "الكهف",
+        "text": "لكنا هو الله ربي ولا أشرك بربي أحدا"
+      },
+      {
+        "surah": 39,
+        "ayah_start": 4,
+        "ayah_end": 4,
+        "score": 0.5297,
+        "words_matched": 2,
+        "words_total": 7,
+        "surah_name": "الزمر",
+        "text": "لو أراد الله أن يتخذ ولدا لاصطفى مما يخلق ما يشاء ۚ سبحانه ۖ هو الله الواحد القهار"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/112001.mp3"
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "kind": "single",
+    "expected": [
+      97,
+      3,
+      3
+    ],
+    "predicted": [
+      97,
+      3,
+      3
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 5.74,
+    "transcript": "لَيْلَةُ الْقَدْرِ خَيْرٌ مِنْ أَلْفِ شَهْرٍ",
+    "matches": [
+      {
+        "surah": 97,
+        "ayah_start": 3,
+        "ayah_end": 3,
+        "score": 1.0,
+        "words_matched": 6,
+        "words_total": 6,
+        "surah_name": "القدر",
+        "text": "ليلة القدر خير من ألف شهر"
+      },
+      {
+        "surah": 93,
+        "ayah_start": 4,
+        "ayah_end": 4,
+        "score": 0.6048,
+        "words_matched": 2,
+        "words_total": 6,
+        "surah_name": "الضحي",
+        "text": "وللآخرة خير لك من الأولى"
+      },
+      {
+        "surah": 97,
+        "ayah_start": 1,
+        "ayah_end": 1,
+        "score": 0.5714,
+        "words_matched": 2,
+        "words_total": 6,
+        "surah_name": "القدر",
+        "text": "إنا أنزلناه في ليلة القدر"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/097003.mp3"
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "kind": "single",
+    "expected": [
+      36,
+      58,
+      58
+    ],
+    "predicted": [
+      36,
+      58,
+      58
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 3.87,
+    "transcript": "سَلَامٌ قَوْلًا مِنْ رَبٍّ رَحِيمٍ مِنْ رَبٍّ",
+    "matches": [
+      {
+        "surah": 36,
+        "ayah_start": 58,
+        "ayah_end": 58,
+        "score": 0.7249,
+        "words_matched": 5,
+        "words_total": 7,
+        "surah_name": "يس",
+        "text": "سلام قولا من رب رحيم"
+      },
+      {
+        "surah": 32,
+        "ayah_start": 2,
+        "ayah_end": 2,
+        "score": 0.5668,
+        "words_matched": 2,
+        "words_total": 7,
+        "surah_name": "السجده",
+        "text": "تنزيل الكتاب لا ريب فيه من رب العالمين"
+      },
+      {
+        "surah": 72,
+        "ayah_start": 27,
+        "ayah_end": 27,
+        "score": 0.564,
+        "words_matched": 2,
+        "words_total": 7,
+        "surah_name": "الجن",
+        "text": "إلا من ارتضى من رسول فإنه يسلك من بين يديه ومن خلفه رصدا"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/036058.mp3"
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "kind": "single",
+    "expected": [
+      55,
+      14,
+      14
+    ],
+    "predicted": [
+      55,
+      14,
+      14
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 6.26,
+    "transcript": "خَلَقَ الْإِنْسَانَ مِنْ صَلْصَالٍ كَالْفَخَّارِ خَلَقَ الْخَلَقَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 14,
+        "ayah_end": 14,
+        "score": 0.7143,
+        "words_matched": 5,
+        "words_total": 7,
+        "surah_name": "الرحمن",
+        "text": "خلق الإنسان من صلصال كالفخار"
+      },
+      {
+        "surah": 15,
+        "ayah_start": 26,
+        "ayah_end": 26,
+        "score": 0.6309,
+        "words_matched": 3,
+        "words_total": 7,
+        "surah_name": "الحجر",
+        "text": "ولقد خلقنا الإنسان من صلصال من حمإ مسنون"
+      },
+      {
+        "surah": 21,
+        "ayah_start": 37,
+        "ayah_end": 37,
+        "score": 0.6241,
+        "words_matched": 3,
+        "words_total": 7,
+        "surah_name": "الانبيا",
+        "text": "خلق الإنسان من عجل ۚ سأريكم آياتي فلا تستعجلون"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/055014.mp3"
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "kind": "single",
+    "expected": [
+      2,
+      255,
+      255
+    ],
+    "predicted": [
+      2,
+      255,
+      255
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 13.63,
+    "transcript": "اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُلُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَالْفَصْلِ",
+    "matches": [
+      {
+        "surah": 2,
+        "ayah_start": 255,
+        "ayah_end": 255,
+        "score": 0.792,
+        "words_matched": 15,
+        "words_total": 17,
+        "surah_name": "البقره",
+        "text": "الله لا إله إلا هو الحي القيوم ۚ لا تأخذه سنة ولا نوم ۚ له ما في السماوات وما في الأرض ۗ من ذا الذي يشفع عنده إلا بإذنه ۚ يعلم ما بين أيديهم وما خلفهم ۖ ولا يحيطون بشيء من علمه إلا بما شاء ۚ وسع كرسيه السماوات والأرض ۖ ولا يئوده حفظهما ۚ وهو العلي العظيم"
+      },
+      {
+        "surah": 59,
+        "ayah_start": 24,
+        "ayah_end": 24,
+        "score": 0.6319,
+        "words_matched": 5,
+        "words_total": 17,
+        "surah_name": "الحشر",
+        "text": "هو الله الخالق البارئ المصور ۖ له الأسماء الحسنى ۚ يسبح له ما في السماوات والأرض ۖ وهو العزيز الحكيم"
+      },
+      {
+        "surah": 4,
+        "ayah_start": 87,
+        "ayah_end": 87,
+        "score": 0.6281,
+        "words_matched": 6,
+        "words_total": 17,
+        "surah_name": "النسا",
+        "text": "الله لا إله إلا هو ۚ ليجمعنكم إلى يوم القيامة لا ريب فيه ۗ ومن أصدق من الله حديثا"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/002255.mp3"
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "kind": "single",
+    "expected": [
+      55,
+      13,
+      13
+    ],
+    "predicted": [
+      55,
+      13,
+      13
+    ],
+    "exact": true,
+    "ambiguous": true,
+    "confident": false,
+    "seconds": 4.13,
+    "transcript": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ فَبِعِينَ",
+    "matches": [
+      {
+        "surah": 55,
+        "ayah_start": 13,
+        "ayah_end": 13,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 16,
+        "ayah_end": 16,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      },
+      {
+        "surah": 55,
+        "ayah_start": 18,
+        "ayah_end": 18,
+        "score": 0.8,
+        "words_matched": 4,
+        "words_total": 5,
+        "surah_name": "الرحمن",
+        "text": "فبأي آلاء ربكما تكذبان"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/055013.mp3"
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "kind": "partial",
+    "expected": [
+      2,
+      255,
+      255
+    ],
+    "predicted": [
+      20,
+      110,
+      110
+    ],
+    "exact": false,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 5.06,
+    "transcript": "مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ",
+    "matches": [
+      {
+        "surah": 20,
+        "ayah_start": 110,
+        "ayah_end": 110,
+        "score": 0.9309,
+        "words_matched": 7,
+        "words_total": 7,
+        "surah_name": "طه",
+        "text": "يعلم ما بين أيديهم وما خلفهم ولا يحيطون به علما"
+      },
+      {
+        "surah": 21,
+        "ayah_start": 28,
+        "ayah_end": 28,
+        "score": 0.79,
+        "words_matched": 6,
+        "words_total": 7,
+        "surah_name": "الانبيا",
+        "text": "يعلم ما بين أيديهم وما خلفهم ولا يشفعون إلا لمن ارتضى وهم من خشيته مشفقون"
+      },
+      {
+        "surah": 2,
+        "ayah_start": 255,
+        "ayah_end": 255,
+        "score": 0.786,
+        "words_matched": 7,
+        "words_total": 7,
+        "surah_name": "البقره",
+        "text": "الله لا إله إلا هو الحي القيوم ۚ لا تأخذه سنة ولا نوم ۚ له ما في السماوات وما في الأرض ۗ من ذا الذي يشفع عنده إلا بإذنه ۚ يعلم ما بين أيديهم وما خلفهم ۖ ولا يحيطون بشيء من علمه إلا بما شاء ۚ وسع كرسيه السماوات والأرض ۖ ولا يئوده حفظهما ۚ وهو العلي العظيم"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/002255.mp3"
+    ]
+  },
+  {
+    "reciter": "Minshawy_Murattal_128kbps",
+    "kind": "range",
+    "expected": [
+      112,
+      2,
+      4
+    ],
+    "predicted": [
+      112,
+      2,
+      4
+    ],
+    "exact": true,
+    "ambiguous": false,
+    "confident": true,
+    "seconds": 5.34,
+    "transcript": "اللَّهُ الصَّمَدُ لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ مَا يَكُونَ",
+    "matches": [
+      {
+        "surah": 112,
+        "ayah_start": 2,
+        "ayah_end": 4,
+        "score": 0.8462,
+        "words_matched": 11,
+        "words_total": 13,
+        "surah_name": "الاخلاص",
+        "text": "الله الصمد لم يلد ولم يولد ولم يكن له كفوا أحد"
+      },
+      {
+        "surah": 112,
+        "ayah_start": 3,
+        "ayah_end": 4,
+        "score": 0.6923,
+        "words_matched": 9,
+        "words_total": 13,
+        "surah_name": "الاخلاص",
+        "text": "لم يلد ولم يولد ولم يكن له كفوا أحد"
+      },
+      {
+        "surah": 17,
+        "ayah_start": 111,
+        "ayah_end": 111,
+        "score": 0.6144,
+        "words_matched": 4,
+        "words_total": 13,
+        "surah_name": "الاسرا",
+        "text": "وقل الحمد لله الذي لم يتخذ ولدا ولم يكن له شريك في الملك ولم يكن له ولي من الذل ۖ وكبره تكبيرا"
+      }
+    ],
+    "sources": [
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/112002.mp3",
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/112003.mp3",
+      "https://everyayah.com/data/Minshawy_Murattal_128kbps/112004.mp3"
+    ]
+  }
+]

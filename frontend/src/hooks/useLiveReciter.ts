@@ -53,9 +53,12 @@ export function useLiveReciter(): UseLiveReciter {
 
       const ws = new WebSocket(LIVE_WS_URL);
       wsRef.current = ws;
-      ws.onopen = () => console.log('Live WebSocket connected.');
+
       ws.onerror = () => setError('Live connection error.');
-      ws.onclose = () => console.log('Live WebSocket closed.');
+      ws.onclose = () => {
+        cleanup();
+        setIsRecording(false);
+      };
       ws.onmessage = (event: MessageEvent<string>) => {
         try {
           const data = JSON.parse(event.data) as IdentifyResponse & { error?: string };
@@ -63,11 +66,26 @@ export function useLiveReciter(): UseLiveReciter {
             setError(data.error);
             return;
           }
+          setError(null);
           setLiveResult(data);
         } catch {
           setError('Received invalid live response.');
         }
       };
+
+      // The first MediaRecorder chunk carries the container header.
+      // Start only after the socket opens so that header is never dropped.
+      await new Promise<void>((resolve, reject) => {
+        const timeout = setTimeout(() => reject(new Error('Live connection timed out.')), 10000);
+        ws.onopen = () => {
+          clearTimeout(timeout);
+          resolve();
+        };
+        ws.onerror = () => {
+          clearTimeout(timeout);
+          reject(new Error('Live connection error.'));
+        };
+      });
 
       const recorder = new MediaRecorder(stream, {
         mimeType: 'audio/webm;codecs=opus',
@@ -87,8 +105,9 @@ export function useLiveReciter(): UseLiveReciter {
             .catch((err: unknown) => console.error('Error sending chunk:', err));
         }
       };
-    } catch {
-      setError('Please allow microphone access.');
+    } catch (err) {
+      setIsRecording(false);
+      setError(err instanceof Error ? err.message : 'Could not start live recording.');
       cleanup();
     }
   }, [cleanup]);

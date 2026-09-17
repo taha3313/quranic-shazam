@@ -35,6 +35,19 @@ class Settings(BaseSettings):
     live_max_duration_sec: float = 30.0
     live_confidence_threshold: float = 0.85
 
+    # Verse identification (ASR + matching; separate from the reciter pipeline)
+    verse_corpus_path: Path = BACKEND_ROOT / "data" / "quran_verses.json"
+    asr_model_source: str = "OdyAsh/faster-whisper-base-ar-quran"
+    asr_device: str = "cpu"
+    asr_compute_type: str = "int8"
+    # Fine-tuned Whisper accuracy degrades badly past ~30 s (documented on
+    # the model cards); cap tighter here since ranges need clean word counts.
+    verse_max_audio_sec: int = 20
+    verse_listen_step_sec: int = 20
+    verse_listen_max_sec: int = 60
+    # Below this top-1 score the endpoint reports no confident match.
+    verse_score_threshold: float = 0.55
+
     # Dataset pipeline
     cdn_base_url: str = "https://cdn.islamic.network/quran/audio/128"
     clip_duration_ms: int = 10_000
