@@ -16,11 +16,20 @@ export default function IdentificationForm() {
 
   const {
     isRecording,
+    isChecking,
+    recording,
+    reset: resetRecording,
     liveResult,
     error: liveError,
     start: startRecording,
     stop: stopRecording,
   } = useLiveReciter();
+
+  useEffect(() => {
+    if (!recording) return;
+    setFile(recording);
+    setAudioURL(URL.createObjectURL(recording));
+  }, [recording]);
 
   // Revoke object URLs on change/unmount to avoid leaks.
   useEffect(() => {
@@ -31,6 +40,7 @@ export default function IdentificationForm() {
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
     const selected = event.target.files?.[0] ?? null;
+    resetRecording();
     setFile(selected);
     setResult(null);
     setSubmitError(null);
@@ -90,6 +100,7 @@ export default function IdentificationForm() {
             id="audio-upload"
             type="file"
             accept="audio/*"
+            disabled={isRecording || isChecking || loading}
             onChange={handleFileChange}
             className="w-full px-4 py-2 border rounded-lg bg-white
                        focus:outline-none focus:ring-2 focus:ring-emerald-500"
@@ -102,21 +113,36 @@ export default function IdentificationForm() {
           <button
             type="button"
             onClick={handleRecordToggle}
+            disabled={loading || (isChecking && !isRecording)}
             className={`w-full px-4 py-3 font-semibold rounded-xl text-white
               ${isRecording ? 'bg-red-600' : 'bg-emerald-600'}`}
           >
-            {isRecording ? 'Stop Recording (Live Mode)' : 'Record Live Audio'}
+            {isRecording ? 'Stop Listening' : 'Listen and Identify Reciter'}
           </button>
         </div>
 
         <button
           type="submit"
-          disabled={loading || !file}
+          disabled={loading || isRecording || isChecking || !file}
           className="w-full mt-2 bg-blue-700 text-white font-bold py-3 px-4 rounded-xl shadow-md disabled:opacity-60"
         >
-          {loading ? 'Identifying...' : 'Identify Uploaded Audio'}
+          {loading || isChecking ? 'Identifying…' : 'Identify Reciter'}
         </button>
+        <p className="mt-2 text-xs text-gray-400 text-center">
+          Checks every 8 seconds and keeps listening while uncertain, up to 30 seconds.
+        </p>
       </form>
+
+      {isRecording && (
+        <p role="status" className="mt-4 text-amber-700">
+          {liveResult ? 'Still uncertain. Keep reciting; listening for more context…' : 'Listening to the recitation…'}
+        </p>
+      )}
+      {!isRecording && liveResult && !liveResult.confident && (
+        <p role="status" className="mt-4 text-amber-700">
+          No confident match. Try a clearer recording with more recitation.
+        </p>
+      )}
 
       {audioURL && (
         <AudioPlayer
@@ -127,7 +153,7 @@ export default function IdentificationForm() {
         />
       )}
 
-      {liveResult && (
+      {liveResult && !result && (
         <div className="mt-6">
           <Result result={liveResult} />
         </div>

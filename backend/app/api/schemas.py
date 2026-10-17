@@ -13,6 +13,7 @@ class ReciterMatch(BaseModel):
 
 class IdentifyResponse(BaseModel):
     matches: list[ReciterMatch]
+    confident: bool = False
 
 
 class VerseMatch(BaseModel):

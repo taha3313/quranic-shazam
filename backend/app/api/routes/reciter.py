@@ -66,4 +66,7 @@ async def identify_reciter(
         logger.exception("identify_reciter failed for %s", file.filename)
         raise HTTPException(status_code=500, detail="Identification failed.") from exc
 
-    return IdentifyResponse(matches=[ReciterMatch(**m) for m in matches])
+    return IdentifyResponse(
+        matches=[ReciterMatch(**m) for m in matches],
+        confident=bool(matches and matches[0]["score"] >= settings.live_confidence_threshold),
+    )

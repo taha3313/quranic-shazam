@@ -83,3 +83,28 @@ def test_long_audio_trimmed_to_max_duration(fake_env, monkeypatch):
     from app.core.config import get_settings
 
     assert captured["samples"] == get_settings().max_audio_sec * 16000
+
+
+def test_reciter_confidence_uses_live_threshold(wav_bytes, monkeypatch):
+    from app.core.config import get_settings
+    from app.services import reciter_service
+
+    threshold = get_settings().live_confidence_threshold
+    for score, expected in [(threshold - 0.01, False), (threshold, True)]:
+        monkeypatch.setattr(
+            reciter_service,
+            "identify_upload_bytes",
+            lambda data, top_k, score=score: [{"reciter": "alpha", "score": score}],
+        )
+        response = _upload(wav_bytes)
+        assert response.status_code == 200
+        assert response.json()["confident"] is expected
+
+
+def test_empty_reciter_matches_are_not_confident(wav_bytes, monkeypatch):
+    from app.services import reciter_service
+
+    monkeypatch.setattr(reciter_service, "identify_upload_bytes", lambda *args: [])
+    response = _upload(wav_bytes)
+    assert response.status_code == 200
+    assert response.json() == {"matches": [], "confident": False}

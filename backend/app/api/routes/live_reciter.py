@@ -103,7 +103,8 @@ async def live_reciter(ws: WebSocket):
 
     async def send_matches(matches: list[dict]) -> None:
         payload = IdentifyResponse(
-            matches=[ReciterMatch(**m) for m in matches]
+            matches=[ReciterMatch(**m) for m in matches],
+            confident=True,
         ).model_dump()
         await ws.send_json(payload)
 

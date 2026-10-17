@@ -7,6 +7,7 @@ export interface ReciterMatch {
 }
 
 export interface IdentifyResponse {
+  confident?: boolean;
   matches: ReciterMatch[];
 }
 
