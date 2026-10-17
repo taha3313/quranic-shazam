@@ -1,0 +1,153 @@
+{
+  "initial_health": {
+    "status": "ok",
+    "reciters_loaded": 20,
+    "model_loaded": false
+  },
+  "requests": [
+    {
+      "route": "/identify_reciter",
+      "filename": "55_1.wav",
+      "seconds": 4.420511997999711,
+      "response": {
+        "matches": [
+          {
+            "reciter": "ghamdi",
+            "display": "Saad Al-Ghamdi",
+            "score": 0.7679775218071793
+          },
+          {
+            "reciter": "ossi",
+            "display": "Abdul Rahman Al-Ossi",
+            "score": 0.5276275125168728
+          },
+          {
+            "reciter": "alafasy",
+            "display": "Mishary Alafasy",
+            "score": 0.5051614279679482
+          }
+        ],
+        "confident": false
+      },
+      "peak_rss_mib": 370.5859375
+    },
+    {
+      "route": "/identify_reciter",
+      "filename": "30-seconds.wav",
+      "seconds": 7.316537303000587,
+      "response": {
+        "matches": [
+          {
+            "reciter": "ghamdi",
+            "display": "Saad Al-Ghamdi",
+            "score": 0.7696126415513671
+          },
+          {
+            "reciter": "ossi",
+            "display": "Abdul Rahman Al-Ossi",
+            "score": 0.525988418241725
+          },
+          {
+            "reciter": "alafasy",
+            "display": "Mishary Alafasy",
+            "score": 0.5007293884946047
+          }
+        ],
+        "confident": false
+      },
+      "peak_rss_mib": 572.36328125
+    },
+    {
+      "route": "/identify_verse_progressive?include_transcript=true",
+      "filename": "112001.mp3",
+      "seconds": 15.449620890000006,
+      "response": {
+        "transcript": "قُلْ هُوَ اللَّهُ أَحَدٌ قُطْ",
+        "confident": true,
+        "matches": [
+          {
+            "surah": 112,
+            "surah_name": "الاخلاص",
+            "ayah_start": 1,
+            "ayah_end": 1,
+            "score": 0.8,
+            "words_matched": 4,
+            "words_total": 5,
+            "text": "قل هو الله أحد"
+          },
+          {
+            "surah": 39,
+            "surah_name": "الزمر",
+            "ayah_start": 14,
+            "ayah_end": 14,
+            "score": 0.6699,
+            "words_matched": 2,
+            "words_total": 5,
+            "text": "قل الله أعبد مخلصا له ديني"
+          },
+          {
+            "surah": 39,
+            "surah_name": "الزمر",
+            "ayah_start": 4,
+            "ayah_end": 4,
+            "score": 0.6157,
+            "words_matched": 2,
+            "words_total": 5,
+            "text": "لو أراد الله أن يتخذ ولدا لاصطفى مما يخلق ما يشاء ۚ سبحانه ۖ هو الله الواحد القهار"
+          }
+        ],
+        "needs_more_audio": false,
+        "listen_limit_reached": false,
+        "audio_seconds": 5.8253125
+      },
+      "peak_rss_mib": 607.21875
+    },
+    {
+      "route": "/identify_verse_progressive?include_transcript=true",
+      "filename": "112002.mp3",
+      "seconds": 10.480285659999936,
+      "response": {
+        "transcript": "اللَّهُ الصَّمَدُ َ",
+        "confident": true,
+        "matches": [
+          {
+            "surah": 112,
+            "surah_name": "الاخلاص",
+            "ayah_start": 2,
+            "ayah_end": 2,
+            "score": 1.0,
+            "words_matched": 2,
+            "words_total": 2,
+            "text": "الله الصمد"
+          },
+          {
+            "surah": 104,
+            "surah_name": "الهمزه",
+            "ayah_start": 6,
+            "ayah_end": 6,
+            "score": 0.6163,
+            "words_matched": 1,
+            "words_total": 2,
+            "text": "نار الله الموقدة"
+          },
+          {
+            "surah": 112,
+            "surah_name": "الاخلاص",
+            "ayah_start": 1,
+            "ayah_end": 1,
+            "score": 0.6139,
+            "words_matched": 1,
+            "words_total": 2,
+            "text": "قل هو الله أحد"
+          }
+        ],
+        "needs_more_audio": false,
+        "listen_limit_reached": false,
+        "audio_seconds": 5.0416875
+      },
+      "peak_rss_mib": 626.03515625
+    }
+  ],
+  "peak_rss_mib": 626.03515625,
+  "forbidden_imports": []
+}

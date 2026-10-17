@@ -18,7 +18,7 @@ import functools
 import logging
 
 import anyio.to_thread
-import torch
+import numpy as np
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect
 
 from app.api.schemas import IdentifyResponse, ReciterMatch
@@ -57,7 +57,7 @@ def _decode_step(
         except ValueError:
             return "pending", None, 0
 
-    tensors: list[torch.Tensor] = []
+    tensors: list[np.ndarray] = []
     errors = 0
     for chunk in pending:
         try:
@@ -84,9 +84,9 @@ async def live_reciter(ws: WebSocket):
     pending: list[bytes] = []
     chunks_since_decode = 0
 
-    session: torch.Tensor | None = None  # "cum" mode: full decoded audio
+    session: np.ndarray | None = None  # "cum" mode: full decoded audio
     consumed = 0                         # samples already identified
-    waveforms: list[torch.Tensor] = []   # "chunk" mode
+    waveforms: list[np.ndarray] = []   # "chunk" mode
     identified_samples = 0               # chunk-mode samples already identified
 
     def buffered_sec() -> float:
@@ -94,11 +94,11 @@ async def live_reciter(ws: WebSocket):
             return max((session.shape[1] - consumed) / sr, 0.0)
         return sum(w.shape[1] for w in waveforms) / sr
 
-    def window_waveform() -> torch.Tensor | None:
+    def window_waveform() -> np.ndarray | None:
         if session is not None:
             return session[:, consumed:]
         if waveforms:
-            return torch.cat([w.reshape(1, -1) for w in waveforms], dim=1)
+            return np.concatenate([w.reshape(1, -1) for w in waveforms], axis=1)
         return None
 
     async def send_matches(matches: list[dict]) -> None:

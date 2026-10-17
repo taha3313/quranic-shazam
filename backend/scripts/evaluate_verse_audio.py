@@ -7,9 +7,9 @@ import json
 import time
 from pathlib import Path
 
+import numpy as np
 import requests
 import soundfile as sf
-import torch
 
 from app.core.audio import decode_upload_bytes
 from app.services.verse_service import identify_upload_bytes
@@ -35,7 +35,7 @@ def audio(reciter, surah, ayah):
 
 def wav_bytes(wave):
     out = io.BytesIO()
-    sf.write(out, wave.squeeze().numpy(), 16000, format="WAV")
+    sf.write(out, wave.squeeze(), 16000, format="WAV")
     return out.getvalue()
 
 
@@ -103,7 +103,7 @@ for reciter in RECITERS:
         wave, _ = decode_upload_bytes(data, target_sr=16000)
         pieces.append(wave)
         urls.append(url)
-    combined = torch.cat(pieces, dim=1)
+    combined = np.concatenate(pieces, axis=1)
     if combined.shape[1] > 20 * 16000:
         print("SKIP range over upload duration cap", reciter, flush=True)
     else:

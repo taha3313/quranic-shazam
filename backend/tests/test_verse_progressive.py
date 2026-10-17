@@ -1,8 +1,8 @@
 """Continued-listening regressions with the real verse corpus."""
 from types import SimpleNamespace
 
+import numpy as np
 import pytest
-import torch
 
 from app.services import verse_service
 
@@ -15,7 +15,7 @@ def setup_audio(monkeypatch, texts, seconds=24):
     monkeypatch.setattr(verse_service, "get_settings", lambda: settings)
     monkeypatch.setattr(
         verse_service, "decode_upload_bytes",
-        lambda *a, **kw: (torch.zeros(1, seconds * 16000), 16000),
+        lambda *a, **kw: (np.zeros((1, seconds * 16000), dtype=np.float32), 16000),
     )
     calls = []
     remaining = iter(texts)

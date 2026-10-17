@@ -1,0 +1,19 @@
+{
+  "source": "speechbrain/spkrec-ecapa-voxceleb",
+  "source_revision": "0f99f2d0ebe89ac095bcc5903c4dd8f72b367286",
+  "sha256": "138051e261e072b080b97947ffe4ef21d6a99e496b4587c8b7a47de102d47552",
+  "database_sha256": "88913772251f2856b6d2ddacd160aeda7117b32073c91b19e07f125dbe704c44",
+  "sample_rate": 16000,
+  "n_fft": 400,
+  "hop_length": 160,
+  "precision": "float32",
+  "bytes": 83513362,
+  "numpy_version": "1.26.4",
+  "torch_version": "2.14.0+cpu",
+  "runtime_python": "/tmp/quran-onnx-runtime/bin/python",
+  "runtime_contains_torch": false,
+  "threads": 2,
+  "samples": "63 local dataset probes: 1/5/10 seconds for each of 20 reciters, plus three repeated 30-second probes",
+  "sample_note": "Training-pool conversion parity, not held-out accuracy certification. Long inputs repeat real audio.",
+  "manifest_sha256": "353c733427ed10ba850d34e30f7c0db72ff45cf0e9d7ca73bae1391babd8b01e"
+}

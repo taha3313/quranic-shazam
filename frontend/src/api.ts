@@ -6,13 +6,13 @@ const rawApiUrl = import.meta.env.VITE_API_URL as string | undefined;
 const rawWsUrl = import.meta.env.VITE_WS_URL as string | undefined;
 
 export const API_BASE_URL: string =
-  rawApiUrl ?? 'http://127.0.0.1:8000';
+  rawApiUrl ?? (import.meta.env.PROD ? '/api' : 'http://127.0.0.1:8000');
 
 function defaultWsUrl(): string {
   try {
-    const url = new URL(API_BASE_URL);
+    const url = new URL(API_BASE_URL, window.location.origin);
     url.protocol = url.protocol === 'https:' ? 'wss:' : 'ws:';
-    return url.origin;
+    return url.href.replace(/\/$/, '');
   } catch {
     return 'ws://127.0.0.1:8000';
   }

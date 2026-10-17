@@ -1,0 +1,13 @@
+{
+  "source": "speechbrain/spkrec-ecapa-voxceleb",
+  "source_revision": "0f99f2d0ebe89ac095bcc5903c4dd8f72b367286",
+  "sha256": "138051e261e072b080b97947ffe4ef21d6a99e496b4587c8b7a47de102d47552",
+  "database_sha256": "88913772251f2856b6d2ddacd160aeda7117b32073c91b19e07f125dbe704c44",
+  "sample_rate": 16000,
+  "n_fft": 400,
+  "hop_length": 160,
+  "precision": "float32",
+  "bytes": 83513362,
+  "numpy_version": "1.26.4",
+  "torch_version": "2.14.0+cpu"
+}

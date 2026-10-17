@@ -1,0 +1,79 @@
+{
+  "memory_limit_bytes": 1073741824,
+  "cpus": 2,
+  "test_kind": "runtime-base container with read-only app and runtime-environment mounts",
+  "peak_memory_bytes": 661250048,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "state": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 86410,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-10-17T21:46:56.76306391Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+  },
+  "reciter_response": {
+    "matches": [
+      {
+        "reciter": "ghamdi",
+        "display": "Saad Al-Ghamdi",
+        "score": 0.7699548605156
+      },
+      {
+        "reciter": "ossi",
+        "display": "Abdul Rahman Al-Ossi",
+        "score": 0.5240038548285565
+      },
+      {
+        "reciter": "alafasy",
+        "display": "Mishary Alafasy",
+        "score": 0.4956664312917261
+      }
+    ],
+    "confident": false
+  },
+  "verse_response": {
+    "transcript": "قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ قُلْ هُوَ اللَّهُ",
+    "confident": false,
+    "matches": [
+      {
+        "surah": 28,
+        "surah_name": "القصص",
+        "ayah_start": 70,
+        "ayah_end": 70,
+        "score": 0.6147,
+        "words_matched": 2,
+        "words_total": 13,
+        "text": "وهو الله لا إله إلا هو ۖ له الحمد في الأولى والآخرة ۖ وله الحكم وإليه ترجعون"
+      },
+      {
+        "surah": 59,
+        "surah_name": "الحشر",
+        "ayah_start": 22,
+        "ayah_end": 22,
+        "score": 0.6062,
+        "words_matched": 4,
+        "words_total": 13,
+        "text": "هو الله الذي لا إله إلا هو ۖ عالم الغيب والشهادة ۖ هو الرحمن الرحيم"
+      },
+      {
+        "surah": 20,
+        "surah_name": "طه",
+        "ayah_start": 98,
+        "ayah_end": 98,
+        "score": 0.5753,
+        "words_matched": 2,
+        "words_total": 13,
+        "text": "إنما إلهكم الله الذي لا إله إلا هو ۚ وسع كل شيء علما"
+      }
+    ],
+    "needs_more_audio": true,
+    "listen_limit_reached": false,
+    "audio_seconds": 20.0
+  }
+}

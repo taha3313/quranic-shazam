@@ -1,0 +1,596 @@
+{
+  "samples": 63,
+  "provenance": "local dataset conversion parity only",
+  "minimum_cosine": 0.9999999999024053,
+  "max_score_difference": 2.424666801059683e-06,
+  "top1_equal": 63,
+  "top3_equal": 63,
+  "confidence_equal": 63,
+  "resources": {
+    "torch": {
+      "peak_rss_mib": 1007.9921875,
+      "warm_median_seconds": 1.836613803999171,
+      "cold_seconds": 8.31128987699958,
+      "forbidden_imports": [
+        "torch",
+        "torchaudio",
+        "speechbrain"
+      ]
+    },
+    "onnx": {
+      "peak_rss_mib": 621.98046875,
+      "warm_median_seconds": 0.7978592540002865,
+      "cold_seconds": 0.7456240030005574,
+      "forbidden_imports": []
+    }
+  },
+  "comparisons": [
+    {
+      "path": "data/recitations_clips/abdulbaset/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.9999999999992586,
+      "max_score_difference": 3.1203409858737707e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/abdulbaset/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.9999999999981273,
+      "max_score_difference": 4.806821769509639e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/abdulbaset/112_3.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999952639,
+      "max_score_difference": 5.538449526221179e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/abkar/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.999999999999386,
+      "max_score_difference": 1.5477918388628886e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/abkar/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.999999999999339,
+      "max_score_difference": 1.429995861723654e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/abkar/112_3.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999985603,
+      "max_score_difference": 3.5646901246078055e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/ajmy/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.9999999999966145,
+      "max_score_difference": 4.2996583310417336e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/ajmy/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.9999999999993316,
+      "max_score_difference": 1.8752792976806099e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/ajmy/36_1.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999983946,
+      "max_score_difference": 3.1303156755591033e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/alafasy/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.9999999999984359,
+      "max_score_difference": 3.48888763407329e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/alafasy/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.9999999999969451,
+      "max_score_difference": 4.248659317696024e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/alafasy/112_3.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999982396,
+      "max_score_difference": 2.880590906639835e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/banna/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.9999999999908253,
+      "max_score_difference": 6.272831986897653e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/banna/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.9999999999971241,
+      "max_score_difference": 6.746952901925951e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/banna/112_3.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999531098,
+      "max_score_difference": 2.0259201103101088e-06,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/dosari/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.9999999999982525,
+      "max_score_difference": 3.0337872353181083e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/dosari/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.9999999999993,
+      "max_score_difference": 1.7550049391523714e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/dosari/112_3.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999910222,
+      "max_score_difference": 6.657524543873805e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/fares/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.9999999999993283,
+      "max_score_difference": 1.7846919597719335e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/fares/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.9999999999989884,
+      "max_score_difference": 2.158522620088199e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/fares/112_3.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999981561,
+      "max_score_difference": 2.952754320773021e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/ghamdi/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.9999999999993798,
+      "max_score_difference": 2.1832765167983936e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/ghamdi/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.9999999999993038,
+      "max_score_difference": 2.896602642188384e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/ghamdi/112_3.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999990782,
+      "max_score_difference": 1.8538510185989177e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/hani/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.9999999999678549,
+      "max_score_difference": 2.0661204296057445e-06,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/hani/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.9999999999894921,
+      "max_score_difference": 1.0031431551538184e-06,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/hani/112_3.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999024053,
+      "max_score_difference": 2.424666801059683e-06,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/husary/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.9999999999503157,
+      "max_score_difference": 1.4531560666442012e-06,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/husary/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.9999999999906252,
+      "max_score_difference": 7.088810462518857e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/husary/112_3.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999863388,
+      "max_score_difference": 1.5678453210155041e-06,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/juhany/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.9999999999716924,
+      "max_score_difference": 9.292756589849953e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/juhany/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.9999999999973914,
+      "max_score_difference": 3.2432346921962285e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/juhany/112_3.wav",
+      "seconds": 10,
+      "cosine": 0.999999999995214,
+      "max_score_difference": 3.32056803720171e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/kurdi/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.999999999999634,
+      "max_score_difference": 1.1329001764134872e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/kurdi/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.9999999999989487,
+      "max_score_difference": 2.515859933993614e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/kurdi/112_3.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999971408,
+      "max_score_difference": 3.437794294236518e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/maher/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.999999999999634,
+      "max_score_difference": 1.1329001764134872e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/maher/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.9999999999939407,
+      "max_score_difference": 5.7854088136855e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/maher/112_3.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999788743,
+      "max_score_difference": 1.4910337892692915e-06,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/minshawi/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.9999999999986111,
+      "max_score_difference": 3.5558482605222916e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/minshawi/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.999999999994896,
+      "max_score_difference": 3.030195716430262e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/minshawi/112_3.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999977461,
+      "max_score_difference": 4.3188788829973124e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/mustafa/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.999999999979048,
+      "max_score_difference": 9.251748373864666e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/mustafa/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.9999999999947676,
+      "max_score_difference": 6.322518280449385e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/mustafa/112_3.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999933261,
+      "max_score_difference": 5.805753886534148e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/ossi/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.9999999999917282,
+      "max_score_difference": 4.5175085414128624e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/ossi/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.9999999999991951,
+      "max_score_difference": 2.752740497213857e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/ossi/112_3.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999991799,
+      "max_score_difference": 2.230540228909117e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/qatami/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.9999999999929342,
+      "max_score_difference": 1.0174317126576682e-06,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/qatami/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.9999999999986903,
+      "max_score_difference": 3.4478124472797633e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/qatami/36_1.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999979758,
+      "max_score_difference": 6.341239318780056e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/shuraim/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.9999999999995632,
+      "max_score_difference": 1.8422849222543558e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/shuraim/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.999999999998566,
+      "max_score_difference": 2.5866053718348603e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/shuraim/112_3.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999956602,
+      "max_score_difference": 3.8770876439886415e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/sudais/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.9999999999986386,
+      "max_score_difference": 3.192964183676428e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/sudais/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.9999999999980081,
+      "max_score_difference": 3.545611479485733e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/sudais/112_3.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999970293,
+      "max_score_difference": 3.613604152713501e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/tunaiji/112_1.wav",
+      "seconds": 1,
+      "cosine": 0.9999999999990701,
+      "max_score_difference": 1.892483098842046e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/tunaiji/112_2.wav",
+      "seconds": 5,
+      "cosine": 0.9999999999985972,
+      "max_score_difference": 2.920553649199409e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/tunaiji/112_3.wav",
+      "seconds": 10,
+      "cosine": 0.9999999999985479,
+      "max_score_difference": 4.5821217845021245e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/abdulbaset/112_1.wav",
+      "seconds": 30,
+      "cosine": 0.9999999999907068,
+      "max_score_difference": 7.334409100057115e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/abkar/112_1.wav",
+      "seconds": 30,
+      "cosine": 0.9999999999964932,
+      "max_score_difference": 5.60641561397901e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    },
+    {
+      "path": "data/recitations_clips/ajmy/112_1.wav",
+      "seconds": 30,
+      "cosine": 0.9999999999967626,
+      "max_score_difference": 3.237812406312046e-07,
+      "top1_equal": true,
+      "top3_equal": true,
+      "confidence_equal": true
+    }
+  ]
+}

@@ -4,77 +4,83 @@ from __future__ import annotations
 
 import io
 import logging
+import math
 import subprocess
 import tempfile
+from functools import lru_cache
 from pathlib import Path
 
-import torch
-import torchaudio
+import numpy as np
+from scipy.signal import resample_poly
 
 logger = logging.getLogger(__name__)
 
 TARGET_SR = 16000
 
 
-def to_mono(waveform: torch.Tensor) -> torch.Tensor:
-    if waveform.dim() == 1:
-        return waveform.unsqueeze(0)
-    if waveform.size(0) > 1:
-        return waveform.mean(dim=0, keepdim=True)
-    return waveform
+def to_mono(waveform: np.ndarray) -> np.ndarray:
+    waveform = np.asarray(waveform, dtype=np.float32)
+    if waveform.ndim == 1:
+        return waveform[None, :]
+    if waveform.ndim != 2:
+        raise ValueError("Expected audio shaped (channels, samples).")
+    return waveform.mean(axis=0, keepdims=True) if waveform.shape[0] > 1 else waveform
 
 
-def resample(waveform: torch.Tensor, orig_sr: int, target_sr: int = TARGET_SR) -> torch.Tensor:
+def normalize(waveform: np.ndarray) -> np.ndarray:
+    return to_mono(waveform)
+
+
+@lru_cache(maxsize=8)
+def _sinc_kernel(down: int, up: int) -> tuple[np.ndarray, int]:
+    """Six-lobe Hann-windowed sinc, matching torchaudio's default filter."""
+    base = min(down, up) * 0.99
+    width = math.ceil(6 * down / base)
+    grid = np.arange(-width, width + down, dtype=np.float32) / np.float32(down)
+    phases = -np.arange(up, dtype=np.float32) / np.float32(up)
+    t = (phases[:, None] + grid[None, :]) * np.float32(base)
+    t = np.clip(t, -6, 6)
+    window = np.cos(t * np.float32(np.pi) / np.float32(6) / np.float32(2)) ** 2
+    angle = t * np.float32(np.pi)
+    sinc = np.ones_like(angle)
+    np.divide(np.sin(angle), angle, out=sinc, where=angle != 0)
+    return (sinc * (window * np.float32(base / down))).T.copy(), width
+
+
+def resample(waveform: np.ndarray, orig_sr: int, target_sr: int = TARGET_SR) -> np.ndarray:
     if orig_sr == target_sr:
         return waveform
-    return torchaudio.functional.resample(waveform, orig_freq=orig_sr, new_freq=target_sr)
+    divisor = math.gcd(orig_sr, target_sr)
+    down, up = orig_sr // divisor, target_sr // divisor
+    # Unusual coprime rates must not create an enormous phase-filter matrix.
+    if down > 4096 or up > 1024:
+        return resample_poly(waveform, up, down, axis=-1).astype(np.float32)
+    kernel, width = _sinc_kernel(down, up)
+    padded = np.pad(waveform, ((0, 0), (width, width + down)))
+    frames = np.lib.stride_tricks.sliding_window_view(padded, kernel.shape[0], axis=-1)
+    result = (frames[:, ::down, :] @ kernel).reshape(waveform.shape[0], -1)
+    count = math.ceil(waveform.shape[-1] * up / down)
+    return result[:, :count].astype(np.float32)
 
 
-def normalize(waveform: torch.Tensor) -> torch.Tensor:
-    return to_mono(waveform.float())
+def load_audio_file(path: str | Path, target_sr: int = TARGET_SR) -> tuple[np.ndarray, int]:
+    return decode_upload_bytes(Path(path).read_bytes(), target_sr)
 
 
-def load_audio_file(path: str | Path, target_sr: int = TARGET_SR) -> tuple[torch.Tensor, int]:
-    """Load an audio file from disk, normalized to mono `target_sr`.
-
-    Uses soundfile (no torchcodec dependency); torchaudio is only a fallback
-    for formats libsndfile cannot read.
-    """
-    try:
-        import soundfile as sf
-
-        data, sr = sf.read(str(path), dtype="float32", always_2d=True)
-        waveform = torch.from_numpy(data.T)  # (channels, samples)
-    except Exception as exc:  # noqa: BLE001
-        logger.debug("soundfile failed (%s), falling back to torchaudio", exc)
-        waveform, sr = torchaudio.load(str(path))
-    waveform = resample(normalize(waveform), sr, target_sr)
-    return waveform, target_sr
-
-
-def decode_upload_bytes(data: bytes, target_sr: int = TARGET_SR) -> tuple[torch.Tensor, int]:
-    """Decode uploaded audio bytes (mp3/wav/ogg/webm) to a mono waveform.
-
-    Tries torchaudio first (works for wav/mp3), falls back to ffmpeg for
-    browser MediaRecorder webm/opus chunks.
-    """
-    # Fast path: soundfile / torchaudio can read wav/mp3 from a buffer.
-    try:
-        import soundfile as sf
-
-        data, sr = sf.read(io.BytesIO(data), dtype="float32", always_2d=True)
-        waveform = torch.from_numpy(data.T)
-        return resample(normalize(waveform), sr, target_sr), target_sr
-    except Exception as exc:  # noqa: BLE001 - fallback to ffmpeg
-        logger.debug("soundfile direct decode failed (%s), trying ffmpeg", exc)
-
-    ffmpeg_out = _decode_with_ffmpeg(data, target_sr)
-    if ffmpeg_out is None:
-        raise ValueError("Could not decode audio bytes (tried soundfile and ffmpeg).")
+def decode_upload_bytes(data: bytes, target_sr: int = TARGET_SR) -> tuple[np.ndarray, int]:
+    """Decode soundfile formats directly, with FFmpeg for browser recordings."""
     import soundfile as sf
 
-    data_out, _ = sf.read(io.BytesIO(ffmpeg_out), dtype="float32", always_2d=True)
-    return normalize(torch.from_numpy(data_out.T)), target_sr
+    try:
+        audio, sr = sf.read(io.BytesIO(data), dtype="float32", always_2d=True)
+        return resample(normalize(audio.T), sr, target_sr), target_sr
+    except Exception as exc:  # noqa: BLE001 - FFmpeg supports additional formats
+        logger.debug("soundfile decode failed (%s), trying ffmpeg", exc)
+    decoded = _decode_with_ffmpeg(data, target_sr)
+    if decoded is None:
+        raise ValueError("Could not decode audio bytes (tried soundfile and ffmpeg).")
+    audio, _ = sf.read(io.BytesIO(decoded), dtype="float32", always_2d=True)
+    return normalize(audio.T), target_sr
 
 
 def _decode_with_ffmpeg(data: bytes, target_sr: int, timeout: int = 10) -> bytes | None:
@@ -82,11 +88,16 @@ def _decode_with_ffmpeg(data: bytes, target_sr: int, timeout: int = 10) -> bytes
     cmd = [
         "ffmpeg",
         "-hide_banner",
-        "-loglevel", "error",
-        "-i", "pipe:0",
-        "-ac", "1",
-        "-ar", str(target_sr),
-        "-f", "wav",
+        "-loglevel",
+        "error",
+        "-i",
+        "pipe:0",
+        "-ac",
+        "1",
+        "-ar",
+        str(target_sr),
+        "-f",
+        "wav",
         "pipe:1",
     ]
     try:
@@ -101,15 +112,15 @@ def _decode_with_ffmpeg(data: bytes, target_sr: int, timeout: int = 10) -> bytes
 
 
 def ensure_min_length(
-    waveform: torch.Tensor, min_samples: int = TARGET_SR, sr: int = TARGET_SR
-) -> torch.Tensor:
+    waveform: np.ndarray, min_samples: int = TARGET_SR, sr: int = TARGET_SR
+) -> np.ndarray:
     """Pad very short (<1s) chunks with tiny noise so the encoder doesn't crash."""
     waveform = normalize(waveform)
-    if waveform.numel() >= min_samples:
+    if waveform.size >= min_samples:
         return waveform
-    pad_len = min_samples - waveform.numel()
-    pad = 1e-4 * torch.randn(1, pad_len)
-    return torch.cat([waveform.reshape(1, -1), pad], dim=1)
+    pad_len = min_samples - waveform.size
+    pad = (1e-4 * np.random.default_rng().standard_normal((1, pad_len))).astype(np.float32)
+    return np.concatenate([waveform.reshape(1, -1), pad], axis=1)
 
 
 def save_upload_to_temp(data: bytes, suffix: str = ".wav") -> Path:

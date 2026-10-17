@@ -8,9 +8,9 @@ import json
 import time
 from pathlib import Path
 
+import numpy as np
 import requests
 import soundfile as sf
-import torch
 
 from app.core.audio import decode_upload_bytes
 from app.services.verse_service import get_index, identify_progressive_bytes
@@ -35,7 +35,7 @@ def fetch_wave(reciter, ayah):
 
 def recognize(wave):
     output = io.BytesIO()
-    sf.write(output, wave.squeeze().numpy(), 16000, format="WAV")
+    sf.write(output, wave.squeeze(), 16000, format="WAV")
     started = time.perf_counter()
     result = identify_progressive_bytes(output.getvalue(), 10)
     return result, round(time.perf_counter() - started, 2)
@@ -58,7 +58,7 @@ def main(resume=False):
                 ("refrain_only", refrain, [refrain_url]),
                 (
                     "with_next_ayah",
-                    torch.cat([refrain, following], dim=1),
+                    np.concatenate([refrain, following], axis=1),
                     [refrain_url, following_url],
                 ),
             ]:

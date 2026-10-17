@@ -1,0 +1,25 @@
+{
+  "format": "webm/opus",
+  "source": "data/recitations_clips/ghamdi/55_1.wav",
+  "response": {
+    "matches": [
+      {
+        "reciter": "ghamdi",
+        "display": "Saad Al-Ghamdi",
+        "score": 0.7048525514687239
+      },
+      {
+        "reciter": "ossi",
+        "display": "Abdul Rahman Al-Ossi",
+        "score": 0.5315259819788831
+      },
+      {
+        "reciter": "fares",
+        "display": "Fares Abbad",
+        "score": 0.4916641963326047
+      }
+    ],
+    "confident": false
+  },
+  "heavy_modules_loaded": []
+}

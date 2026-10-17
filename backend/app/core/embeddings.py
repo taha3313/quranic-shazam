@@ -1,66 +1,70 @@
-"""Lazy SpeechBrain embedding model + helpers.
-
-The model is intentionally NOT loaded at import time so that:
-- ``uvicorn --reload`` / tests / CLI scripts import fast,
-- a missing model cache fails loudly only when actually needed.
-"""
+"""Lazy ONNX reciter inference; no PyTorch or SpeechBrain runtime dependency."""
 
 from __future__ import annotations
 
-import logging
 import threading
 from pathlib import Path
 
 import numpy as np
-import torch
+from scipy.fft import rfft
 
 from app.core.audio import ensure_min_length, load_audio_file, normalize
 from app.core.config import get_settings
-
-logger = logging.getLogger(__name__)
 
 _lock = threading.Lock()
 _classifier = None
 
 
 def get_classifier():
-    """Return the shared EncoderClassifier, loading it once (thread-safe)."""
     global _classifier
     if _classifier is not None:
         return _classifier
     with _lock:
         if _classifier is not None:
             return _classifier
-        from speechbrain.pretrained import EncoderClassifier
+        import onnxruntime as ort
 
         settings = get_settings()
-        device = "cuda" if torch.cuda.is_available() else "cpu"
-        logger.info("Loading embedding model %s on %s ...", settings.embedding_model_source, device)
-        _classifier = EncoderClassifier.from_hparams(
-            source=settings.embedding_model_source,
-            run_opts={"device": device},
+        if not settings.reciter_onnx_path.is_file():
+            raise FileNotFoundError(
+                "Reciter ONNX model missing. Run: uv run --group export "
+                "python -m scripts.export_reciter_onnx"
+            )
+        options = ort.SessionOptions()
+        options.intra_op_num_threads = settings.inference_threads
+        options.inter_op_num_threads = 1
+        options.enable_cpu_mem_arena = False
+        _classifier = ort.InferenceSession(
+            str(settings.reciter_onnx_path), options, providers=["CPUExecutionProvider"]
         )
-        logger.info("Embedding model loaded.")
         return _classifier
 
 
 def is_loaded() -> bool:
-    """True once the classifier singleton has been instantiated."""
     return _classifier is not None
 
 
-@torch.no_grad()
-def embedding_from_waveform(waveform: torch.Tensor, sr: int = 16000) -> np.ndarray:
-    """Compute an embedding from an in-memory 16 kHz mono waveform."""
-    settings = get_settings()
-    waveform = normalize(waveform)
-    waveform = ensure_min_length(waveform, min_samples=settings.sample_rate)
-    classifier = get_classifier()
-    emb = classifier.encode_batch(waveform).squeeze().detach().cpu().numpy()
-    return np.asarray(emb)
+def power_spectrogram(waveform: np.ndarray) -> np.ndarray:
+    """SpeechBrain's centered 400-point periodic Hamming STFT, hop 160."""
+    audio = normalize(waveform)
+    audio = np.pad(audio, ((0, 0), (200, 200)), mode="constant")
+    frames = np.lib.stride_tricks.sliding_window_view(audio, 400, axis=-1)[:, ::160, :]
+    # Match torch.hamming_window's float32 arithmetic, not NumPy's symmetric window.
+    phase = np.arange(400, dtype=np.float32) * np.float32(2 * np.pi / 400)
+    window = np.float32(0.54) - np.float32(0.46) * np.cos(phase)
+    spectrum = rfft(frames * window, axis=-1)
+    return (spectrum.real**2 + spectrum.imag**2).astype(np.float32)
+
+
+def embedding_from_waveform(waveform: np.ndarray, sr: int = 16000) -> np.ndarray:
+    if sr != 16000:
+        raise ValueError("Reciter model requires 16000 Hz audio.")
+    audio = ensure_min_length(waveform, min_samples=16000)
+    session = get_classifier()
+    embedding = session.run(["embedding"], {"power": power_spectrogram(audio)})[0]
+    return embedding.reshape(-1)
 
 
 def embedding_from_file(path: str | Path) -> np.ndarray:
-    """Compute an embedding from an audio file on disk."""
     waveform, sr = load_audio_file(path)
     return embedding_from_waveform(waveform, sr)

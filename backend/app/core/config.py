@@ -3,6 +3,7 @@
 from functools import lru_cache
 from pathlib import Path
 
+from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 BACKEND_ROOT = Path(__file__).resolve().parents[2]
@@ -18,12 +19,17 @@ class Settings(BaseSettings):
 
     # Model
     embedding_model_source: str = "speechbrain/spkrec-ecapa-voxceleb"
+    embedding_model_revision: str = "0f99f2d0ebe89ac095bcc5903c4dd8f72b367286"
     embedding_dim_fallback: int = 192
+    reciter_onnx_path: Path = BACKEND_ROOT / "data" / "models" / "reciter.onnx"
+    inference_threads: int = Field(default=2, ge=1, le=8)
     # Load the embedding model during startup instead of on first request.
     warm_model: bool = False
 
     # API
-    cors_origins: str = "http://localhost:5173,http://127.0.0.1:5173,http://localhost:8080,http://127.0.0.1:8080"
+    cors_origins: str = (
+        "http://localhost:5173,http://127.0.0.1:5173,http://localhost:8080,http://127.0.0.1:8080"
+    )
     max_upload_mb: int = 25
     # Identify only the first N seconds of an upload; longer audio is a
     # CPU DoS vector and adds no accuracy beyond this.

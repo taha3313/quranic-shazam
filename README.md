@@ -6,7 +6,7 @@ Identify the reciter of a Quranic recitation from a short audio clip — upload 
 
 - FastAPI backend: file upload + live WebSocket recognition
 - React + Vite + **TypeScript** frontend
-- SpeechBrain **ECAPA-TDNN** (VoxCeleb) speaker embeddings; per-reciter mean voice prints + cosine matching
+- **ECAPA-TDNN** (VoxCeleb) exported from SpeechBrain to ONNX Runtime; per-reciter mean voice prints + cosine matching
 - Reproducible dataset pipeline (quranicaudio.com / surahquran.com) and deep evaluation harness
 - `uv` for Python deps, `make` for tasks, Docker Compose for the full stack
 - Developed/run inside **WSL Ubuntu** (see below)
@@ -37,11 +37,11 @@ Abdul Basit · Minshawi · Husary · Mustafa Ismail · Al-Banna · Sudais · Shu
 │   │   ├── api/routes/      # reciter.py (POST /identify_reciter), live_reciter.py (WS /live_reciter)
 │   │   ├── api/schemas.py   # Pydantic response models
 │   │   ├── core/            # config.py, audio.py (soundfile + ffmpeg fallback),
-│   │   │                    # embeddings.py (lazy ECAPA singleton), similarity.py
+│   │   │                    # embeddings.py (lazy ONNX ECAPA singleton), similarity.py
 │   │   └── services/        # reciter_service.py (profile DB + bounded inference)
 │   ├── scripts/             # sources.py, generate_data.py, extract_embeddings.py,
 │   │                        # evaluate.py, evaluate_report.py (deep reports)
-│   ├── tests/               # 23 pytest tests (no heavy model needed)
+│   ├── tests/               # pytest unit, API, and ONNX integration tests
 │   └── data/                # reciters.json, reciters_embeddings.npy,
 │                            # recitations_clips/ (gitignored), eval_reports/
 └── frontend/
@@ -75,8 +75,9 @@ uv --version && make --version && ffmpeg -version | head -n 1 && node --version
 ### Backend (uv + make)
 
 ```bash
-make backend-install   # uv sync
-make backend-test      # pytest (23 tests, no heavy model)
+make backend-export    # one-time model export (export-only PyTorch dependencies)
+make backend-install   # uv sync; runtime has no PyTorch
+make backend-test      # pytest; model integration test runs when the ONNX artifact is present
 make backend-dev       # uvicorn app.main:app --reload on :8000
 ```
 

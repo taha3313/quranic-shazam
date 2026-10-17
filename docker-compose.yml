@@ -4,7 +4,7 @@ services:
       context: ./backend
     container_name: quranic-shazam-backend
     ports:
-      - "8000:8000"
+      - "127.0.0.1:8000:8000"
     environment:
       QD_CORS_ORIGINS: "http://localhost:5173,http://127.0.0.1:5173,http://localhost:8080,http://127.0.0.1:8080"
       QD_EMBEDDINGS_PATH: "/app/data/reciters_embeddings.npy"
@@ -12,7 +12,6 @@ services:
       # Persist embeddings + model caches across restarts
       - ./backend/data/reciters_embeddings.npy:/app/data/reciters_embeddings.npy
       - hf-cache:/app/.cache/huggingface
-      - torch-cache:/app/.cache/torch
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
@@ -25,14 +24,13 @@ services:
     build:
       context: ./frontend
       args:
-        VITE_API_URL: ${VITE_API_URL:-http://127.0.0.1:8000}
+        VITE_API_URL: ${VITE_API_URL:-/api}
     container_name: quranic-shazam-frontend
     ports:
-      - "8080:80"
+      - "127.0.0.1:8080:80"
     depends_on:
       - backend
     restart: unless-stopped
 
 volumes:
   hf-cache:
-  torch-cache:

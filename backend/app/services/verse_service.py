@@ -5,21 +5,19 @@ from __future__ import annotations
 import logging
 import threading
 
-import torch
+import numpy as np
 
 from app.core.arabic_norm import normalize_words
 from app.core.asr import transcribe_waveform
 from app.core.audio import decode_upload_bytes
 from app.core.config import get_settings
+from app.core.inference import inference_slot
 from app.core.verse_match import VerseIndex, load_corpus
 
 logger = logging.getLogger(__name__)
 
 _lock = threading.Lock()
 _index: VerseIndex | None = None
-# ASR inference must not run concurrently on one CPU box (same policy as
-# the reciter service semaphore).
-_infer_sem = threading.Semaphore(1)
 
 
 def get_index() -> VerseIndex:
@@ -48,9 +46,7 @@ def reload_index() -> VerseIndex:
     return get_index()
 
 
-def identify_transcript(
-    transcript: str, top_k: int, index: VerseIndex | None = None
-) -> list[dict]:
+def identify_transcript(transcript: str, top_k: int, index: VerseIndex | None = None) -> list[dict]:
     """Pure-text path: normalized transcript → ranked verse matches (dicts)."""
     index = index or get_index()
     words = normalize_words(transcript)
@@ -58,7 +54,7 @@ def identify_transcript(
     return [m.as_dict() for m in matches]
 
 
-def identify_waveform(waveform: torch.Tensor, top_k: int) -> tuple[str, list[dict]]:
+def identify_waveform(waveform: np.ndarray, top_k: int) -> tuple[str, list[dict]]:
     """Blocking ASR + matching; run off the event loop via to_thread."""
     transcript, _words = transcribe_waveform(waveform)
     return transcript, identify_transcript(transcript, top_k)
@@ -75,7 +71,7 @@ def identify_upload_bytes(data: bytes, top_k: int) -> tuple[str, list[dict]]:
     max_samples = settings.verse_max_audio_sec * settings.sample_rate
     if waveform.shape[1] > max_samples:
         waveform = waveform[:, :max_samples]
-    with _infer_sem:
+    with inference_slot:
         return identify_waveform(waveform, top_k)
 
 
@@ -106,7 +102,7 @@ def identify_progressive_bytes(data: bytes, top_k: int) -> dict:
     transcripts: list[str] = []
     matches: list[dict] = []
     processed = 0
-    with _infer_sem:
+    with inference_slot:
         for start in range(0, waveform.shape[1], step):
             end = min(start + step, waveform.shape[1])
             # A very short trailing fragment adds little useful context.

@@ -7,11 +7,11 @@ import threading
 from pathlib import Path
 
 import numpy as np
-import torch
 
 from app.core.audio import decode_upload_bytes
 from app.core.config import get_settings
 from app.core.embeddings import embedding_from_waveform
+from app.core.inference import inference_slot
 from app.core.similarity import rank_reciters
 
 logger = logging.getLogger(__name__)
@@ -19,9 +19,6 @@ logger = logging.getLogger(__name__)
 _lock = threading.Lock()
 _db: dict[str, np.ndarray] | None = None
 _display_names: dict[str, str] = {}
-# CPU inference does not parallelize (torch uses all cores per call); the
-# semaphore just prevents N concurrent requests from thrashing the machine.
-_infer_sem = threading.Semaphore(2)
 
 
 def get_database() -> dict[str, np.ndarray]:
@@ -58,9 +55,7 @@ def _load_display_names() -> None:
         import json
 
         entries = json.loads(path.read_text())["reciters"]
-        _display_names = {
-            e["key"]: e["name"] for e in entries if e.get("key") and e.get("name")
-        }
+        _display_names = {e["key"]: e["name"] for e in entries if e.get("key") and e.get("name")}
     except Exception as exc:  # noqa: BLE001 - metadata is optional
         logger.warning("Could not load reciter metadata from %s: %s", path, exc)
         _display_names = {}
@@ -73,13 +68,14 @@ def reload_database() -> dict[str, np.ndarray]:
     return get_database()
 
 
-def identify_waveform(waveform: torch.Tensor, sr: int, top_k: int) -> list[dict[str, float]]:
+def identify_waveform(waveform: np.ndarray, sr: int, top_k: int) -> list[dict[str, float]]:
     db = get_database()
     if not db:
         raise FileNotFoundError(
             "No reciter embeddings loaded. Generate them first (make embeddings)."
         )
-    query = embedding_from_waveform(waveform, sr)
+    with inference_slot:
+        query = embedding_from_waveform(waveform, sr)
     return rank_reciters(query, db, top_k=top_k, display_names=_display_names)
 
 
@@ -94,5 +90,4 @@ def identify_upload_bytes(data: bytes, top_k: int) -> list[dict[str, float]]:
     max_samples = settings.max_audio_sec * settings.sample_rate
     if waveform.shape[1] > max_samples:
         waveform = waveform[:, :max_samples]
-    with _infer_sem:
-        return identify_waveform(waveform, sr, top_k=top_k)
+    return identify_waveform(waveform, sr, top_k=top_k)

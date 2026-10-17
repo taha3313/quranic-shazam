@@ -31,3 +31,6 @@ pretrained_models/
 *.iml
 .DS_Store
 Thumbs.db
+
+# Exported model artifacts (reproduce using scripts.export_reciter_onnx)
+data/models/*.onnx

@@ -30,7 +30,7 @@ def main(argv: list[str] | None = None) -> int:
     logging.basicConfig(level=logging.INFO)
     args = build_parser().parse_args(argv)
 
-    # Import lazily so --help works without torch/speechbrain installed.
+    # Import lazily so --help works without loading ONNX Runtime.
     from app.core.embeddings import embedding_from_file
 
     dataset_dir = Path(args.dataset_dir)

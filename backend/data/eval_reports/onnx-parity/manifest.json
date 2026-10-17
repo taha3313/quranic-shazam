@@ -1,0 +1,254 @@
+[
+  {
+    "path": "data/recitations_clips/abdulbaset/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/abdulbaset/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/abdulbaset/112_3.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/abkar/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/abkar/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/abkar/112_3.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/ajmy/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/ajmy/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/ajmy/36_1.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/alafasy/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/alafasy/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/alafasy/112_3.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/banna/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/banna/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/banna/112_3.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/dosari/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/dosari/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/dosari/112_3.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/fares/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/fares/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/fares/112_3.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/ghamdi/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/ghamdi/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/ghamdi/112_3.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/hani/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/hani/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/hani/112_3.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/husary/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/husary/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/husary/112_3.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/juhany/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/juhany/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/juhany/112_3.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/kurdi/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/kurdi/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/kurdi/112_3.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/maher/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/maher/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/maher/112_3.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/minshawi/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/minshawi/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/minshawi/112_3.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/mustafa/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/mustafa/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/mustafa/112_3.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/ossi/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/ossi/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/ossi/112_3.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/qatami/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/qatami/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/qatami/36_1.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/shuraim/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/shuraim/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/shuraim/112_3.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/sudais/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/sudais/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/sudais/112_3.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/tunaiji/112_1.wav",
+    "seconds": 1
+  },
+  {
+    "path": "data/recitations_clips/tunaiji/112_2.wav",
+    "seconds": 5
+  },
+  {
+    "path": "data/recitations_clips/tunaiji/112_3.wav",
+    "seconds": 10
+  },
+  {
+    "path": "data/recitations_clips/abdulbaset/112_1.wav",
+    "seconds": 30
+  },
+  {
+    "path": "data/recitations_clips/abkar/112_1.wav",
+    "seconds": 30
+  },
+  {
+    "path": "data/recitations_clips/ajmy/112_1.wav",
+    "seconds": 30
+  }
+]

@@ -11,7 +11,6 @@ import logging
 import threading
 
 import numpy as np
-import torch
 
 from app.core.config import get_settings
 
@@ -39,6 +38,8 @@ def get_model():
             settings.asr_model_source,
             device=settings.asr_device,
             compute_type=settings.asr_compute_type,
+            cpu_threads=settings.inference_threads,
+            num_workers=1,
         )
         logger.info("ASR model loaded.")
         return _model
@@ -48,12 +49,12 @@ def is_loaded() -> bool:
     return _model is not None
 
 
-def transcribe_waveform(waveform: torch.Tensor) -> tuple[str, list[dict]]:
+def transcribe_waveform(waveform: np.ndarray) -> tuple[str, list[dict]]:
     """Transcribe a 16 kHz mono waveform → (text, word list).
 
     Words are dicts with keys ``word``, ``start``, ``end`` (seconds).
     """
-    audio = waveform.squeeze().detach().cpu().numpy().astype(np.float32)
+    audio = np.asarray(waveform, dtype=np.float32).reshape(-1)
     model = get_model()
     segments, _info = model.transcribe(
         audio,

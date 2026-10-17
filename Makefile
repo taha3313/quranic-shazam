@@ -1,4 +1,4 @@
-.PHONY: help backend-install backend-dev backend-run backend-test backend-lint \
+.PHONY: help backend-export backend-install backend-dev backend-run backend-test backend-lint \
 	data embeddings evaluate \
 	frontend-install frontend-dev frontend-build frontend-preview frontend-typecheck \
 	docker-build docker-up docker-down docker-logs
@@ -10,6 +10,9 @@ help: ## Show available targets
 	@grep -E '^[a-zA-Z_-]+:.*?## ' $(MAKEFILE_LIST) | awk 'BEGIN {FS=":.*?## "} {printf "  \033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
 # ---------------- Backend (uv) ----------------
+
+backend-export: ## Export ECAPA to ONNX (requires export-only PyTorch dependencies)
+	cd backend && uv run --group export python -m scripts.export_reciter_onnx
 
 backend-install: ## Install backend deps with uv
 	cd backend && uv sync
