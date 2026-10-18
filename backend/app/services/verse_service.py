@@ -11,7 +11,7 @@ from app.core.arabic_norm import normalize_words
 from app.core.asr import transcribe_waveform
 from app.core.audio import decode_upload_bytes
 from app.core.config import get_settings
-from app.core.inference import inference_slot
+from app.core.inference import model_execution
 from app.core.verse_match import VerseIndex, load_corpus
 
 logger = logging.getLogger(__name__)
@@ -67,11 +67,13 @@ def identify_upload_bytes(data: bytes, top_k: int) -> tuple[str, list[dict]]:
     route does); it must never execute on the event loop itself.
     """
     settings = get_settings()
-    waveform, _sr = decode_upload_bytes(data, target_sr=settings.sample_rate)
+    waveform, _sr = decode_upload_bytes(
+        data, target_sr=settings.sample_rate, max_seconds=settings.verse_max_audio_sec
+    )
     max_samples = settings.verse_max_audio_sec * settings.sample_rate
     if waveform.shape[1] > max_samples:
         waveform = waveform[:, :max_samples]
-    with inference_slot:
+    with model_execution("verse"):
         return identify_waveform(waveform, top_k)
 
 
@@ -95,14 +97,16 @@ def identify_progressive_bytes(data: bytes, top_k: int) -> dict:
     retry back to the same first 20 seconds.
     """
     settings = get_settings()
-    waveform, _ = decode_upload_bytes(data, target_sr=settings.sample_rate)
+    waveform, _ = decode_upload_bytes(
+        data, target_sr=settings.sample_rate, max_seconds=settings.verse_listen_max_sec
+    )
     limit = settings.verse_listen_max_sec * settings.sample_rate
     waveform = waveform[:, :limit]
     step = settings.verse_listen_step_sec * settings.sample_rate
     transcripts: list[str] = []
     matches: list[dict] = []
     processed = 0
-    with inference_slot:
+    with model_execution("verse"):
         for start in range(0, waveform.shape[1], step):
             end = min(start + step, waveform.shape[1])
             # A very short trailing fragment adds little useful context.

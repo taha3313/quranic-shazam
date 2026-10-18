@@ -29,6 +29,7 @@ async def identify_verse(
         raise HTTPException(status_code=400, detail="Audio file is required.")
 
     data = await _read_capped(file, settings.max_upload_bytes)
+    await file.close()
     if not data:
         raise HTTPException(status_code=400, detail="Uploaded file is empty.")
 
@@ -65,6 +66,7 @@ async def identify_verse_progressive(
     if not file.filename:
         raise HTTPException(status_code=400, detail="Audio file is required.")
     data = await _read_capped(file, settings.max_upload_bytes)
+    await file.close()
     if not data:
         raise HTTPException(status_code=400, detail="Uploaded file is empty.")
     try:

@@ -1,0 +1,38 @@
+{
+  "image": "sha256:04d39a6b55c5ce0d58ec2e2d0f2c37b4ccf8b154eae740441326ef82614fd4f3",
+  "source_sha256": "9b6b70b27cad2bec69e1f1df3120ebf6a9c1ff6113d50ee7e0f1510d4ac38953",
+  "app_bind_mount": false,
+  "mounts": [
+    "ASR model cache mounted read-only at /hf-cache/hub"
+  ],
+  "limits": {
+    "memory_bytes": 536870912,
+    "memory_swap_bytes": 536870912,
+    "cpus": 1.0
+  },
+  "matrix": {
+    "reciter_inputs": 63,
+    "top3_order_and_confidence_equal": true,
+    "maximum_reciter_score_difference": 0.0,
+    "api_comparisons": {
+      "verse-20s": true,
+      "verse-60s": true,
+      "webm-reciter": true,
+      "webm-verse": true
+    },
+    "overlap_cycles": 3
+  },
+  "matrix_peak_memory_bytes": 536870912,
+  "matrix_memory_events": "low 0\nhigh 0\nmax 2121\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "matrix_oom_killed": false,
+  "matrix_running": true,
+  "large_upload": {
+    "seconds": 700,
+    "payload_bytes": 22400044,
+    "top3_equal": true,
+    "peak_memory_bytes": 485154816,
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+    "oom_killed": false
+  },
+  "tradeoff": "Model weights are released after each request and loaded again for later requests; inference is serialized. The matrix peak reached the configured 512 MiB ceiling during ASR but had zero OOM kills. The 700-second upload peaked at 462.6 MiB."
+}

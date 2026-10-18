@@ -11,7 +11,7 @@ import numpy as np
 from app.core.audio import decode_upload_bytes
 from app.core.config import get_settings
 from app.core.embeddings import embedding_from_waveform
-from app.core.inference import inference_slot
+from app.core.inference import model_execution
 from app.core.similarity import rank_reciters
 
 logger = logging.getLogger(__name__)
@@ -74,7 +74,7 @@ def identify_waveform(waveform: np.ndarray, sr: int, top_k: int) -> list[dict[st
         raise FileNotFoundError(
             "No reciter embeddings loaded. Generate them first (make embeddings)."
         )
-    with inference_slot:
+    with model_execution("reciter"):
         query = embedding_from_waveform(waveform, sr)
     return rank_reciters(query, db, top_k=top_k, display_names=_display_names)
 
@@ -86,7 +86,9 @@ def identify_upload_bytes(data: bytes, top_k: int) -> list[dict[str, float]]:
     routes do); it must never execute on the event loop itself.
     """
     settings = get_settings()
-    waveform, sr = decode_upload_bytes(data, target_sr=settings.sample_rate)
+    waveform, sr = decode_upload_bytes(
+        data, target_sr=settings.sample_rate, max_seconds=settings.max_audio_sec
+    )
     max_samples = settings.max_audio_sec * settings.sample_rate
     if waveform.shape[1] > max_samples:
         waveform = waveform[:, :max_samples]

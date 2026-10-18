@@ -92,3 +92,7 @@ read-only ASR model download cache was mounted. Peak container memory was
 has no torch, torchaudio, or speechbrain packages available to import. See
 `packaged-container.json` for the exact image ID and responses. The model
 download cache avoids measuring network download time in this smoke test.
+
+For the opt-in allocator/model-cache profile and hard 512 MiB validation, see
+[memory-512.md](memory-512.md). Docker defaults to that profile; direct Python
+execution retains the previous caching behavior unless QD_LOW_MEMORY is set.

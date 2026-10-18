@@ -11,7 +11,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg libsndfile1 curl \
     && rm -rf /var/lib/apt/lists/*
 
-ENV OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2
+# Keep native allocation peaks predictable on 512 MiB Linux instances.
+ENV OPENBLAS_NUM_THREADS=2 \
+    OMP_NUM_THREADS=2 \
+    QD_INFERENCE_THREADS=2 \
+    QD_LOW_MEMORY=true \
+    MALLOC_ARENA_MAX=2 \
+    MALLOC_MMAP_THRESHOLD_=131072 \
+    MALLOC_TRIM_THRESHOLD_=131072
 
 FROM runtime-base AS dependencies
 

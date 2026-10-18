@@ -13,6 +13,7 @@ import threading
 import numpy as np
 
 from app.core.config import get_settings
+from app.core.memory import release_unused_memory
 
 logger = logging.getLogger(__name__)
 
@@ -42,7 +43,15 @@ def get_model():
             num_workers=1,
         )
         logger.info("ASR model loaded.")
+        if settings.low_memory:
+            release_unused_memory()
         return _model
+
+
+def release_model() -> None:
+    global _model
+    with _lock:
+        _model = None
 
 
 def is_loaded() -> bool:

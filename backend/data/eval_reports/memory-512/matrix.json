@@ -1,0 +1,2114 @@
+{
+  "reciter_probes": [
+    {
+      "path": "data/recitations_clips/abdulbaset/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.5275719140004185,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.31901659286538564
+        },
+        {
+          "reciter": "dosari",
+          "display": "Yasser Al-Dosari",
+          "score": 0.2915578541803417
+        },
+        {
+          "reciter": "kurdi",
+          "display": "Raad Al-Kurdi",
+          "score": 0.2600792300494257
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/abdulbaset/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.3816922380001415,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.37528774726479674
+        },
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.32625113176032766
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.3077158601400814
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/abdulbaset/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.3389460640000834,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.43226363576718385
+        },
+        {
+          "reciter": "maher",
+          "display": "Maher Al-Muaiqly",
+          "score": 0.35661243634844403
+        },
+        {
+          "reciter": "husary",
+          "display": "Mahmoud Al-Hussary",
+          "score": 0.34221535603712716
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/abkar/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.4889403140000468,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abkar",
+          "display": "Idris Abkar",
+          "score": 0.47592320908964825
+        },
+        {
+          "reciter": "minshawi",
+          "display": "Mohamed Al-Minshawi",
+          "score": 0.3825060220021376
+        },
+        {
+          "reciter": "shuraim",
+          "display": "Saud Al-Shuraim",
+          "score": 0.30182619063159477
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/abkar/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.323819235999963,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abkar",
+          "display": "Idris Abkar",
+          "score": 0.7338800980521585
+        },
+        {
+          "reciter": "minshawi",
+          "display": "Mohamed Al-Minshawi",
+          "score": 0.3866542137371097
+        },
+        {
+          "reciter": "shuraim",
+          "display": "Saud Al-Shuraim",
+          "score": 0.3845260614825058
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/abkar/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.363289920999705,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abkar",
+          "display": "Idris Abkar",
+          "score": 0.7123702465645225
+        },
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.38474449109007847
+        },
+        {
+          "reciter": "minshawi",
+          "display": "Mohamed Al-Minshawi",
+          "score": 0.3702980393905718
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ajmy/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.6266129059999912,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.47309952547385525
+        },
+        {
+          "reciter": "qatami",
+          "display": "Nasser Al-Qatami",
+          "score": 0.39152540486211573
+        },
+        {
+          "reciter": "hani",
+          "display": "Hani Ar-Rifai",
+          "score": 0.3319327618541178
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ajmy/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.319356412000161,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.5868435747538792
+        },
+        {
+          "reciter": "qatami",
+          "display": "Nasser Al-Qatami",
+          "score": 0.3989411594215795
+        },
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.37647637401247336
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ajmy/36_1.wav",
+      "audio_seconds": 10,
+      "seconds": 2.3602308219997212,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.6644686106257298
+        },
+        {
+          "reciter": "qatami",
+          "display": "Nasser Al-Qatami",
+          "score": 0.4264984467927595
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.4207872718875678
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/alafasy/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.5988151609999477,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.2840190012070896
+        },
+        {
+          "reciter": "kurdi",
+          "display": "Raad Al-Kurdi",
+          "score": 0.2649591742408831
+        },
+        {
+          "reciter": "tunaiji",
+          "display": "Khalifa Al-Tunaiji",
+          "score": 0.24428491241773212
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/alafasy/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.2180122240001765,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.711484458623429
+        },
+        {
+          "reciter": "maher",
+          "display": "Maher Al-Muaiqly",
+          "score": 0.4140833366644647
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.3752600927390373
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/alafasy/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.3730347400000937,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.7398350921718452
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.47491357454419353
+        },
+        {
+          "reciter": "kurdi",
+          "display": "Raad Al-Kurdi",
+          "score": 0.330540682347714
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/banna/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.545098654999947,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.35545481139964497
+        },
+        {
+          "reciter": "mustafa",
+          "display": "Mustafa Ismail",
+          "score": 0.2393757760070146
+        },
+        {
+          "reciter": "shuraim",
+          "display": "Saud Al-Shuraim",
+          "score": 0.2122736062160031
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/banna/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.4224960450001163,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.5523371113076224
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.4159854893258412
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.37727791660568794
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/banna/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.2515460409999832,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.7947421421474246
+        },
+        {
+          "reciter": "kurdi",
+          "display": "Raad Al-Kurdi",
+          "score": 0.40692190914699516
+        },
+        {
+          "reciter": "dosari",
+          "display": "Yasser Al-Dosari",
+          "score": 0.36086249318996727
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/dosari/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.48816040900010194,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "dosari",
+          "display": "Yasser Al-Dosari",
+          "score": 0.4236752806608836
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.3839709430270326
+        },
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.2762299936807112
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/dosari/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.2921433239998805,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "dosari",
+          "display": "Yasser Al-Dosari",
+          "score": 0.7281237799007038
+        },
+        {
+          "reciter": "shuraim",
+          "display": "Saud Al-Shuraim",
+          "score": 0.4379590455905393
+        },
+        {
+          "reciter": "kurdi",
+          "display": "Raad Al-Kurdi",
+          "score": 0.379609381458657
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/dosari/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.1380521390001377,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "dosari",
+          "display": "Yasser Al-Dosari",
+          "score": 0.37408266298118376
+        },
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.3247529263914748
+        },
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.27244954714392877
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/fares/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.5434905229999458,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.29035553668594166
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.2197109048022621
+        },
+        {
+          "reciter": "qatami",
+          "display": "Nasser Al-Qatami",
+          "score": 0.16874374300011846
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/fares/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.2412967000000208,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.6732458341600626
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.5341432058903107
+        },
+        {
+          "reciter": "hani",
+          "display": "Hani Ar-Rifai",
+          "score": 0.3963089119013996
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/fares/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.269841782000185,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.7360029996049391
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.5054721306082189
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.4193633808246612
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ghamdi/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.5510108440003023,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "kurdi",
+          "display": "Raad Al-Kurdi",
+          "score": 0.38176196654908356
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.34691847931164754
+        },
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.3359213126054575
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ghamdi/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.492724520000138,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.6757960751154601
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.4849022565641672
+        },
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.4113975327388848
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ghamdi/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.377001083000323,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.6805523897603108
+        },
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.49533525596496947
+        },
+        {
+          "reciter": "hani",
+          "display": "Hani Ar-Rifai",
+          "score": 0.30332734935515876
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/hani/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.7434264560001793,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.18138309760338236
+        },
+        {
+          "reciter": "hani",
+          "display": "Hani Ar-Rifai",
+          "score": 0.1637603358008774
+        },
+        {
+          "reciter": "mustafa",
+          "display": "Mustafa Ismail",
+          "score": 0.12582945210992016
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/hani/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.5533510179998302,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "hani",
+          "display": "Hani Ar-Rifai",
+          "score": 0.5521373249479731
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.4833363163176017
+        },
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.4343016066988535
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/hani/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.3582244790000004,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "hani",
+          "display": "Hani Ar-Rifai",
+          "score": 0.6746994258673699
+        },
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.4905854534052746
+        },
+        {
+          "reciter": "qatami",
+          "display": "Nasser Al-Qatami",
+          "score": 0.486369891007463
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/husary/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.6121168729996498,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "maher",
+          "display": "Maher Al-Muaiqly",
+          "score": 0.27094805575225445
+        },
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.23967456991547503
+        },
+        {
+          "reciter": "husary",
+          "display": "Mahmoud Al-Hussary",
+          "score": 0.23567270315971045
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/husary/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.3918782650002868,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "husary",
+          "display": "Mahmoud Al-Hussary",
+          "score": 0.39323856146118785
+        },
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.342295926967892
+        },
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.2748031086877722
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/husary/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.5313447990001805,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "husary",
+          "display": "Mahmoud Al-Hussary",
+          "score": 0.6263973878497602
+        },
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.42434829147309017
+        },
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.37438889903615746
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/juhany/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.6890543819999948,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "juhany",
+          "display": "Abdullah Al-Juhany",
+          "score": 0.4181651568970493
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.1747472271016562
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.16571532946649634
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/juhany/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.352756049999698,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "juhany",
+          "display": "Abdullah Al-Juhany",
+          "score": 0.57583630565304
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.22545365919656932
+        },
+        {
+          "reciter": "abkar",
+          "display": "Idris Abkar",
+          "score": 0.210271987606585
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/juhany/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.7428794919997017,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "juhany",
+          "display": "Abdullah Al-Juhany",
+          "score": 0.5103823546099319
+        },
+        {
+          "reciter": "abkar",
+          "display": "Idris Abkar",
+          "score": 0.2248023109127628
+        },
+        {
+          "reciter": "minshawi",
+          "display": "Mohamed Al-Minshawi",
+          "score": 0.19903202774574952
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/kurdi/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.47264021600039996,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.1573403322794062
+        },
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.15583327727411372
+        },
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.14552873268559596
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/kurdi/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.361436245999812,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "kurdi",
+          "display": "Raad Al-Kurdi",
+          "score": 0.7844388965749621
+        },
+        {
+          "reciter": "shuraim",
+          "display": "Saud Al-Shuraim",
+          "score": 0.3706186859158315
+        },
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.3552916098094677
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/kurdi/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.2799529740000253,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "kurdi",
+          "display": "Raad Al-Kurdi",
+          "score": 0.8244687532294572
+        },
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.45910566376473816
+        },
+        {
+          "reciter": "shuraim",
+          "display": "Saud Al-Shuraim",
+          "score": 0.3495135282909638
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/maher/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.6061215159998028,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.1573403322794062
+        },
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.15583327727411372
+        },
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.14552873268559596
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/maher/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.3083055330002935,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "maher",
+          "display": "Maher Al-Muaiqly",
+          "score": 0.6662008646920802
+        },
+        {
+          "reciter": "tunaiji",
+          "display": "Khalifa Al-Tunaiji",
+          "score": 0.37088903004815776
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.31726678009062487
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/maher/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.242965956000262,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "maher",
+          "display": "Maher Al-Muaiqly",
+          "score": 0.7400190271818885
+        },
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.40765529072773565
+        },
+        {
+          "reciter": "tunaiji",
+          "display": "Khalifa Al-Tunaiji",
+          "score": 0.40354494936287916
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/minshawi/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.5776870139998209,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "minshawi",
+          "display": "Mohamed Al-Minshawi",
+          "score": 0.2334557634164804
+        },
+        {
+          "reciter": "abkar",
+          "display": "Idris Abkar",
+          "score": 0.21823408447115608
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.18700966218710277
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/minshawi/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.23975663300007,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "minshawi",
+          "display": "Mohamed Al-Minshawi",
+          "score": 0.5028977597094785
+        },
+        {
+          "reciter": "mustafa",
+          "display": "Mustafa Ismail",
+          "score": 0.25149494615662427
+        },
+        {
+          "reciter": "husary",
+          "display": "Mahmoud Al-Hussary",
+          "score": 0.24838327115284026
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/minshawi/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.808403200000157,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "minshawi",
+          "display": "Mohamed Al-Minshawi",
+          "score": 0.6954323096599634
+        },
+        {
+          "reciter": "abkar",
+          "display": "Idris Abkar",
+          "score": 0.41548285657040995
+        },
+        {
+          "reciter": "qatami",
+          "display": "Nasser Al-Qatami",
+          "score": 0.30250829594688866
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/mustafa/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.6128070220001973,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "mustafa",
+          "display": "Mustafa Ismail",
+          "score": 0.27325501505531735
+        },
+        {
+          "reciter": "maher",
+          "display": "Maher Al-Muaiqly",
+          "score": 0.17355286758513006
+        },
+        {
+          "reciter": "tunaiji",
+          "display": "Khalifa Al-Tunaiji",
+          "score": 0.13729944089654042
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/mustafa/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.2927061469999899,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "mustafa",
+          "display": "Mustafa Ismail",
+          "score": 0.5657933874306573
+        },
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.2876701802830208
+        },
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.2113508650007883
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/mustafa/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.2991091779999806,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "mustafa",
+          "display": "Mustafa Ismail",
+          "score": 0.664938349281299
+        },
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.33455103965792854
+        },
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.3282116748450273
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ossi/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.5432691150003848,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.09734665818421258
+        },
+        {
+          "reciter": "juhany",
+          "display": "Abdullah Al-Juhany",
+          "score": 0.0871418253306854
+        },
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.08533447552499016
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ossi/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.3981895380002243,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.6450893310238961
+        },
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.48410832516369606
+        },
+        {
+          "reciter": "hani",
+          "display": "Hani Ar-Rifai",
+          "score": 0.4670503935627912
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ossi/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.31485226399991,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.7534714578360117
+        },
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.525289282271946
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.5247503111877825
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/qatami/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.5345418150000114,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.23097578635875157
+        },
+        {
+          "reciter": "shuraim",
+          "display": "Saud Al-Shuraim",
+          "score": 0.23058405558549272
+        },
+        {
+          "reciter": "dosari",
+          "display": "Yasser Al-Dosari",
+          "score": 0.22124809246616456
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/qatami/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.4172711350001919,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "qatami",
+          "display": "Nasser Al-Qatami",
+          "score": 0.4861148984748066
+        },
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.3126000853937566
+        },
+        {
+          "reciter": "minshawi",
+          "display": "Mohamed Al-Minshawi",
+          "score": 0.26484548774712846
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/qatami/36_1.wav",
+      "audio_seconds": 10,
+      "seconds": 2.283597548999751,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "qatami",
+          "display": "Nasser Al-Qatami",
+          "score": 0.49450720329468806
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.4167314069403658
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.3052334538442543
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/shuraim/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.6092936129998634,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "tunaiji",
+          "display": "Khalifa Al-Tunaiji",
+          "score": 0.5279159468133968
+        },
+        {
+          "reciter": "maher",
+          "display": "Maher Al-Muaiqly",
+          "score": 0.30785716770786187
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.2867394713573505
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/shuraim/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.2854770269996152,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "shuraim",
+          "display": "Saud Al-Shuraim",
+          "score": 0.550944466705928
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.24321032969334683
+        },
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.2184519885199332
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/shuraim/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.7711347590002333,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "shuraim",
+          "display": "Saud Al-Shuraim",
+          "score": 0.4112222628775397
+        },
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.2629311749651073
+        },
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.19540320261451577
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/sudais/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.668336814000213,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.48414643988868417
+        },
+        {
+          "reciter": "hani",
+          "display": "Hani Ar-Rifai",
+          "score": 0.19711934848001963
+        },
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.11184332459524421
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/sudais/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.5428915320003398,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.6702906993003732
+        },
+        {
+          "reciter": "abkar",
+          "display": "Idris Abkar",
+          "score": 0.282251130653737
+        },
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.2717191207131867
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/sudais/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.443740850999802,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.7344860916064907
+        },
+        {
+          "reciter": "hani",
+          "display": "Hani Ar-Rifai",
+          "score": 0.43456354840975503
+        },
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.4148656534681226
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/tunaiji/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.6931666139998924,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "tunaiji",
+          "display": "Khalifa Al-Tunaiji",
+          "score": 0.5515730742684183
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.35164116158782543
+        },
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.2659333966930566
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/tunaiji/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.491893730999891,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "tunaiji",
+          "display": "Khalifa Al-Tunaiji",
+          "score": 0.6696189365778565
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.4141515561710365
+        },
+        {
+          "reciter": "maher",
+          "display": "Maher Al-Muaiqly",
+          "score": 0.36615461194552373
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/tunaiji/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.3853650480000397,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "tunaiji",
+          "display": "Khalifa Al-Tunaiji",
+          "score": 0.685728243902844
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.41640734909422716
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.40112586251284243
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/abdulbaset/112_1.wav",
+      "audio_seconds": 30,
+      "seconds": 6.489949129999786,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.4845057448425827
+        },
+        {
+          "reciter": "maher",
+          "display": "Maher Al-Muaiqly",
+          "score": 0.42062368947736106
+        },
+        {
+          "reciter": "dosari",
+          "display": "Yasser Al-Dosari",
+          "score": 0.40959631319761397
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/abkar/112_1.wav",
+      "audio_seconds": 30,
+      "seconds": 6.668666030000168,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abkar",
+          "display": "Idris Abkar",
+          "score": 0.7778670823955027
+        },
+        {
+          "reciter": "minshawi",
+          "display": "Mohamed Al-Minshawi",
+          "score": 0.4558734426342923
+        },
+        {
+          "reciter": "qatami",
+          "display": "Nasser Al-Qatami",
+          "score": 0.4287623926744616
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ajmy/112_1.wav",
+      "audio_seconds": 30,
+      "seconds": 6.879969429000084,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.6706667398483598
+        },
+        {
+          "reciter": "qatami",
+          "display": "Nasser Al-Qatami",
+          "score": 0.4411473968361352
+        },
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.4276736581533719
+        }
+      ]
+    }
+  ],
+  "api_probes": [
+    {
+      "label": "verse-20s",
+      "baseline": {
+        "response": {
+          "transcript": "قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ ق",
+          "confident": false,
+          "matches": [
+            {
+              "surah": 6,
+              "surah_name": "الانعام",
+              "ayah_start": 19,
+              "ayah_end": 19,
+              "score": 0.508,
+              "words_matched": 7,
+              "words_total": 48,
+              "text": "قل أي شيء أكبر شهادة ۖ قل الله ۖ شهيد بيني وبينكم ۚ وأوحي إلي هذا القرآن لأنذركم به ومن بلغ ۚ أئنكم لتشهدون أن مع الله آلهة أخرى ۚ قل لا أشهد ۚ قل إنما هو إله واحد وإنني بريء مما تشركون"
+            },
+            {
+              "surah": 13,
+              "surah_name": "الرعد",
+              "ayah_start": 16,
+              "ayah_end": 16,
+              "score": 0.505,
+              "words_matched": 7,
+              "words_total": 48,
+              "text": "قل من رب السماوات والأرض قل الله ۚ قل أفاتخذتم من دونه أولياء لا يملكون لأنفسهم نفعا ولا ضرا ۚ قل هل يستوي الأعمى والبصير أم هل تستوي الظلمات والنور ۗ أم جعلوا لله شركاء خلقوا كخلقه فتشابه الخلق عليهم ۚ قل الله خالق كل شيء وهو الواحد القهار"
+            },
+            {
+              "surah": 39,
+              "surah_name": "الزمر",
+              "ayah_start": 38,
+              "ayah_end": 38,
+              "score": 0.4959,
+              "words_matched": 6,
+              "words_total": 48,
+              "text": "ولئن سألتهم من خلق السماوات والأرض ليقولن الله ۚ قل أفرأيتم ما تدعون من دون الله إن أرادني الله بضر هل هن كاشفات ضره أو أرادني برحمة هل هن ممسكات رحمته ۚ قل حسبي الله ۖ عليه يتوكل المتوكلون"
+            }
+          ],
+          "needs_more_audio": true,
+          "listen_limit_reached": false,
+          "audio_seconds": 20.0
+        },
+        "seconds": 55.63419722000026
+      },
+      "candidate": {
+        "response": {
+          "transcript": "قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ ق",
+          "confident": false,
+          "matches": [
+            {
+              "surah": 6,
+              "surah_name": "الانعام",
+              "ayah_start": 19,
+              "ayah_end": 19,
+              "score": 0.508,
+              "words_matched": 7,
+              "words_total": 48,
+              "text": "قل أي شيء أكبر شهادة ۖ قل الله ۖ شهيد بيني وبينكم ۚ وأوحي إلي هذا القرآن لأنذركم به ومن بلغ ۚ أئنكم لتشهدون أن مع الله آلهة أخرى ۚ قل لا أشهد ۚ قل إنما هو إله واحد وإنني بريء مما تشركون"
+            },
+            {
+              "surah": 13,
+              "surah_name": "الرعد",
+              "ayah_start": 16,
+              "ayah_end": 16,
+              "score": 0.505,
+              "words_matched": 7,
+              "words_total": 48,
+              "text": "قل من رب السماوات والأرض قل الله ۚ قل أفاتخذتم من دونه أولياء لا يملكون لأنفسهم نفعا ولا ضرا ۚ قل هل يستوي الأعمى والبصير أم هل تستوي الظلمات والنور ۗ أم جعلوا لله شركاء خلقوا كخلقه فتشابه الخلق عليهم ۚ قل الله خالق كل شيء وهو الواحد القهار"
+            },
+            {
+              "surah": 39,
+              "surah_name": "الزمر",
+              "ayah_start": 38,
+              "ayah_end": 38,
+              "score": 0.4959,
+              "words_matched": 6,
+              "words_total": 48,
+              "text": "ولئن سألتهم من خلق السماوات والأرض ليقولن الله ۚ قل أفرأيتم ما تدعون من دون الله إن أرادني الله بضر هل هن كاشفات ضره أو أرادني برحمة هل هن ممسكات رحمته ۚ قل حسبي الله ۖ عليه يتوكل المتوكلون"
+            }
+          ],
+          "needs_more_audio": true,
+          "listen_limit_reached": false,
+          "audio_seconds": 20.0
+        },
+        "seconds": 69.6879237420003
+      },
+      "equivalent_response": true
+    },
+    {
+      "label": "verse-60s",
+      "baseline": {
+        "response": {
+          "transcript": "قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ ق قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحْدَى قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ",
+          "confident": false,
+          "matches": [
+            {
+              "surah": 4,
+              "surah_name": "النسا",
+              "ayah_start": 171,
+              "ayah_end": 171,
+              "score": 0.4895,
+              "words_matched": 3,
+              "words_total": 74,
+              "text": "يا أهل الكتاب لا تغلوا في دينكم ولا تقولوا على الله إلا الحق ۚ إنما المسيح عيسى ابن مريم رسول الله وكلمته ألقاها إلى مريم وروح منه ۖ فآمنوا بالله ورسله ۖ ولا تقولوا ثلاثة ۚ انتهوا خيرا لكم ۚ إنما الله إله واحد ۖ سبحانه أن يكون له ولد ۘ له ما في السماوات وما في الأرض ۗ وكفى بالله وكيلا"
+            },
+            {
+              "surah": 58,
+              "surah_name": "المجادله",
+              "ayah_start": 22,
+              "ayah_end": 22,
+              "score": 0.4787,
+              "words_matched": 4,
+              "words_total": 74,
+              "text": "لا تجد قوما يؤمنون بالله واليوم الآخر يوادون من حاد الله ورسوله ولو كانوا آباءهم أو أبناءهم أو إخوانهم أو عشيرتهم ۚ أولئك كتب في قلوبهم الإيمان وأيدهم بروح منه ۖ ويدخلهم جنات تجري من تحتها الأنهار خالدين فيها ۚ رضي الله عنهم ورضوا عنه ۚ أولئك حزب الله ۚ ألا إن حزب الله هم المفلحون"
+            },
+            {
+              "surah": 2,
+              "surah_name": "البقره",
+              "ayah_start": 246,
+              "ayah_end": 246,
+              "score": 0.4748,
+              "words_matched": 2,
+              "words_total": 74,
+              "text": "ألم تر إلى الملإ من بني إسرائيل من بعد موسى إذ قالوا لنبي لهم ابعث لنا ملكا نقاتل في سبيل الله ۖ قال هل عسيتم إن كتب عليكم القتال ألا تقاتلوا ۖ قالوا وما لنا ألا نقاتل في سبيل الله وقد أخرجنا من ديارنا وأبنائنا ۖ فلما كتب عليهم القتال تولوا إلا قليلا منهم ۗ والله عليم بالظالمين"
+            }
+          ],
+          "needs_more_audio": false,
+          "listen_limit_reached": true,
+          "audio_seconds": 60.0
+        },
+        "seconds": 74.31011494799986
+      },
+      "candidate": {
+        "response": {
+          "transcript": "قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ ق قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحْدَى قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ",
+          "confident": false,
+          "matches": [
+            {
+              "surah": 4,
+              "surah_name": "النسا",
+              "ayah_start": 171,
+              "ayah_end": 171,
+              "score": 0.4895,
+              "words_matched": 3,
+              "words_total": 74,
+              "text": "يا أهل الكتاب لا تغلوا في دينكم ولا تقولوا على الله إلا الحق ۚ إنما المسيح عيسى ابن مريم رسول الله وكلمته ألقاها إلى مريم وروح منه ۖ فآمنوا بالله ورسله ۖ ولا تقولوا ثلاثة ۚ انتهوا خيرا لكم ۚ إنما الله إله واحد ۖ سبحانه أن يكون له ولد ۘ له ما في السماوات وما في الأرض ۗ وكفى بالله وكيلا"
+            },
+            {
+              "surah": 58,
+              "surah_name": "المجادله",
+              "ayah_start": 22,
+              "ayah_end": 22,
+              "score": 0.4787,
+              "words_matched": 4,
+              "words_total": 74,
+              "text": "لا تجد قوما يؤمنون بالله واليوم الآخر يوادون من حاد الله ورسوله ولو كانوا آباءهم أو أبناءهم أو إخوانهم أو عشيرتهم ۚ أولئك كتب في قلوبهم الإيمان وأيدهم بروح منه ۖ ويدخلهم جنات تجري من تحتها الأنهار خالدين فيها ۚ رضي الله عنهم ورضوا عنه ۚ أولئك حزب الله ۚ ألا إن حزب الله هم المفلحون"
+            },
+            {
+              "surah": 2,
+              "surah_name": "البقره",
+              "ayah_start": 246,
+              "ayah_end": 246,
+              "score": 0.4748,
+              "words_matched": 2,
+              "words_total": 74,
+              "text": "ألم تر إلى الملإ من بني إسرائيل من بعد موسى إذ قالوا لنبي لهم ابعث لنا ملكا نقاتل في سبيل الله ۖ قال هل عسيتم إن كتب عليكم القتال ألا تقاتلوا ۖ قالوا وما لنا ألا نقاتل في سبيل الله وقد أخرجنا من ديارنا وأبنائنا ۖ فلما كتب عليهم القتال تولوا إلا قليلا منهم ۗ والله عليم بالظالمين"
+            }
+          ],
+          "needs_more_audio": false,
+          "listen_limit_reached": true,
+          "audio_seconds": 60.0
+        },
+        "seconds": 89.35434745400016
+      },
+      "equivalent_response": true
+    },
+    {
+      "label": "webm-reciter",
+      "baseline": {
+        "response": {
+          "matches": [
+            {
+              "reciter": "ghamdi",
+              "display": "Saad Al-Ghamdi",
+              "score": 0.7622876818542432
+            },
+            {
+              "reciter": "ossi",
+              "display": "Abdul Rahman Al-Ossi",
+              "score": 0.5245562866251277
+            },
+            {
+              "reciter": "alafasy",
+              "display": "Mishary Alafasy",
+              "score": 0.4995513148614162
+            }
+          ],
+          "confident": false
+        },
+        "seconds": 2.2609350359998643
+      },
+      "candidate": {
+        "response": {
+          "matches": [
+            {
+              "reciter": "ghamdi",
+              "display": "Saad Al-Ghamdi",
+              "score": 0.7622876818542432
+            },
+            {
+              "reciter": "ossi",
+              "display": "Abdul Rahman Al-Ossi",
+              "score": 0.5245562866251277
+            },
+            {
+              "reciter": "alafasy",
+              "display": "Mishary Alafasy",
+              "score": 0.4995513148614162
+            }
+          ],
+          "confident": false
+        },
+        "seconds": 2.564331139999922
+      },
+      "equivalent_response": true
+    },
+    {
+      "label": "webm-verse",
+      "baseline": {
+        "response": {
+          "transcript": "قُلْ هُوَ اللَّهُ أَحَدٌ قُطُوا قُطُوا",
+          "confident": true,
+          "matches": [
+            {
+              "surah": 112,
+              "surah_name": "الاخلاص",
+              "ayah_start": 1,
+              "ayah_end": 1,
+              "score": 0.6667,
+              "words_matched": 4,
+              "words_total": 6,
+              "text": "قل هو الله أحد"
+            },
+            {
+              "surah": 18,
+              "surah_name": "الكهف",
+              "ayah_start": 38,
+              "ayah_end": 38,
+              "score": 0.6009,
+              "words_matched": 2,
+              "words_total": 6,
+              "text": "لكنا هو الله ربي ولا أشرك بربي أحدا"
+            },
+            {
+              "surah": 39,
+              "surah_name": "الزمر",
+              "ayah_start": 14,
+              "ayah_end": 14,
+              "score": 0.593,
+              "words_matched": 2,
+              "words_total": 6,
+              "text": "قل الله أعبد مخلصا له ديني"
+            }
+          ],
+          "needs_more_audio": false,
+          "listen_limit_reached": false,
+          "audio_seconds": 5.8253125
+        },
+        "seconds": 11.49513613199997
+      },
+      "candidate": {
+        "response": {
+          "transcript": "قُلْ هُوَ اللَّهُ أَحَدٌ قُطُوا قُطُوا",
+          "confident": true,
+          "matches": [
+            {
+              "surah": 112,
+              "surah_name": "الاخلاص",
+              "ayah_start": 1,
+              "ayah_end": 1,
+              "score": 0.6667,
+              "words_matched": 4,
+              "words_total": 6,
+              "text": "قل هو الله أحد"
+            },
+            {
+              "surah": 18,
+              "surah_name": "الكهف",
+              "ayah_start": 38,
+              "ayah_end": 38,
+              "score": 0.6009,
+              "words_matched": 2,
+              "words_total": 6,
+              "text": "لكنا هو الله ربي ولا أشرك بربي أحدا"
+            },
+            {
+              "surah": 39,
+              "surah_name": "الزمر",
+              "ayah_start": 14,
+              "ayah_end": 14,
+              "score": 0.593,
+              "words_matched": 2,
+              "words_total": 6,
+              "text": "قل الله أعبد مخلصا له ديني"
+            }
+          ],
+          "needs_more_audio": false,
+          "listen_limit_reached": false,
+          "audio_seconds": 5.8253125
+        },
+        "seconds": 14.773038672999974
+      },
+      "equivalent_response": true
+    },
+    {
+      "label": "overlap-0",
+      "results": [
+        {
+          "response": {
+            "transcript": "قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ ق",
+            "confident": false,
+            "matches": [
+              {
+                "surah": 6,
+                "surah_name": "الانعام",
+                "ayah_start": 19,
+                "ayah_end": 19,
+                "score": 0.508,
+                "words_matched": 7,
+                "words_total": 48,
+                "text": "قل أي شيء أكبر شهادة ۖ قل الله ۖ شهيد بيني وبينكم ۚ وأوحي إلي هذا القرآن لأنذركم به ومن بلغ ۚ أئنكم لتشهدون أن مع الله آلهة أخرى ۚ قل لا أشهد ۚ قل إنما هو إله واحد وإنني بريء مما تشركون"
+              },
+              {
+                "surah": 13,
+                "surah_name": "الرعد",
+                "ayah_start": 16,
+                "ayah_end": 16,
+                "score": 0.505,
+                "words_matched": 7,
+                "words_total": 48,
+                "text": "قل من رب السماوات والأرض قل الله ۚ قل أفاتخذتم من دونه أولياء لا يملكون لأنفسهم نفعا ولا ضرا ۚ قل هل يستوي الأعمى والبصير أم هل تستوي الظلمات والنور ۗ أم جعلوا لله شركاء خلقوا كخلقه فتشابه الخلق عليهم ۚ قل الله خالق كل شيء وهو الواحد القهار"
+              },
+              {
+                "surah": 39,
+                "surah_name": "الزمر",
+                "ayah_start": 38,
+                "ayah_end": 38,
+                "score": 0.4959,
+                "words_matched": 6,
+                "words_total": 48,
+                "text": "ولئن سألتهم من خلق السماوات والأرض ليقولن الله ۚ قل أفرأيتم ما تدعون من دون الله إن أرادني الله بضر هل هن كاشفات ضره أو أرادني برحمة هل هن ممسكات رحمته ۚ قل حسبي الله ۖ عليه يتوكل المتوكلون"
+              }
+            ],
+            "needs_more_audio": true,
+            "listen_limit_reached": false,
+            "audio_seconds": 20.0
+          },
+          "seconds": 55.1311724950001
+        },
+        {
+          "response": {
+            "matches": [
+              {
+                "reciter": "ghamdi",
+                "display": "Saad Al-Ghamdi",
+                "score": 0.7695793588680514
+              },
+              {
+                "reciter": "ossi",
+                "display": "Abdul Rahman Al-Ossi",
+                "score": 0.5259520779905613
+              },
+              {
+                "reciter": "alafasy",
+                "display": "Mishary Alafasy",
+                "score": 0.5006886621074119
+              }
+            ],
+            "confident": false
+          },
+          "seconds": 60.7744250730002
+        }
+      ]
+    },
+    {
+      "label": "overlap-1",
+      "results": [
+        {
+          "response": {
+            "transcript": "قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ ق",
+            "confident": false,
+            "matches": [
+              {
+                "surah": 6,
+                "surah_name": "الانعام",
+                "ayah_start": 19,
+                "ayah_end": 19,
+                "score": 0.508,
+                "words_matched": 7,
+                "words_total": 48,
+                "text": "قل أي شيء أكبر شهادة ۖ قل الله ۖ شهيد بيني وبينكم ۚ وأوحي إلي هذا القرآن لأنذركم به ومن بلغ ۚ أئنكم لتشهدون أن مع الله آلهة أخرى ۚ قل لا أشهد ۚ قل إنما هو إله واحد وإنني بريء مما تشركون"
+              },
+              {
+                "surah": 13,
+                "surah_name": "الرعد",
+                "ayah_start": 16,
+                "ayah_end": 16,
+                "score": 0.505,
+                "words_matched": 7,
+                "words_total": 48,
+                "text": "قل من رب السماوات والأرض قل الله ۚ قل أفاتخذتم من دونه أولياء لا يملكون لأنفسهم نفعا ولا ضرا ۚ قل هل يستوي الأعمى والبصير أم هل تستوي الظلمات والنور ۗ أم جعلوا لله شركاء خلقوا كخلقه فتشابه الخلق عليهم ۚ قل الله خالق كل شيء وهو الواحد القهار"
+              },
+              {
+                "surah": 39,
+                "surah_name": "الزمر",
+                "ayah_start": 38,
+                "ayah_end": 38,
+                "score": 0.4959,
+                "words_matched": 6,
+                "words_total": 48,
+                "text": "ولئن سألتهم من خلق السماوات والأرض ليقولن الله ۚ قل أفرأيتم ما تدعون من دون الله إن أرادني الله بضر هل هن كاشفات ضره أو أرادني برحمة هل هن ممسكات رحمته ۚ قل حسبي الله ۖ عليه يتوكل المتوكلون"
+              }
+            ],
+            "needs_more_audio": true,
+            "listen_limit_reached": false,
+            "audio_seconds": 20.0
+          },
+          "seconds": 72.65861881299998
+        },
+        {
+          "response": {
+            "matches": [
+              {
+                "reciter": "ghamdi",
+                "display": "Saad Al-Ghamdi",
+                "score": 0.7695793588680514
+              },
+              {
+                "reciter": "ossi",
+                "display": "Abdul Rahman Al-Ossi",
+                "score": 0.5259520779905613
+              },
+              {
+                "reciter": "alafasy",
+                "display": "Mishary Alafasy",
+                "score": 0.5006886621074119
+              }
+            ],
+            "confident": false
+          },
+          "seconds": 79.61175190499989
+        }
+      ]
+    },
+    {
+      "label": "overlap-2",
+      "results": [
+        {
+          "response": {
+            "transcript": "قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ ق",
+            "confident": false,
+            "matches": [
+              {
+                "surah": 6,
+                "surah_name": "الانعام",
+                "ayah_start": 19,
+                "ayah_end": 19,
+                "score": 0.508,
+                "words_matched": 7,
+                "words_total": 48,
+                "text": "قل أي شيء أكبر شهادة ۖ قل الله ۖ شهيد بيني وبينكم ۚ وأوحي إلي هذا القرآن لأنذركم به ومن بلغ ۚ أئنكم لتشهدون أن مع الله آلهة أخرى ۚ قل لا أشهد ۚ قل إنما هو إله واحد وإنني بريء مما تشركون"
+              },
+              {
+                "surah": 13,
+                "surah_name": "الرعد",
+                "ayah_start": 16,
+                "ayah_end": 16,
+                "score": 0.505,
+                "words_matched": 7,
+                "words_total": 48,
+                "text": "قل من رب السماوات والأرض قل الله ۚ قل أفاتخذتم من دونه أولياء لا يملكون لأنفسهم نفعا ولا ضرا ۚ قل هل يستوي الأعمى والبصير أم هل تستوي الظلمات والنور ۗ أم جعلوا لله شركاء خلقوا كخلقه فتشابه الخلق عليهم ۚ قل الله خالق كل شيء وهو الواحد القهار"
+              },
+              {
+                "surah": 39,
+                "surah_name": "الزمر",
+                "ayah_start": 38,
+                "ayah_end": 38,
+                "score": 0.4959,
+                "words_matched": 6,
+                "words_total": 48,
+                "text": "ولئن سألتهم من خلق السماوات والأرض ليقولن الله ۚ قل أفرأيتم ما تدعون من دون الله إن أرادني الله بضر هل هن كاشفات ضره أو أرادني برحمة هل هن ممسكات رحمته ۚ قل حسبي الله ۖ عليه يتوكل المتوكلون"
+              }
+            ],
+            "needs_more_audio": true,
+            "listen_limit_reached": false,
+            "audio_seconds": 20.0
+          },
+          "seconds": 66.86143082199987
+        },
+        {
+          "response": {
+            "matches": [
+              {
+                "reciter": "ghamdi",
+                "display": "Saad Al-Ghamdi",
+                "score": 0.7695793588680514
+              },
+              {
+                "reciter": "ossi",
+                "display": "Abdul Rahman Al-Ossi",
+                "score": 0.5259520779905613
+              },
+              {
+                "reciter": "alafasy",
+                "display": "Mishary Alafasy",
+                "score": 0.5006886621074119
+              }
+            ],
+            "confident": false
+          },
+          "seconds": 73.77737050999986
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "memory_limit_bytes": 536870912,
+  "memory_swap_limit_bytes": 536870912,
+  "cpus": 1.0,
+  "baseline_sha256": "1412a20d30272a5569fe52aa65b01075eacfee6ab22abbab706c219a0e8262df",
+  "peak_memory_bytes": 536870912,
+  "memory_events": "low 0\nhigh 0\nmax 2121\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "oom_killed": false,
+  "running": true
+}

@@ -1,0 +1,1537 @@
+{
+  "reciter_probes": [
+    {
+      "path": "data/recitations_clips/abdulbaset/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.37963490199945227,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.31901659286538564
+        },
+        {
+          "reciter": "dosari",
+          "display": "Yasser Al-Dosari",
+          "score": 0.2915578541803417
+        },
+        {
+          "reciter": "kurdi",
+          "display": "Raad Al-Kurdi",
+          "score": 0.2600792300494257
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/abdulbaset/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.0138501040000847,
+      "same_top3_order": true,
+      "max_score_difference": 2.1743135070195763e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.375287761576624
+        },
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.32625114815621403
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.30771583839694633
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/abdulbaset/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 1.622218504000557,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.43226363576718385
+        },
+        {
+          "reciter": "maher",
+          "display": "Maher Al-Muaiqly",
+          "score": 0.35661243634844403
+        },
+        {
+          "reciter": "husary",
+          "display": "Mahmoud Al-Hussary",
+          "score": 0.34221535603712716
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/abkar/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.30925840100098867,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abkar",
+          "display": "Idris Abkar",
+          "score": 0.47592320908964825
+        },
+        {
+          "reciter": "minshawi",
+          "display": "Mohamed Al-Minshawi",
+          "score": 0.3825060220021376
+        },
+        {
+          "reciter": "shuraim",
+          "display": "Saud Al-Shuraim",
+          "score": 0.30182619063159477
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/abkar/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 0.9119424020009319,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abkar",
+          "display": "Idris Abkar",
+          "score": 0.7338800980521585
+        },
+        {
+          "reciter": "minshawi",
+          "display": "Mohamed Al-Minshawi",
+          "score": 0.3866542137371097
+        },
+        {
+          "reciter": "shuraim",
+          "display": "Saud Al-Shuraim",
+          "score": 0.3845260614825058
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/abkar/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 1.641883202999452,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abkar",
+          "display": "Idris Abkar",
+          "score": 0.7123702465645225
+        },
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.38474449109007847
+        },
+        {
+          "reciter": "minshawi",
+          "display": "Mohamed Al-Minshawi",
+          "score": 0.3702980393905718
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ajmy/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.41941030000089086,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.47309952547385525
+        },
+        {
+          "reciter": "qatami",
+          "display": "Nasser Al-Qatami",
+          "score": 0.39152540486211573
+        },
+        {
+          "reciter": "hani",
+          "display": "Hani Ar-Rifai",
+          "score": 0.3319327618541178
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ajmy/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.1159115029986424,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.5868435747538792
+        },
+        {
+          "reciter": "qatami",
+          "display": "Nasser Al-Qatami",
+          "score": 0.3989411594215795
+        },
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.37647637401247336
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ajmy/36_1.wav",
+      "audio_seconds": 10,
+      "seconds": 2.307190197001546,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.6644686106257298
+        },
+        {
+          "reciter": "qatami",
+          "display": "Nasser Al-Qatami",
+          "score": 0.4264984467927595
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.4207872718875678
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/alafasy/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.29160760000013397,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.2840190012070896
+        },
+        {
+          "reciter": "kurdi",
+          "display": "Raad Al-Kurdi",
+          "score": 0.2649591742408831
+        },
+        {
+          "reciter": "tunaiji",
+          "display": "Khalifa Al-Tunaiji",
+          "score": 0.24428491241773212
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/alafasy/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.140709199000412,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.711484458623429
+        },
+        {
+          "reciter": "maher",
+          "display": "Maher Al-Muaiqly",
+          "score": 0.4140833366644647
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.3752600927390373
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/alafasy/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 1.8513395980007772,
+      "same_top3_order": true,
+      "max_score_difference": 2.8810223262620838e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.7398351025801294
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.4749136033544168
+        },
+        {
+          "reciter": "kurdi",
+          "display": "Raad Al-Kurdi",
+          "score": 0.33054065513201825
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/banna/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.31013680000069144,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.35545481139964497
+        },
+        {
+          "reciter": "mustafa",
+          "display": "Mustafa Ismail",
+          "score": 0.2393757760070146
+        },
+        {
+          "reciter": "shuraim",
+          "display": "Saud Al-Shuraim",
+          "score": 0.2122736062160031
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/banna/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.0269466940007987,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.5523371113076224
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.4159854893258412
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.37727791660568794
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/banna/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 1.917332990999057,
+      "same_top3_order": true,
+      "max_score_difference": 3.613294374815723e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.7947421060144808
+        },
+        {
+          "reciter": "kurdi",
+          "display": "Raad Al-Kurdi",
+          "score": 0.40692192661667037
+        },
+        {
+          "reciter": "dosari",
+          "display": "Yasser Al-Dosari",
+          "score": 0.3608624956075935
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/dosari/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.4195911980004894,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "dosari",
+          "display": "Yasser Al-Dosari",
+          "score": 0.4236752806608836
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.3839709430270326
+        },
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.2762299936807112
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/dosari/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.6874980909997248,
+      "same_top3_order": true,
+      "max_score_difference": 3.536481546495551e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "dosari",
+          "display": "Yasser Al-Dosari",
+          "score": 0.7281237845505113
+        },
+        {
+          "reciter": "shuraim",
+          "display": "Saud Al-Shuraim",
+          "score": 0.43795904567124344
+        },
+        {
+          "reciter": "kurdi",
+          "display": "Raad Al-Kurdi",
+          "score": 0.3796094168234725
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/dosari/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.308600087000741,
+      "same_top3_order": true,
+      "max_score_difference": 3.0337092171706104e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "dosari",
+          "display": "Yasser Al-Dosari",
+          "score": 0.3740826468822714
+        },
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.32475295672856697
+        },
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.27244954535647914
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/fares/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.4931005969992839,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.29035553668594166
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.2197109048022621
+        },
+        {
+          "reciter": "qatami",
+          "display": "Nasser Al-Qatami",
+          "score": 0.16874374300011846
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/fares/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.3693454909989669,
+      "same_top3_order": true,
+      "max_score_difference": 2.5801946690329203e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.6732458083581159
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.5341431962453841
+        },
+        {
+          "reciter": "hani",
+          "display": "Hani Ar-Rifai",
+          "score": 0.39630892917376537
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/fares/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 3.1149590799996076,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.7360029996049391
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.5054721306082189
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.4193633808246612
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ghamdi/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.333995300999959,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "kurdi",
+          "display": "Raad Al-Kurdi",
+          "score": 0.38176196654908356
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.34691847931164754
+        },
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.3359213126054575
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ghamdi/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.0288384999985283,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.6757960751154601
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.4849022565641672
+        },
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.4113975327388848
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ghamdi/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.8321337010002026,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.6805523897603108
+        },
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.49533525596496947
+        },
+        {
+          "reciter": "hani",
+          "display": "Hani Ar-Rifai",
+          "score": 0.30332734935515876
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/hani/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.32653620000019146,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.18138309760338236
+        },
+        {
+          "reciter": "hani",
+          "display": "Hani Ar-Rifai",
+          "score": 0.1637603358008774
+        },
+        {
+          "reciter": "mustafa",
+          "display": "Mustafa Ismail",
+          "score": 0.12582945210992016
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/hani/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.0759965010001906,
+      "same_top3_order": true,
+      "max_score_difference": 5.850046586042268e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "hani",
+          "display": "Hani Ar-Rifai",
+          "score": 0.5521372994476903
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.4833362715589868
+        },
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.4343015481983876
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/hani/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 1.8626592860000528,
+      "same_top3_order": true,
+      "max_score_difference": 6.474915759113742e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "hani",
+          "display": "Hani Ar-Rifai",
+          "score": 0.6746993611182123
+        },
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.490585455984973
+        },
+        {
+          "reciter": "qatami",
+          "display": "Nasser Al-Qatami",
+          "score": 0.48636987547259697
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/husary/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.2993999979989894,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "maher",
+          "display": "Maher Al-Muaiqly",
+          "score": 0.27094805575225445
+        },
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.23967456991547503
+        },
+        {
+          "reciter": "husary",
+          "display": "Mahmoud Al-Hussary",
+          "score": 0.23567270315971045
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/husary/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.0460154920001514,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "husary",
+          "display": "Mahmoud Al-Hussary",
+          "score": 0.39323856146118785
+        },
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.342295926967892
+        },
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.2748031086877722
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/husary/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 1.9089504860003217,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "husary",
+          "display": "Mahmoud Al-Hussary",
+          "score": 0.6263973878497602
+        },
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.42434829147309017
+        },
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.37438889903615746
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/juhany/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.3751508980003564,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "juhany",
+          "display": "Abdullah Al-Juhany",
+          "score": 0.4181651568970493
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.1747472271016562
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.16571532946649634
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/juhany/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 0.8577865970000857,
+      "same_top3_order": true,
+      "max_score_difference": 3.7568015587297054e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "juhany",
+          "display": "Abdullah Al-Juhany",
+          "score": 0.5758363175890948
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.22545364591599354
+        },
+        {
+          "reciter": "abkar",
+          "display": "Idris Abkar",
+          "score": 0.2102719500385694
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/juhany/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 1.8549050980000175,
+      "same_top3_order": true,
+      "max_score_difference": 4.146450277575653e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "juhany",
+          "display": "Abdullah Al-Juhany",
+          "score": 0.5103823440540938
+        },
+        {
+          "reciter": "abkar",
+          "display": "Idris Abkar",
+          "score": 0.22480235237726556
+        },
+        {
+          "reciter": "minshawi",
+          "display": "Mohamed Al-Minshawi",
+          "score": 0.19903201670547518
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/kurdi/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.3215014000015799,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.1573403322794062
+        },
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.15583327727411372
+        },
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.14552873268559596
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/kurdi/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.147785199998907,
+      "same_top3_order": true,
+      "max_score_difference": 1.4143569315727689e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "kurdi",
+          "display": "Raad Al-Kurdi",
+          "score": 0.7844388824313928
+        },
+        {
+          "reciter": "shuraim",
+          "display": "Saud Al-Shuraim",
+          "score": 0.3706186907241982
+        },
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.3552916223620892
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/kurdi/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.1379129979995923,
+      "same_top3_order": true,
+      "max_score_difference": 3.413177912525711e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "kurdi",
+          "display": "Raad Al-Kurdi",
+          "score": 0.8244687554494701
+        },
+        {
+          "reciter": "banna",
+          "display": "Mahmoud Ali Al-Banna",
+          "score": 0.4591056978965173
+        },
+        {
+          "reciter": "shuraim",
+          "display": "Saud Al-Shuraim",
+          "score": 0.3495135329590164
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/maher/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.32850210400101787,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.1573403322794062
+        },
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.15583327727411372
+        },
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.14552873268559596
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/maher/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 0.9463188129993796,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "maher",
+          "display": "Maher Al-Muaiqly",
+          "score": 0.6662008646920802
+        },
+        {
+          "reciter": "tunaiji",
+          "display": "Khalifa Al-Tunaiji",
+          "score": 0.37088903004815776
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.31726678009062487
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/maher/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 1.7709226240003773,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "maher",
+          "display": "Maher Al-Muaiqly",
+          "score": 0.7400190271818885
+        },
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.40765529072773565
+        },
+        {
+          "reciter": "tunaiji",
+          "display": "Khalifa Al-Tunaiji",
+          "score": 0.40354494936287916
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/minshawi/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.2717550029992708,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "minshawi",
+          "display": "Mohamed Al-Minshawi",
+          "score": 0.2334557634164804
+        },
+        {
+          "reciter": "abkar",
+          "display": "Idris Abkar",
+          "score": 0.21823408447115608
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.18700966218710277
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/minshawi/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 0.8992164120008965,
+      "same_top3_order": true,
+      "max_score_difference": 2.6395900909470527e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "minshawi",
+          "display": "Mohamed Al-Minshawi",
+          "score": 0.5028977603355657
+        },
+        {
+          "reciter": "mustafa",
+          "display": "Mustafa Ismail",
+          "score": 0.25149493750679713
+        },
+        {
+          "reciter": "husary",
+          "display": "Mahmoud Al-Hussary",
+          "score": 0.24838329754874117
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/minshawi/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 1.9612684289986646,
+      "same_top3_order": true,
+      "max_score_difference": 5.292883420437988e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "minshawi",
+          "display": "Mohamed Al-Minshawi",
+          "score": 0.6954323259130607
+        },
+        {
+          "reciter": "abkar",
+          "display": "Idris Abkar",
+          "score": 0.41548290949924416
+        },
+        {
+          "reciter": "qatami",
+          "display": "Nasser Al-Qatami",
+          "score": 0.3025083195102741
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/mustafa/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.26631612199889787,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "mustafa",
+          "display": "Mustafa Ismail",
+          "score": 0.27325501505531735
+        },
+        {
+          "reciter": "maher",
+          "display": "Maher Al-Muaiqly",
+          "score": 0.17355286758513006
+        },
+        {
+          "reciter": "tunaiji",
+          "display": "Khalifa Al-Tunaiji",
+          "score": 0.13729944089654042
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/mustafa/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 0.8176921680005762,
+      "same_top3_order": true,
+      "max_score_difference": 4.803156949950704e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "mustafa",
+          "display": "Mustafa Ismail",
+          "score": 0.5657933600667528
+        },
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.2876701322514513
+        },
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.21135082570204616
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/mustafa/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 1.8754773549990205,
+      "same_top3_order": true,
+      "max_score_difference": 3.060450470826481e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "mustafa",
+          "display": "Mustafa Ismail",
+          "score": 0.6649383434247012
+        },
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.3345510285299968
+        },
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.328211705449532
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ossi/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.29821542399986356,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.09734665818421258
+        },
+        {
+          "reciter": "juhany",
+          "display": "Abdullah Al-Juhany",
+          "score": 0.0871418253306854
+        },
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.08533447552499016
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ossi/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 0.9805300810003246,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.6450893310238961
+        },
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.48410832516369606
+        },
+        {
+          "reciter": "hani",
+          "display": "Hani Ar-Rifai",
+          "score": 0.4670503935627912
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/ossi/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 1.6669705349995638,
+      "same_top3_order": true,
+      "max_score_difference": 5.8385995926890644e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.7534714477635531
+        },
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.525289340657942
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.5247503004604032
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/qatami/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.2851042170004803,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.23097578635875157
+        },
+        {
+          "reciter": "shuraim",
+          "display": "Saud Al-Shuraim",
+          "score": 0.23058405558549272
+        },
+        {
+          "reciter": "dosari",
+          "display": "Yasser Al-Dosari",
+          "score": 0.22124809246616456
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/qatami/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 0.8870555529992998,
+      "same_top3_order": true,
+      "max_score_difference": 2.7462853213755523e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "qatami",
+          "display": "Nasser Al-Qatami",
+          "score": 0.4861148710119534
+        },
+        {
+          "reciter": "fares",
+          "display": "Fares Abbad",
+          "score": 0.31260008220412316
+        },
+        {
+          "reciter": "minshawi",
+          "display": "Mohamed Al-Minshawi",
+          "score": 0.26484546226381517
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/qatami/36_1.wav",
+      "audio_seconds": 10,
+      "seconds": 1.7098493009998492,
+      "same_top3_order": true,
+      "max_score_difference": 5.50664526755007e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "qatami",
+          "display": "Nasser Al-Qatami",
+          "score": 0.49450725836114073
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.4167314414524802
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.30523348059240163
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/shuraim/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.29000871700009156,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "tunaiji",
+          "display": "Khalifa Al-Tunaiji",
+          "score": 0.5279159468133968
+        },
+        {
+          "reciter": "maher",
+          "display": "Maher Al-Muaiqly",
+          "score": 0.30785716770786187
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.2867394713573505
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/shuraim/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.51215448900075,
+      "same_top3_order": true,
+      "max_score_difference": 1.2053548520407631e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "shuraim",
+          "display": "Saud Al-Shuraim",
+          "score": 0.5509444718060201
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.24321034174689535
+        },
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.21845198703933302
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/shuraim/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.5793589870008873,
+      "same_top3_order": true,
+      "max_score_difference": 8.929670325397154e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "shuraim",
+          "display": "Saud Al-Shuraim",
+          "score": 0.41122223748686393
+        },
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.26293108566840406
+        },
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.195403193022062
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/sudais/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.38294300499910605,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.48414643988868417
+        },
+        {
+          "reciter": "hani",
+          "display": "Hani Ar-Rifai",
+          "score": 0.19711934848001963
+        },
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.11184332459524421
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/sudais/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 1.5850394240005699,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.6702906993003732
+        },
+        {
+          "reciter": "abkar",
+          "display": "Idris Abkar",
+          "score": 0.282251130653737
+        },
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.2717191207131867
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/sudais/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 2.0371885299991845,
+      "same_top3_order": true,
+      "max_score_difference": 2.941411147983075e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "sudais",
+          "display": "Abdurrahman As-Sudais",
+          "score": 0.7344860985448928
+        },
+        {
+          "reciter": "hani",
+          "display": "Hani Ar-Rifai",
+          "score": 0.43456356756224895
+        },
+        {
+          "reciter": "ajmy",
+          "display": "Ahmed Al-Ajmy",
+          "score": 0.4148656240540111
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/tunaiji/112_1.wav",
+      "audio_seconds": 1,
+      "seconds": 0.2639227039999241,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "tunaiji",
+          "display": "Khalifa Al-Tunaiji",
+          "score": 0.5515730742684183
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.35164116158782543
+        },
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.2659333966930566
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/tunaiji/112_2.wav",
+      "audio_seconds": 5,
+      "seconds": 0.8822350110003754,
+      "same_top3_order": true,
+      "max_score_difference": 0.0,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "tunaiji",
+          "display": "Khalifa Al-Tunaiji",
+          "score": 0.6696189365778565
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.4141515561710365
+        },
+        {
+          "reciter": "maher",
+          "display": "Maher Al-Muaiqly",
+          "score": 0.36615461194552373
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/tunaiji/112_3.wav",
+      "audio_seconds": 10,
+      "seconds": 1.7152568219989917,
+      "same_top3_order": true,
+      "max_score_difference": 3.062251641150482e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "tunaiji",
+          "display": "Khalifa Al-Tunaiji",
+          "score": 0.6857282132803276
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.41640737847686426
+        },
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.40112588401128485
+        }
+      ]
+    },
+    {
+      "path": "data/recitations_clips/abdulbaset/112_1.wav",
+      "audio_seconds": 30,
+      "seconds": 5.756375267999829,
+      "same_top3_order": true,
+      "max_score_difference": 1.252285064534675e-08,
+      "confidence_equal": true,
+      "matches": [
+        {
+          "reciter": "abdulbaset",
+          "display": "Abdulbaset Abdussamad",
+          "score": 0.4845057490115416
+        },
+        {
+          "reciter": "maher",
+          "display": "Maher Al-Muaiqly",
+          "score": 0.4206236769545104
+        },
+        {
+          "reciter": "dosari",
+          "display": "Yasser Al-Dosari",
+          "score": 0.4095963230977974
+        }
+      ]
+    }
+  ],
+  "api_probes": [],
+  "failures": [],
+  "memory_limit_bytes": 536870912,
+  "memory_swap_limit_bytes": 536870912,
+  "cpus": 1.0,
+  "baseline_sha256": "1412a20d30272a5569fe52aa65b01075eacfee6ab22abbab706c219a0e8262df",
+  "peak_memory_bytes": 478769152,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+}

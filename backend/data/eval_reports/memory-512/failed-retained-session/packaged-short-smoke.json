@@ -1,0 +1,144 @@
+[
+  {
+    "route": "/identify_reciter",
+    "path": "/tmp/quran-onnx-30s.wav",
+    "seconds": 6.0459893659990485,
+    "response": {
+      "matches": [
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.7699548605156
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.5240038548285565
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.4956664312917261
+        }
+      ],
+      "confident": false
+    },
+    "peak_memory_bytes": 435503104
+  },
+  {
+    "route": "/identify_verse_progressive?include_transcript=true",
+    "path": "/tmp/quran-512-60s.wav",
+    "seconds": 128.77448025099875,
+    "response": {
+      "transcript": "قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ",
+      "confident": false,
+      "matches": [
+        {
+          "surah": 13,
+          "surah_name": "الرعد",
+          "ayah_start": 16,
+          "ayah_end": 16,
+          "score": 0.5088,
+          "words_matched": 7,
+          "words_total": 48,
+          "text": "قل من رب السماوات والأرض قل الله ۚ قل أفاتخذتم من دونه أولياء لا يملكون لأنفسهم نفعا ولا ضرا ۚ قل هل يستوي الأعمى والبصير أم هل تستوي الظلمات والنور ۗ أم جعلوا لله شركاء خلقوا كخلقه فتشابه الخلق عليهم ۚ قل الله خالق كل شيء وهو الواحد القهار"
+        },
+        {
+          "surah": 6,
+          "surah_name": "الانعام",
+          "ayah_start": 19,
+          "ayah_end": 19,
+          "score": 0.501,
+          "words_matched": 7,
+          "words_total": 48,
+          "text": "قل أي شيء أكبر شهادة ۖ قل الله ۖ شهيد بيني وبينكم ۚ وأوحي إلي هذا القرآن لأنذركم به ومن بلغ ۚ أئنكم لتشهدون أن مع الله آلهة أخرى ۚ قل لا أشهد ۚ قل إنما هو إله واحد وإنني بريء مما تشركون"
+        },
+        {
+          "surah": 6,
+          "surah_name": "الانعام",
+          "ayah_start": 71,
+          "ayah_end": 71,
+          "score": 0.4964,
+          "words_matched": 6,
+          "words_total": 48,
+          "text": "قل أندعو من دون الله ما لا ينفعنا ولا يضرنا ونرد على أعقابنا بعد إذ هدانا الله كالذي استهوته الشياطين في الأرض حيران له أصحاب يدعونه إلى الهدى ائتنا ۗ قل إن هدى الله هو الهدى ۖ وأمرنا لنسلم لرب العالمين"
+        }
+      ],
+      "needs_more_audio": false,
+      "listen_limit_reached": true,
+      "audio_seconds": 60.0
+    },
+    "peak_memory_bytes": 477102080
+  },
+  {
+    "route": "/identify_reciter",
+    "path": "/tmp/quran-onnx-30s.wav",
+    "seconds": 7.282740213000579,
+    "response": {
+      "matches": [
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.7699548605156
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.5240038548285565
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.4956664312917261
+        }
+      ],
+      "confident": false
+    },
+    "peak_memory_bytes": 477896704
+  },
+  {
+    "route": "/identify_verse_progressive?include_transcript=true",
+    "path": "/tmp/quran-onnx-20s.wav",
+    "seconds": 56.34234016700066,
+    "response": {
+      "transcript": "قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ",
+      "confident": false,
+      "matches": [
+        {
+          "surah": 59,
+          "surah_name": "الحشر",
+          "ayah_start": 22,
+          "ayah_end": 22,
+          "score": 0.6435,
+          "words_matched": 4,
+          "words_total": 16,
+          "text": "هو الله الذي لا إله إلا هو ۖ عالم الغيب والشهادة ۖ هو الرحمن الرحيم"
+        },
+        {
+          "surah": 28,
+          "surah_name": "القصص",
+          "ayah_start": 70,
+          "ayah_end": 70,
+          "score": 0.6119,
+          "words_matched": 2,
+          "words_total": 16,
+          "text": "وهو الله لا إله إلا هو ۖ له الحمد في الأولى والآخرة ۖ وله الحكم وإليه ترجعون"
+        },
+        {
+          "surah": 3,
+          "surah_name": "ال عمران",
+          "ayah_start": 62,
+          "ayah_end": 62,
+          "score": 0.6064,
+          "words_matched": 2,
+          "words_total": 16,
+          "text": "إن هذا لهو القصص الحق ۚ وما من إله إلا الله ۚ وإن الله لهو العزيز الحكيم"
+        }
+      ],
+      "needs_more_audio": true,
+      "listen_limit_reached": false,
+      "audio_seconds": 20.0
+    },
+    "peak_memory_bytes": 478515200
+  }
+]

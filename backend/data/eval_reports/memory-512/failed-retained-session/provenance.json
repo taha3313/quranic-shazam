@@ -1,0 +1,28 @@
+{
+  "source_sha256": "711d11a48e566b9e90db0c5df9df377fde71757653c15c51756afff7a59cbf23",
+  "base_image": "sha256:14f48e74d88bd32e16a937d255ff2832cc5bf95448e06c06debc5c18a027ae5d",
+  "app_bind_mount": true,
+  "profile": {
+    "QD_INFERENCE_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "QD_LOW_MEMORY": "true",
+    "OMP_NUM_THREADS": "1",
+    "MALLOC_ARENA_MAX": "2",
+    "MALLOC_MMAP_THRESHOLD_": "131072",
+    "MALLOC_TRIM_THRESHOLD_": "131072"
+  },
+  "model": {
+    "source": "speechbrain/spkrec-ecapa-voxceleb",
+    "source_revision": "0f99f2d0ebe89ac095bcc5903c4dd8f72b367286",
+    "sha256": "138051e261e072b080b97947ffe4ef21d6a99e496b4587c8b7a47de102d47552",
+    "database_sha256": "88913772251f2856b6d2ddacd160aeda7117b32073c91b19e07f125dbe704c44",
+    "sample_rate": 16000,
+    "n_fft": 400,
+    "hop_length": 160,
+    "precision": "float32",
+    "bytes": 83513362,
+    "numpy_version": "1.26.4",
+    "torch_version": "2.14.0+cpu"
+  },
+  "policy": "Unmodified float32 weights, confidence thresholds, beam size and audio limits. Only inactive model eviction, allocator settings and native thread counts change."
+}

@@ -10,6 +10,7 @@ from scipy.fft import rfft
 
 from app.core.audio import ensure_min_length, load_audio_file, normalize
 from app.core.config import get_settings
+from app.core.memory import release_unused_memory
 
 _lock = threading.Lock()
 _classifier = None
@@ -37,7 +38,15 @@ def get_classifier():
         _classifier = ort.InferenceSession(
             str(settings.reciter_onnx_path), options, providers=["CPUExecutionProvider"]
         )
+        if settings.low_memory:
+            release_unused_memory()
         return _classifier
+
+
+def release_model() -> None:
+    global _classifier
+    with _lock:
+        _classifier = None
 
 
 def is_loaded() -> bool:

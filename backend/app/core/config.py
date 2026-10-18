@@ -23,6 +23,7 @@ class Settings(BaseSettings):
     embedding_dim_fallback: int = 192
     reciter_onnx_path: Path = BACKEND_ROOT / "data" / "models" / "reciter.onnx"
     inference_threads: int = Field(default=2, ge=1, le=8)
+    low_memory: bool = False
     # Load the embedding model during startup instead of on first request.
     warm_model: bool = False
 

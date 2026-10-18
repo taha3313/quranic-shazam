@@ -25,6 +25,17 @@ async def _read_capped(file: UploadFile, cap: int) -> bytes:
     Checking before buffering the whole body prevents a multi-GB body
     from being read into RAM just to be rejected.
     """
+    # Starlette has already counted the bytes while parsing multipart data.
+    # Avoid the bytearray-to-bytes copy for normal uploads after rejecting an
+    # oversized spool. The fallback retains the streaming cap for unknown size.
+    if file.size is not None:
+        if file.size > cap:
+            raise HTTPException(
+                status_code=413,
+                detail=f"File too large (max {get_settings().max_upload_mb} MB).",
+            )
+        return await file.read()
+
     buf = bytearray()
     while True:
         chunk = await file.read(_UPLOAD_CHUNK)
@@ -49,6 +60,7 @@ async def identify_reciter(
         raise HTTPException(status_code=400, detail="Audio file is required.")
 
     data = await _read_capped(file, settings.max_upload_bytes)
+    await file.close()
     if not data:
         raise HTTPException(status_code=400, detail="Uploaded file is empty.")
 

@@ -11,7 +11,6 @@ from functools import lru_cache
 from pathlib import Path
 
 import numpy as np
-from scipy.signal import resample_poly
 
 logger = logging.getLogger(__name__)
 
@@ -54,6 +53,8 @@ def resample(waveform: np.ndarray, orig_sr: int, target_sr: int = TARGET_SR) -> 
     down, up = orig_sr // divisor, target_sr // divisor
     # Unusual coprime rates must not create an enormous phase-filter matrix.
     if down > 4096 or up > 1024:
+        from scipy.signal import resample_poly
+
         return resample_poly(waveform, up, down, axis=-1).astype(np.float32)
     kernel, width = _sinc_kernel(down, up)
     padded = np.pad(waveform, ((0, 0), (width, width + down)))
@@ -67,23 +68,40 @@ def load_audio_file(path: str | Path, target_sr: int = TARGET_SR) -> tuple[np.nd
     return decode_upload_bytes(Path(path).read_bytes(), target_sr)
 
 
-def decode_upload_bytes(data: bytes, target_sr: int = TARGET_SR) -> tuple[np.ndarray, int]:
+def decode_upload_bytes(
+    data: bytes, target_sr: int = TARGET_SR, max_seconds: float | None = None
+) -> tuple[np.ndarray, int]:
     """Decode soundfile formats directly, with FFmpeg for browser recordings."""
     import soundfile as sf
 
+    if max_seconds is not None and max_seconds <= 0:
+        raise ValueError("Audio duration limit must be positive.")
+
+    def bounded(audio):
+        if max_seconds is None:
+            return audio
+        return audio[:, : int(max_seconds * target_sr)].copy()
+
     try:
-        audio, sr = sf.read(io.BytesIO(data), dtype="float32", always_2d=True)
-        return resample(normalize(audio.T), sr, target_sr), target_sr
+        with sf.SoundFile(io.BytesIO(data)) as source:
+            sr = source.samplerate
+            # Preserve resampler lookahead at the cutoff without decoding the
+            # entire upload into memory before applying the service's limit.
+            frames = -1 if max_seconds is None else math.ceil((max_seconds + 0.01) * sr)
+            audio = source.read(frames=frames, dtype="float32", always_2d=True)
+        return bounded(resample(normalize(audio.T), sr, target_sr)), target_sr
     except Exception as exc:  # noqa: BLE001 - FFmpeg supports additional formats
         logger.debug("soundfile decode failed (%s), trying ffmpeg", exc)
-    decoded = _decode_with_ffmpeg(data, target_sr)
+    decoded = _decode_with_ffmpeg(data, target_sr, max_seconds=max_seconds)
     if decoded is None:
         raise ValueError("Could not decode audio bytes (tried soundfile and ffmpeg).")
     audio, _ = sf.read(io.BytesIO(decoded), dtype="float32", always_2d=True)
-    return normalize(audio.T), target_sr
+    return bounded(normalize(audio.T)), target_sr
 
 
-def _decode_with_ffmpeg(data: bytes, target_sr: int, timeout: int = 10) -> bytes | None:
+def _decode_with_ffmpeg(
+    data: bytes, target_sr: int, timeout: int = 10, max_seconds: float | None = None
+) -> bytes | None:
     """Use the ffmpeg binary to convert arbitrary audio bytes to wav bytes."""
     cmd = [
         "ffmpeg",
@@ -100,6 +118,8 @@ def _decode_with_ffmpeg(data: bytes, target_sr: int, timeout: int = 10) -> bytes
         "wav",
         "pipe:1",
     ]
+    if max_seconds is not None:
+        cmd[-3:-3] = ["-t", str(max_seconds + 0.01)]
     try:
         proc = subprocess.run(cmd, input=data, capture_output=True, timeout=timeout)
     except (subprocess.TimeoutExpired, FileNotFoundError) as exc:

@@ -89,3 +89,45 @@ def test_resample_stereo_to_16k():
     assert np.isfinite(waveform).all()
     expected = 0.75 * np.sin(2 * np.pi * 440 * np.arange(16000) / 16000)
     np.testing.assert_allclose(waveform[0, 20:-20], expected[20:-20], atol=0.002)
+
+
+def test_capped_resampling_matches_full_decode_without_retaining_parent():
+    import io
+
+    import soundfile as sf
+
+    data = io.BytesIO()
+    audio = np.sin(np.arange(48000 * 4, dtype=np.float32) * 0.03)
+    sf.write(data, audio, 48000, format="WAV", subtype="FLOAT")
+    full, _ = decode_upload_bytes(data.getvalue())
+    capped, _ = decode_upload_bytes(data.getvalue(), max_seconds=1)
+    assert capped.shape == (1, 16000)
+    assert capped.base is None
+    np.testing.assert_allclose(capped, full[:, :16000], atol=2e-6)
+
+
+@pytest.mark.skipif(shutil.which("ffmpeg") is None, reason="ffmpeg not installed")
+def test_webm_decode_respects_duration_cap():
+    encoded = subprocess.run(
+        [
+            "ffmpeg",
+            "-hide_banner",
+            "-loglevel",
+            "error",
+            "-f",
+            "lavfi",
+            "-i",
+            "sine=frequency=440:duration=3",
+            "-c:a",
+            "libopus",
+            "-f",
+            "webm",
+            "pipe:1",
+        ],
+        capture_output=True,
+        check=True,
+        timeout=15,
+    ).stdout
+    audio, sr = decode_upload_bytes(encoded, max_seconds=1)
+    assert sr == 16000
+    assert audio.shape == (1, 16000)

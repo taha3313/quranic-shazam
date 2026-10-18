@@ -1,0 +1,33 @@
+{
+  "source_sha256": "9b6b70b27cad2bec69e1f1df3120ebf6a9c1ff6113d50ee7e0f1510d4ac38953",
+  "base_image": "sha256:04d39a6b55c5ce0d58ec2e2d0f2c37b4ccf8b154eae740441326ef82614fd4f3",
+  "app_bind_mount": false,
+  "profile": {
+    "QD_INFERENCE_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "QD_LOW_MEMORY": "true",
+    "OMP_NUM_THREADS": "2",
+    "MALLOC_ARENA_MAX": "2",
+    "MALLOC_MMAP_THRESHOLD_": "131072",
+    "MALLOC_TRIM_THRESHOLD_": "131072"
+  },
+  "model": {
+    "source": "speechbrain/spkrec-ecapa-voxceleb",
+    "source_revision": "0f99f2d0ebe89ac095bcc5903c4dd8f72b367286",
+    "sha256": "138051e261e072b080b97947ffe4ef21d6a99e496b4587c8b7a47de102d47552",
+    "database_sha256": "88913772251f2856b6d2ddacd160aeda7117b32073c91b19e07f125dbe704c44",
+    "sample_rate": 16000,
+    "n_fft": 400,
+    "hop_length": 160,
+    "precision": "float32",
+    "bytes": 83513362,
+    "numpy_version": "1.26.4",
+    "torch_version": "2.14.0+cpu"
+  },
+  "policy": "Unmodified float32 weights, confidence thresholds, beam size and audio duration limits. Runtime changes are request-scoped model eviction, allocator settings, active-request admission, capped decode, and single-copy multipart reads.",
+  "limits": {
+    "memory_bytes": 536870912,
+    "memory_swap_bytes": 536870912,
+    "cpus": 1
+  }
+}

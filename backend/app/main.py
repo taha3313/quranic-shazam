@@ -12,6 +12,7 @@ from app.api.routes.live_reciter import router as live_router
 from app.api.routes.reciter import router as reciter_router
 from app.api.routes.verse import router as verse_router
 from app.api.schemas import HealthResponse
+from app.core.admission import LowMemoryAdmissionMiddleware
 from app.core.config import get_settings
 
 logging.basicConfig(level=logging.INFO)
@@ -45,6 +46,7 @@ def create_app() -> FastAPI:
     settings = get_settings()
     app = FastAPI(title="Quranic Shazam - Reciter Identifier", lifespan=lifespan)
 
+    app.add_middleware(LowMemoryAdmissionMiddleware)
     app.add_middleware(
         CORSMiddleware,
         allow_origins=settings.allowed_origins,

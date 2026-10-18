@@ -1,0 +1,140 @@
+[
+  {
+    "route": "/identify_reciter",
+    "seconds": 7.235460317000616,
+    "peak_bytes": 435281920,
+    "response": {
+      "matches": [
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.7699548605156
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.5240038548285565
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.4956664312917261
+        }
+      ],
+      "confident": false
+    }
+  },
+  {
+    "route": "/identify_verse_progressive?include_transcript=true",
+    "seconds": 52.053248704,
+    "peak_bytes": 457482240,
+    "response": {
+      "transcript": "قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ",
+      "confident": false,
+      "matches": [
+        {
+          "surah": 59,
+          "surah_name": "الحشر",
+          "ayah_start": 22,
+          "ayah_end": 22,
+          "score": 0.6435,
+          "words_matched": 4,
+          "words_total": 16,
+          "text": "هو الله الذي لا إله إلا هو ۖ عالم الغيب والشهادة ۖ هو الرحمن الرحيم"
+        },
+        {
+          "surah": 28,
+          "surah_name": "القصص",
+          "ayah_start": 70,
+          "ayah_end": 70,
+          "score": 0.6119,
+          "words_matched": 2,
+          "words_total": 16,
+          "text": "وهو الله لا إله إلا هو ۖ له الحمد في الأولى والآخرة ۖ وله الحكم وإليه ترجعون"
+        },
+        {
+          "surah": 3,
+          "surah_name": "ال عمران",
+          "ayah_start": 62,
+          "ayah_end": 62,
+          "score": 0.6064,
+          "words_matched": 2,
+          "words_total": 16,
+          "text": "إن هذا لهو القصص الحق ۚ وما من إله إلا الله ۚ وإن الله لهو العزيز الحكيم"
+        }
+      ],
+      "needs_more_audio": true,
+      "listen_limit_reached": false,
+      "audio_seconds": 20.0
+    }
+  },
+  {
+    "route": "/identify_reciter",
+    "seconds": 7.691948677000255,
+    "peak_bytes": 477646848,
+    "response": {
+      "matches": [
+        {
+          "reciter": "ghamdi",
+          "display": "Saad Al-Ghamdi",
+          "score": 0.7699548605156
+        },
+        {
+          "reciter": "ossi",
+          "display": "Abdul Rahman Al-Ossi",
+          "score": 0.5240038548285565
+        },
+        {
+          "reciter": "alafasy",
+          "display": "Mishary Alafasy",
+          "score": 0.4956664312917261
+        }
+      ],
+      "confident": false
+    }
+  },
+  {
+    "route": "/identify_verse_progressive?include_transcript=true",
+    "seconds": 41.32986020899989,
+    "peak_bytes": 478769152,
+    "response": {
+      "transcript": "قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ قُلْ هُوَ اللَّهُ أَحَدٌ",
+      "confident": false,
+      "matches": [
+        {
+          "surah": 59,
+          "surah_name": "الحشر",
+          "ayah_start": 22,
+          "ayah_end": 22,
+          "score": 0.6435,
+          "words_matched": 4,
+          "words_total": 16,
+          "text": "هو الله الذي لا إله إلا هو ۖ عالم الغيب والشهادة ۖ هو الرحمن الرحيم"
+        },
+        {
+          "surah": 28,
+          "surah_name": "القصص",
+          "ayah_start": 70,
+          "ayah_end": 70,
+          "score": 0.6119,
+          "words_matched": 2,
+          "words_total": 16,
+          "text": "وهو الله لا إله إلا هو ۖ له الحمد في الأولى والآخرة ۖ وله الحكم وإليه ترجعون"
+        },
+        {
+          "surah": 3,
+          "surah_name": "ال عمران",
+          "ayah_start": 62,
+          "ayah_end": 62,
+          "score": 0.6064,
+          "words_matched": 2,
+          "words_total": 16,
+          "text": "إن هذا لهو القصص الحق ۚ وما من إله إلا الله ۚ وإن الله لهو العزيز الحكيم"
+        }
+      ],
+      "needs_more_audio": true,
+      "listen_limit_reached": false,
+      "audio_seconds": 20.0
+    }
+  }
+]
