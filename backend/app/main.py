@@ -44,7 +44,11 @@ async def lifespan(_: FastAPI):
 
 def create_app() -> FastAPI:
     settings = get_settings()
-    app = FastAPI(title="Quranic Shazam - Reciter Identifier", lifespan=lifespan)
+    app = FastAPI(
+        title="Quranic Shazam - Reciter Identifier",
+        description="API for Quranic reciter and verse recognition.",
+        lifespan=lifespan,
+    )
 
     app.add_middleware(LowMemoryAdmissionMiddleware)
     app.add_middleware(
