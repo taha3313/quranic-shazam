@@ -2,6 +2,7 @@ __pycache__/
 *.py[cod]
 .venv/
 data/recitations_clips/
+data/models/*.onnx
 data/test_clips/
 pretrained_models/
 *.wav

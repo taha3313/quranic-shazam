@@ -38,9 +38,13 @@ COPY --from=dependencies /app/.venv /app/.venv
 COPY app ./app
 COPY scripts ./scripts
 COPY data/reciters_embeddings.npy data/reciters.json data/quran_verses.json ./data/
-# Generate with the export dependency group before building this runtime image.
-COPY data/models/reciter.onnx data/models/reciter.json ./data/models/
+# Fetch the versioned model asset; its checksum pins the exported weights.
+COPY data/models/reciter.json ./data/models/
+ARG RECITER_ONNX_URL=https://github.com/taha3313/quranic-shazam/releases/download/reciter-onnx-v1/reciter.onnx
+RUN curl --fail --location --retry 5 --output data/models/reciter.onnx "$RECITER_ONNX_URL" \
+    && echo "138051e261e072b080b97947ffe4ef21d6a99e496b4587c8b7a47de102d47552  data/models/reciter.onnx" \
+        | sha256sum --check
 
 EXPOSE 8000
 
-CMD [".venv/bin/uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "exec .venv/bin/uvicorn app.main:app --host 0.0.0.0 --port \"${PORT:-8000}\""]

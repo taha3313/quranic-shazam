@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: quranic-shazam-api
+    runtime: docker
+    plan: free
+    region: frankfurt
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    autoDeployTrigger: commit
+    envVars:
+      - key: QD_LOW_MEMORY
+        value: "true"
+      - key: QD_INFERENCE_THREADS
+        value: "2"
+      - key: QD_CORS_ORIGINS
+        value: https://quranicshazam.tahachelly.com,https://quranic-shazam-site.onrender.com
+
+  - type: web
+    name: quranic-shazam-site
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist
+    domains:
+      - quranicshazam.tahachelly.com
+    envVars:
+      - key: VITE_API_URL
+        value: https://quranic-shazam-api.onrender.com
+      - key: VITE_WS_URL
+        value: wss://quranic-shazam-api.onrender.com
