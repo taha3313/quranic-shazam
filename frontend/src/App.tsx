@@ -55,20 +55,32 @@ function App() {
           </div>
 
           <div className="hero-art" aria-hidden="true">
-            <div className="art-orbit orbit-outer" />
-            <div className="art-orbit orbit-inner" />
-            <div className="art-medallion">
-              <svg viewBox="0 0 220 220" fill="none">
-                <circle cx="110" cy="110" r="75" stroke="currentColor" strokeOpacity=".22" />
-                <circle cx="110" cy="110" r="61" stroke="currentColor" strokeOpacity=".3" strokeDasharray="2 6" />
-                <path d="M110 48 121 88l39-18-18 39 40 11-40 11 18 39-39-18-11 40-11-40-39 18 18-39-40-11 40-11-18-39 39 18 11-40Z" fill="currentColor" fillOpacity=".08" stroke="currentColor" strokeOpacity=".48" />
-                <circle cx="110" cy="110" r="29" fill="#F8F5EB" stroke="currentColor" strokeOpacity=".4" />
-                <path d="M108 91v37m0-37c-7-5-15-6-23-3v34c8-3 16-2 23 3m0-34c7-5 15-6 23-3v34c-8-3-16-2-23 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </div>
-            <div className="sound-wave"><i /><i /><i /><i /><i /><i /><i /><i /><i /><i /><i /></div>
-            <span className="art-caption">LISTEN · REFLECT · RECOGNIZE</span>
-            <span className="art-star star-a">✳</span><span className="art-star star-b">✦</span>
+            <div className="arch-aura" />
+            <svg className="mihrab-art" viewBox="0 0 340 420" fill="none">
+              <defs>
+                <linearGradient id="archFill" x1="35" y1="35" x2="300" y2="400" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#285b49" />
+                  <stop offset="1" stopColor="#102f28" />
+                </linearGradient>
+                <linearGradient id="archLine" x1="36" y1="20" x2="305" y2="390" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#e5ca8e" />
+                  <stop offset="1" stopColor="#a77d3f" />
+                </linearGradient>
+              </defs>
+              <path d="M19 403V180C19 117 74 68 170 13c96 55 151 104 151 167v223H19Z" fill="url(#archFill)" stroke="url(#archLine)" strokeWidth="2" />
+              <path d="M44 403V184c0-51 44-91 126-139 82 48 126 88 126 139v219H44Z" stroke="#d4b875" strokeOpacity=".45" />
+              <path d="M65 403V188c0-43 37-77 105-117 68 40 105 74 105 117v215" stroke="#d4b875" strokeOpacity=".2" />
+              <path d="M170 74 184 116 226 102 202 139 239 163 195 163 195 207 170 171 145 207 145 163 101 163 138 139 114 102 156 116 170 74Z" stroke="#d8bb77" strokeOpacity=".56" strokeWidth="1.4" />
+              <circle cx="170" cy="153" r="45" stroke="#d8bb77" strokeOpacity=".48" />
+              <circle cx="170" cy="153" r="35" stroke="#d8bb77" strokeOpacity=".32" strokeDasharray="2 5" />
+              <path d="M164 139v30m0-30c-6-4-12-5-18-2v27c6-3 12-2 18 2m0-27c6-4 12-5 18-2v27c-6-3-12-2-18 2" stroke="#f1e5c3" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M74 248h192M74 258h192" stroke="#d8bb77" strokeOpacity=".25" />
+              <path d="m170 279 8 21 22-8-13 19 19 13-22 0 0 22-14-18-14 18v-22h-22l19-13-13-19 22 8 8-21Z" stroke="#d8bb77" strokeOpacity=".48" />
+              <circle cx="68" cy="111" r="2" fill="#e4cc94"/><circle cx="272" cy="111" r="2" fill="#e4cc94"/>
+              <path d="M65 346h210" stroke="#d8bb77" strokeOpacity=".35" />
+              <text x="170" y="373" fill="#e9d9ad" fontSize="8" letterSpacing="3" textAnchor="middle">LISTEN · REFLECT · RECOGNIZE</text>
+            </svg>
+            <span className="art-star star-a">✦</span><span className="art-star star-b">✧</span>
           </div>
         </section>
 

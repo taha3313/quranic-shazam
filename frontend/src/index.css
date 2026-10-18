@@ -35,7 +35,7 @@ button:focus-visible, input:focus-visible { outline: 3px solid #b79252; outline-
 }
 .pattern-layer {
   position: absolute; z-index: -1; inset: 0; pointer-events: none;
-  background-image: url('/patterns/moroccan-flower.png'); background-size: 390px; opacity: .022;
+  background-image: none; opacity: 0;
   mask-image: linear-gradient(to bottom, #000 0%, transparent 76%);
 }
 .ambient { position: absolute; z-index: -1; border-radius: 999px; pointer-events: none; filter: blur(1px); }
@@ -130,7 +130,7 @@ h1 em { display: block; color: #8d7547; font-style: normal; }
 .audio-player-wrap .rhap_progress-indicator { background: #b79252; }
 .audio-player-wrap .rhap_time { color: #6c786e; font-size: 10px; }
 
-.result-card { margin-top: 18px; padding: 19px 20px; border: 1px solid #e4e8de; border-radius: 12px; background: linear-gradient(125deg, #fcfdf9, #f6f8f1); animation: rise-in .35s both; }
+.result-card { margin-top: 18px; padding: 19px 20px; border: 1px solid #e4e8de; border-left: 3px solid #b79252; border-radius: 12px; background: linear-gradient(125deg, #fcfdf9, #f6f8f1); animation: rise-in .35s both; }
 .result-topline { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 13px; }
 .result-title { margin: 0; color: var(--ink); font-family: "Scheherazade New", Georgia, serif; font-size: 23px; line-height: 1.2; }
 .result-badge { padding: 5px 8px; border: 1px solid #dbe6d9; border-radius: 99px; color: #476d4e; background: #f0f6ed; font-size: 8px; font-weight: 700; letter-spacing: .04em; }
@@ -206,4 +206,74 @@ h1 em { display: block; color: #8d7547; font-style: normal; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+/* Jewel-toned Islamic geometry and warm manuscript paper. */
+.app-shell {
+  --ink: #f4efdf;
+  --forest: #173f34;
+  --green: #28664f;
+  --muted: #b8c5b8;
+  --gold: #d3b36c;
+  background: radial-gradient(ellipse at 77% 40%, #1d493c 0, #14372f 45%, #0d2924 100%);
+}
+.pattern-layer {
+  background-image: none;
+  opacity: 0;
+}
+.ambient-one { background: radial-gradient(circle, rgba(194,159,91,.12) 0, transparent 70%); }
+.ambient-two { background: radial-gradient(circle, rgba(74,126,92,.2) 0, transparent 70%); }
+.site-header { border-color: rgba(222,198,143,.2); }
+.brand, .brand-mark { color: #efe6cc; }
+.brand-kicker, .header-note { color: #aab9aa; }
+.status-dot { background: #d3b36c; box-shadow: 0 0 0 4px rgba(211,179,108,.14); }
+.eyebrow { color: #d6bd80; }
+.eyebrow span { background: #d6bd80; }
+h1 em { color: #e0c681; }
+.hero-description { color: #bac8bb; }
+.hero-qualities { color: #e0e5d8; }
+.hero-qualities i, .art-star { color: #e0c681; }
+.hero-art { height: 350px; color: #e0c681; }
+.arch-aura { position: absolute; width: 245px; height: 245px; border-radius: 50%; background: radial-gradient(circle, rgba(210,179,108,.17), rgba(210,179,108,0) 68%); }
+.mihrab-art { position: relative; height: 100%; width: auto; max-width: 100%; overflow: visible; filter: drop-shadow(0 18px 30px rgba(3,17,13,.3)); animation: float 8s ease-in-out infinite; }
+.star-a { top: 35px; right: 11%; font-size: 17px; }
+.star-b { left: 13%; bottom: 67px; font-size: 14px; }
+.mode-switch { border-color: rgba(220,195,133,.22); background: rgba(8,33,27,.58); box-shadow: 0 12px 36px rgba(1,16,12,.2); }
+.mode-tab { color: #d1dbcf; }
+.mode-tab:hover { color: #fff8e8; background: rgba(255,255,255,.06); }
+.mode-tab.active { color: #243a2b; border-color: rgba(241,222,176,.65); background: linear-gradient(115deg, #e9d6a5, #c8a55f); box-shadow: 0 7px 19px rgba(4,20,14,.3); }
+.mode-tab.active .mode-icon { border-color: rgba(47,65,42,.35); }
+.studio-card { position: relative; border-color: rgba(219,199,151,.58); background: linear-gradient(145deg, #fbf8ee, #f3efdf); box-shadow: 0 22px 65px rgba(1,14,10,.34), inset 0 1px 0 rgba(255,255,255,.9); }
+.studio-card::before { content: ""; position: absolute; inset: 7px; border: 1px solid rgba(183,146,82,.18); border-radius: 12px; pointer-events: none; }
+.form-heading { border-color: #e4deca; }
+.form-heading h2, .result-title { color: #1b4131; }
+.form-heading h2::before { content: "۞"; margin-right: .42em; color: #b28f52; font-family: "Scheherazade New", Georgia, serif; font-size: .62em; vertical-align: .14em; }
+.upload-label { color: #495e4e; }
+.file-input { border-color: #b9c7b5; color: #657667; background: #f9f8f0; }
+.file-input:hover { border-color: #809b7c; background: #f2f5eb; }
+.file-input::file-selector-button { color: #f7f1dd; background: #315c45; }
+.file-input::file-selector-button:hover { background: #244a38; }
+.or-divider { color: #99875f; }
+.or-divider::before, .or-divider::after { background: #ded8c4; }
+.record-button { border-color: #bdccb8; color: #2c543d; background: #edf1e6; }
+.record-button:hover:not(:disabled) { border-color: #829b79; background: #e5ecdd; }
+.record-button.recording { border-color: #d7a69a; color: #9d4639; background: #fbebe4; }
+.submit-button { border-color: #214b38; color: #f7f1df; background: linear-gradient(115deg, #315e45, #1b4938); box-shadow: 0 6px 14px rgba(37,73,48,.19); }
+.submit-button:hover:not(:disabled) { background: linear-gradient(115deg, #274f3a, #143f30); }
+.submit-button:disabled { border-color: #dce2d3; color: #69796b; background: #e7eade; }
+.helper-copy { color: #8e9688; }
+.live-status { border-color: #e3dabb; color: #746747; background: #f7f3e5; }
+.audio-player-wrap { border-color: #ddd7c2; background: #faf9f2; }
+.privacy-note { color: #aebcae; }
+.privacy-note span { color: #dec47e; }
+.site-footer { color: #aab9aa; }
+.site-footer p { color: #e2d2a4; }
+.site-footer small { color: #c2ad79; }
+
+@media (min-width: 900px) {
+  .hero-art { right: -42px; bottom: -72px; width: 270px; height: 340px; opacity: .94; }
+}
+@media (max-width: 700px) {
+  .hero-art { opacity: .22; }
+  .mode-switch { background: rgba(8,33,27,.72); }
 }
