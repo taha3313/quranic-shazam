@@ -18,6 +18,7 @@ function App() {
 
   return (
     <div className="app-shell">
+      <a className="skip-link" href="#recognition">Skip to recognition controls</a>
       <div className="ambient ambient-one" aria-hidden="true" />
       <div className="ambient ambient-two" aria-hidden="true" />
       <div className="pattern-layer" aria-hidden="true" />
@@ -84,14 +85,15 @@ function App() {
           </div>
         </section>
 
-        <section className="recognition-section" aria-label="Audio recognition">
-          <div className="mode-switch" role="tablist" aria-label="Choose what to recognize">
+        <section id="recognition" className="recognition-section" aria-label="Audio recognition">
+          <div className="mode-switch" role="tablist" aria-label="Choose what to recognize" aria-orientation="horizontal">
             <button
               id="reciter-tab"
               type="button"
               role="tab"
               aria-selected={tab === 'reciter'}
               aria-controls="recognition-panel"
+              tabIndex={tab === 'reciter' ? 0 : -1}
               onClick={() => setTab('reciter')}
               onKeyDown={handleModeKeyDown}
               className={tab === 'reciter' ? 'mode-tab active' : 'mode-tab'}
@@ -106,6 +108,7 @@ function App() {
               role="tab"
               aria-selected={tab === 'verse'}
               aria-controls="recognition-panel"
+              tabIndex={tab === 'verse' ? 0 : -1}
               onClick={() => setTab('verse')}
               onKeyDown={handleModeKeyDown}
               className={tab === 'verse' ? 'mode-tab active' : 'mode-tab'}

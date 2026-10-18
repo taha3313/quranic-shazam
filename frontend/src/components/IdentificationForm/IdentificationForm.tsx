@@ -84,10 +84,10 @@ export default function IdentificationForm() {
 
   return (
     <div className="studio-card">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} aria-busy={loading}>
         <div className="form-heading">
           <div>
-            <h2>Identify a reciter</h2>
+            <h2><span className="form-heading-mark" aria-hidden="true">۞</span>Identify a reciter</h2>
             <p>Upload a recording or let us listen with you.</p>
           </div>
           <span className="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ</span>
@@ -99,6 +99,7 @@ export default function IdentificationForm() {
             id="audio-upload"
             type="file"
             accept="audio/*"
+            aria-describedby="reciter-audio-help"
             disabled={isRecording || isChecking || loading}
             onChange={handleFileChange}
             className="file-input"
@@ -126,19 +127,23 @@ export default function IdentificationForm() {
         >
           {loading || isChecking ? 'Listening for a match…' : 'Find this reciter'}
         </button>
-        <p className="helper-copy">
+        <p id="reciter-audio-help" className="helper-copy">
           Live listening checks every few seconds and allows up to 30 seconds for a clear match.
         </p>
       </form>
 
+      {!isRecording && (loading || isChecking) && (
+        <p role="status" aria-live="polite" aria-atomic="true" className="sr-only">Searching for a reciter match.</p>
+      )}
+
       {isRecording && (
-        <p role="status" aria-live="polite" className="live-status">
+        <p role="status" aria-live="polite" aria-atomic="true" className="live-status">
           <span className="record-indicator" aria-hidden="true" />
           {isChecking ? 'Listening to your recitation now…' : liveResult ? 'A few more seconds of recitation will help us be sure.' : 'Microphone is on. Recite a few seconds, then stop when ready.'}
         </p>
       )}
       {!isRecording && liveResult && !liveResult.confident && (
-        <p role="status" className="live-status">
+        <p role="status" aria-live="polite" aria-atomic="true" className="live-status">
           We found a possible match. Try a clearer or longer passage for more confidence.
         </p>
       )}

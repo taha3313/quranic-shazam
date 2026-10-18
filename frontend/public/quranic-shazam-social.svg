@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#214d3e"/><stop offset=".58" stop-color="#14372f"/><stop offset="1" stop-color="#0b2723"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f0dfae"/><stop offset="1" stop-color="#bd9650"/>
+    </linearGradient>
+    <pattern id="geometry" width="88" height="88" patternUnits="userSpaceOnUse" patternTransform="rotate(22)">
+      <path d="M44 0 55 33 88 44 55 55 44 88 33 55 0 44 33 33Z" fill="none" stroke="#ddc47f" stroke-opacity=".12" stroke-width="1"/>
+      <circle cx="44" cy="44" r="18" fill="none" stroke="#ddc47f" stroke-opacity=".08"/>
+    </pattern>
+    <filter id="shadow" x="-.3" y="-.2" width="1.6" height="1.6"><feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#04140f" flood-opacity=".42"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#geometry)"/>
+  <circle cx="930" cy="325" r="285" fill="#b99552" opacity=".08"/>
+  <g filter="url(#shadow)">
+    <path d="M736 577V266c0-111 91-175 200-238 109 63 200 127 200 238v311H736Z" fill="#12352d" stroke="url(#gold)" stroke-width="3"/>
+    <path d="M765 577V270c0-95 79-150 171-205 92 55 171 110 171 205v307" fill="none" stroke="#dfc783" stroke-opacity=".52" stroke-width="2"/>
+    <path d="M803 576V274c0-78 57-118 133-165 76 47 133 87 133 165v302" fill="none" stroke="#dfc783" stroke-opacity=".26" stroke-width="2"/>
+    <circle cx="936" cy="259" r="87" fill="none" stroke="#d9bd78" stroke-opacity=".58" stroke-width="2"/>
+    <circle cx="936" cy="259" r="70" fill="none" stroke="#d9bd78" stroke-opacity=".28" stroke-dasharray="3 9" stroke-width="2"/>
+    <path d="m936 185 18 51 52-17-30 45 46 31-54 0 0 54-32-44-32 44v-54h-54l46-31-30-45 52 17 18-51Z" fill="none" stroke="url(#gold)" stroke-width="2"/>
+    <path d="M909 245v42m0-42c-8-6-18-7-27-3v39c9-4 19-3 27 3m0-39c9-6 19-7 28-3v39c-9-4-19-3-28 3" fill="none" stroke="#f0e7cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path d="M820 390h232M820 402h232M820 510h232" stroke="#d9bd78" stroke-opacity=".34"/>
+    <path d="m936 425 10 27 29-10-18 25 25 17-29 0 0 29-17-24-18 24v-29h-29l25-17-18-25 29 10 11-27Z" fill="none" stroke="#d9bd78" stroke-opacity=".55"/>
+  </g>
+  <path d="M94 160h74" stroke="url(#gold)" stroke-width="2"/>
+  <text x="94" y="218" fill="#dfc985" font-family="Georgia,serif" font-size="22" letter-spacing="5">A LISTENING COMPANION</text>
+  <text x="88" y="318" fill="#fbf5e6" font-family="Georgia,serif" font-size="76" font-weight="700">Quranic</text>
+  <text x="88" y="402" fill="#e4cc8e" font-family="Georgia,serif" font-size="76" font-weight="700">Shazam</text>
+  <text x="94" y="469" fill="#c2d0c1" font-family="Arial,sans-serif" font-size="26">Recognize the reciter.</text>
+  <text x="94" y="508" fill="#c2d0c1" font-family="Arial,sans-serif" font-size="26">Find the verse.</text>
+  <g fill="#e3cb8c"><path d="m655 179 7 20 21 7-21 7-7 21-7-21-20-7 20-7z"/><circle cx="598" cy="462" r="4"/><circle cx="646" cy="496" r="3"/></g>
+  <path d="M94 552h500" stroke="#ddc47f" stroke-opacity=".3"/>
+</svg>

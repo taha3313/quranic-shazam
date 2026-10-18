@@ -28,7 +28,7 @@ export default function Result({ result, error }: ResultProps) {
         <div className="match-info">
           <span className="match-caption">Closest reciter</span>
           <span className="match-name">{top.display ?? top.reciter}</span>
-          <div className="score-track" role="meter" aria-label="Match similarity" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(score)}>
+          <div className="score-track" role="meter" aria-label="Match similarity" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(score)} aria-valuetext={`${score.toFixed(1)} percent`}>
             <div className="score-fill" style={{ width: `${score}%` }} />
           </div>
         </div>

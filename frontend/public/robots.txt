@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://quranicshazam.tahachelly.com/sitemap.xml

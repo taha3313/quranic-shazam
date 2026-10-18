@@ -161,10 +161,10 @@ export default function VerseForm() {
 
   return (
     <div className="studio-card">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} aria-busy={loading && !recording}>
         <div className="form-heading">
           <div>
-            <h2>Find a verse</h2>
+            <h2><span className="form-heading-mark" aria-hidden="true">۞</span>Find a verse</h2>
             <p>We listen for the words and surrounding context.</p>
           </div>
           <span className="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ</span>
@@ -176,6 +176,7 @@ export default function VerseForm() {
             id="verse-audio-upload"
             type="file"
             accept="audio/*"
+            aria-describedby="verse-audio-help"
             disabled={recording || loading}
             onChange={handleFileChange}
             className="file-input"
@@ -203,10 +204,14 @@ export default function VerseForm() {
         >
           {loading ? 'Listening for the ayah…' : 'Find this verse'}
         </button>
-        <p className="helper-copy">
+        <p id="verse-audio-help" className="helper-copy">
           More surrounding recitation helps us find the right ayah, especially with repeated verses.
         </p>
       </form>
+
+      {!recording && loading && (
+        <p role="status" aria-live="polite" aria-atomic="true" className="sr-only">Searching the recitation for a verse.</p>
+      )}
 
       {recording && (
         <p role="status" aria-live="polite" className="live-status">
