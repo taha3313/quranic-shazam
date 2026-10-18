@@ -24,6 +24,20 @@ The screenshots below show the live app's two recognition modes.
 
 ## How recognition works
 
+```mermaid
+flowchart LR
+    A[Audio upload or live microphone] --> B{Recognition mode}
+    B -->|Reciter| C[ECAPA-TDNN audio embedding]
+    C --> D[Compare with 20 reciter profiles]
+    D --> E[Ranked reciter matches]
+    B -->|Verse| F[Quran-tuned Whisper transcription]
+    F --> G[Normalize Arabic transcript]
+    G --> H[Match against 6,236 verses]
+    H --> I[Ranked surah and ayah matches]
+    I -. ambiguous .-> J[Progressive listening adds context]
+    J --> F
+```
+
 For reciter matching, a pretrained ECAPA-TDNN speaker-embedding model converts audio into a voice representation. The API compares that representation with precomputed profiles for 20 reciters and returns ranked matches. The embedding model runs through ONNX Runtime; it is not fine-tuned on Qur'an recordings.
 
 For verse discovery, a Quran-tuned Whisper model transcribes Arabic recitation. The service normalizes the transcript and compares it with a 6,236-verse corpus, including partial-verse and ayah-range matches. Progressive requests can add audio context in intervals up to a 60-second listening limit.
