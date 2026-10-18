@@ -45,6 +45,13 @@ RUN curl --fail --location --retry 5 --output data/models/reciter.onnx "$RECITER
     && echo "138051e261e072b080b97947ffe4ef21d6a99e496b4587c8b7a47de102d47552  data/models/reciter.onnx" \
         | sha256sum --check
 
+# Bake the small Quran-tuned CTranslate2 ASR model into the image. Free Render
+# instances lose their writable cache when they spin down, so downloading it on
+# the first recognition request can add a large cold-start delay.
+ARG ASR_MODEL_REVISION=8578bafd427d122f671b187706650e76edf6f86f
+ENV QD_ASR_MODEL_SOURCE=/app/models/whisper
+RUN .venv/bin/python -c "from huggingface_hub import snapshot_download; snapshot_download(repo_id='OdyAsh/faster-whisper-base-ar-quran', revision='${ASR_MODEL_REVISION}', local_dir='/app/models/whisper', allow_patterns=['config.json','model.bin','preprocessor_config.json','vocabulary.json'])"
+
 EXPOSE 8000
 
 CMD ["sh", "-c", "exec .venv/bin/uvicorn app.main:app --host 0.0.0.0 --port \"${PORT:-8000}\""]

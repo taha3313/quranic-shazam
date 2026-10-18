@@ -68,7 +68,9 @@ def transcribe_waveform(waveform: np.ndarray) -> tuple[str, list[dict]]:
     segments, _info = model.transcribe(
         audio,
         language="ar",
-        word_timestamps=True,
+        # Verse matching uses only the transcript; word alignment adds a
+        # costly decoder/alignment pass without affecting its result.
+        word_timestamps=False,
         vad_filter=False,
         beam_size=5,
     )

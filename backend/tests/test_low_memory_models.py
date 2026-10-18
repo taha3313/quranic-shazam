@@ -28,6 +28,24 @@ def test_switching_evicts_only_inactive_model(low_memory, monkeypatch):
         assert embeddings._classifier is None
 
 
+def test_verse_model_stays_warm_until_reciter_needs_memory(low_memory, monkeypatch):
+    verse = object()
+    reciter = object()
+    monkeypatch.setattr(embeddings, "_classifier", None)
+    monkeypatch.setattr(asr, "_model", None)
+
+    with inference.model_execution("verse"):
+        asr._model = verse
+    assert asr._model is verse
+
+    with inference.model_execution("reciter"):
+        assert asr._model is None
+        assert embeddings._classifier is None
+        embeddings._classifier = reciter
+        assert embeddings._classifier is reciter
+    assert embeddings._classifier is None
+
+
 def test_switch_waits_for_active_inference(low_memory, monkeypatch):
     reciter = object()
     monkeypatch.setattr(embeddings, "_classifier", reciter)

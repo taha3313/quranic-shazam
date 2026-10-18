@@ -1,4 +1,4 @@
-"""Serialize model execution and evict the inactive model in low-memory mode."""
+"""Serialize models and keep only the active model resident in low-memory mode."""
 
 from contextlib import contextmanager
 from threading import Semaphore
@@ -27,11 +27,10 @@ def model_execution(kind: Literal["reciter", "verse"]):
             yield
         finally:
             if low_memory:
-                # Session caches can grow across variable input shapes. Drop the
-                # active model too, so each request has a fresh bounded lifecycle.
+                # Keep Whisper warm between verse requests to avoid reloading it
+                # for every upload. The next reciter request evicts it before
+                # loading the other model, so at most one model remains resident.
                 if kind == "reciter":
                     from app.core.embeddings import release_model
-                else:
-                    from app.core.asr import release_model
-                release_model()
+                    release_model()
                 release_unused_memory()
