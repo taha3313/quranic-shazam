@@ -7,45 +7,46 @@ interface ResultProps {
 
 export default function Result({ result, error }: ResultProps) {
   if (error) {
-    return (
-      <div className="mt-6 p-5 bg-red-50 border border-red-200 rounded-xl shadow-md text-red-700">
-        <h3 className="text-lg font-semibold mb-2">Error</h3>
-        <p>{error}</p>
-      </div>
-    );
+    return <div role="alert" className="error-card"><b>We couldn’t complete the match</b>{error}</div>;
   }
 
   if (!result || result.matches.length === 0) return null;
 
   const top = result.matches[0];
+  const score = Math.max(0, Math.min(100, top.score * 100));
 
   return (
-    <div className="mt-6 p-6 bg-white rounded-2xl card-glow shadow-md border border-emerald-100">
-      <h3 className="text-2xl font-bold mb-3 text-emerald-800 font-scheherazade">
-        Identification Result
-      </h3>
-
-      <div className="space-y-2">
-        <p className="text-lg">
-          <span className="font-semibold text-gray-600">Reciter:</span>{' '}
-          <span className="text-emerald-700 font-bold tracking-wide">{top.display ?? top.reciter}</span>
-        </p>
-
-        <p className="text-md">
-          <span className="font-semibold text-gray-600">Confidence:</span>{' '}
-          <span>{`${(top.score * 100).toFixed(2)}%`}</span>
-        </p>
-
-        {result.matches.length > 1 && (
-          <ul className="pt-2 text-sm text-gray-600 space-y-1">
-            {result.matches.slice(1).map((m) => (
-              <li key={m.reciter}>
-                {m.display ?? m.reciter} — {(m.score * 100).toFixed(2)}%
-              </li>
-            ))}
-          </ul>
-        )}
+    <section className="result-card" aria-live="polite" aria-label="Reciter match">
+      <div className="result-topline">
+        <h3 className="result-title">A voice we recognize</h3>
+        <span className={`result-badge${result.confident ? '' : ' uncertain'}`}>
+          {result.confident ? 'CLEAR MATCH' : 'POSSIBLE MATCH'}
+        </span>
       </div>
-    </div>
+      <div className="primary-match">
+        <span className="match-seal" aria-hidden="true">✧</span>
+        <div className="match-info">
+          <span className="match-caption">Closest reciter</span>
+          <span className="match-name">{top.display ?? top.reciter}</span>
+          <div className="score-track" role="meter" aria-label="Match similarity" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(score)}>
+            <div className="score-fill" style={{ width: `${score}%` }} />
+          </div>
+        </div>
+        <span className="match-score">{score.toFixed(1)}%</span>
+      </div>
+      {result.matches.length > 1 && (
+        <ul className="candidate-list" aria-label="Other possible reciters">
+          {result.matches.slice(1).map((match) => (
+            <li key={match.reciter}>
+              <span>{match.display ?? match.reciter}</span>
+              <b>{(match.score * 100).toFixed(1)}%</b>
+            </li>
+          ))}
+        </ul>
+      )}
+      {!result.confident && (
+        <p className="result-warning">A longer, clearer passage can help distinguish between similar voices.</p>
+      )}
+    </section>
   );
 }

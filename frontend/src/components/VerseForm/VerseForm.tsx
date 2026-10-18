@@ -160,89 +160,87 @@ export default function VerseForm() {
   const top = result?.matches[0];
 
   return (
-    <div className="bg-white p-8 rounded-2xl card-glow shadow-soft-lg w-full">
+    <div className="studio-card">
       <form onSubmit={handleSubmit}>
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-3xl font-bold text-emerald-800 font-scheherazade">
-            Identify Verse
-          </h2>
-          <span className="text-sm text-gray-400">Surah + Ayah from recitation</span>
+        <div className="form-heading">
+          <div>
+            <h2>Find a verse</h2>
+            <p>We listen for the words and surrounding context.</p>
+          </div>
+          <span className="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ</span>
         </div>
 
         <div className="mb-4">
-          <label htmlFor="verse-audio-upload" className="block text-gray-700 text-sm font-medium mb-2">
-            Upload Recitation Audio
-          </label>
+          <label htmlFor="verse-audio-upload" className="upload-label">Choose an audio recording</label>
           <input
             id="verse-audio-upload"
             type="file"
             accept="audio/*"
             disabled={recording || loading}
             onChange={handleFileChange}
-            className="w-full px-4 py-2 border rounded-lg bg-white
-                       focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            className="file-input"
           />
         </div>
 
-        <div className="mb-4 text-center text-gray-500">or</div>
+        <div className="or-divider"><span>or recite now</span></div>
 
-        <div className="mb-6">
+        <div className="mb-3">
           <button
             type="button"
             onClick={handleRecordToggle}
             disabled={loading && !recording}
-            className={`w-full px-4 py-3 font-semibold rounded-xl text-white
-              ${recording ? 'bg-red-600' : 'bg-emerald-600'}`}
+            className={`record-button${recording ? ' recording' : ''}`}
           >
-            {recording ? 'Stop Listening' : 'Listen and Identify Verse'}
+            <span className="record-indicator" aria-hidden="true" />
+            {recording ? 'Stop listening' : 'Start live listening'}
           </button>
         </div>
 
         <button
           type="submit"
           disabled={loading || recording || !file}
-          className="w-full mt-2 bg-blue-700 text-white font-bold py-3 px-4 rounded-xl shadow-md disabled:opacity-60"
+          className="submit-button"
         >
-          {loading ? 'Identifying verse…' : 'Identify Verse'}
+          {loading ? 'Listening for the ayah…' : 'Find this verse'}
         </button>
-        <p className="mt-2 text-xs text-gray-400 text-center">
-          Checks every 8 seconds and keeps listening while uncertain, up to one minute.
+        <p className="helper-copy">
+          More surrounding recitation helps us find the right ayah, especially with repeated verses.
         </p>
       </form>
 
       {recording && (
-        <p role="status" className="mt-4 text-amber-700">
+        <p role="status" aria-live="polite" className="live-status">
+          <span className="record-indicator" aria-hidden="true" />
           {result && !result.confident
-            ? 'Several verses are still possible. Keep reciting; listening for more context…'
-            : 'Listening to the recitation…'}
+            ? 'A few verses are still possible. Keep reciting so we can hear more context.'
+            : 'Microphone is on. Recite a continuous passage, then stop when ready.'}
         </p>
       )}
 
       {audioURL && (
-        <AudioPlayer
-          src={audioURL}
-          showJumpControls={false}
-          customAdditionalControls={[]}
-          className="mt-6"
-        />
-      )}
-
-      {submitError && (
-        <div className="mt-6 p-5 bg-red-50 border border-red-200 rounded-xl shadow-md text-red-700">
-          <h3 className="text-lg font-semibold mb-2">Error</h3>
-          <p>{submitError}</p>
+        <div className="audio-player-wrap">
+          <AudioPlayer
+            src={audioURL}
+            showJumpControls={false}
+            customAdditionalControls={[]}
+          />
         </div>
       )}
 
+      {submitError && (
+        <div role="alert" className="error-card"><b>We couldn’t complete the match</b>{submitError}</div>
+      )}
+
       {result && (
-        <div className="mt-6 p-6 bg-white rounded-2xl card-glow shadow-md border border-emerald-100">
-          <h3 className="text-2xl font-bold mb-3 text-emerald-800 font-scheherazade">
-            Verse Result
-          </h3>
+        <section className="result-card" aria-live="polite" aria-label="Verse match">
+          <div className="result-topline">
+            <h3 className="result-title">A verse from the recitation</h3>
+            {top && <span className={`result-badge${result.confident ? '' : ' uncertain'}`}>{result.confident ? 'CLEAR MATCH' : 'LISTENING FOR CONTEXT'}</span>}
+          </div>
 
           {!top && <p className="text-gray-600">No match found for this audio.</p>}
           {!result.confident && !recording && (
-            <p className="mb-3 text-amber-700">
+            <p className="result-warning">
               {result.listen_limit_reached
                 ? 'Still uncertain after one minute. Try a clearer recording with more surrounding verses.'
                 : 'More context is needed. Record a longer continuous passage, including the following verse.'}
@@ -250,44 +248,37 @@ export default function VerseForm() {
           )}
 
           {top && (
-            <div className="space-y-2">
-              <p className="text-lg">
-                <span className="font-semibold text-gray-600">Verse:</span>{' '}
-                <span className="text-emerald-700 font-bold tracking-wide">
-                  {verseLabel(top)}
-                </span>
-                {!result.confident && (
-                  <span className="ml-2 text-sm text-amber-600">(low confidence)</span>
-                )}
-              </p>
+            <div>
+              <p className="match-caption">Closest passage</p>
+              <p className="match-name">{verseLabel(top)}</p>
 
               {top.text && (
-                <p dir="rtl" className="text-2xl text-gray-800 font-scheherazade leading-loose">
+                <p dir="rtl" lang="ar" className="arabic-verse">
                   {top.text}
                 </p>
               )}
 
-              <p className="text-md">
-                <span className="font-semibold text-gray-600">Match score:</span>{' '}
+              <p className="verse-meta">
+                Similarity{' '}
                 {`${(top.score * 100).toFixed(1)}%`}
-                <span className="text-gray-400">
-                  {' '}
+                <span>
+                  {' · '}
                   ({top.words_matched}/{top.words_total} words matched)
                 </span>
               </p>
 
               {result.matches.length > 1 && (
-                <ul className="pt-2 text-sm text-gray-600 space-y-1">
+                <ul className="candidate-list">
                   {result.matches.slice(1).map((m) => (
                     <li key={`${m.surah}:${m.ayah_start}-${m.ayah_end}`}>
-                      {verseLabel(m)} — {(m.score * 100).toFixed(1)}%
+                      <span>{verseLabel(m)}</span><b>{(m.score * 100).toFixed(1)}%</b>
                     </li>
                   ))}
                 </ul>
               )}
             </div>
           )}
-        </div>
+        </section>
       )}
     </div>
   );

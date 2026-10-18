@@ -1,78 +1,209 @@
 @import "tailwindcss";
-
-/* load Scheherazade font */
 @import "@fontsource/scheherazade-new/700.css";
 @import "@fontsource/scheherazade-new/400.css";
 
-:root{
-  --emerald-500: #059669;
-  --emerald-800: #064e3b;
-  --gold-500: #D4AF37;
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #193b31;
+  background: #f7f5ed;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --ink: #193b31;
+  --forest: #153f34;
+  --green: #1e6651;
+  --muted: #738078;
+  --gold: #b79252;
+  --paper: #f7f5ed;
+  --line: #e8e5d9;
 }
 
-/* small decorative bismillah style */
-.bismillah {
-  font-family: "Scheherazade New", serif;
-  font-size: 1.1rem;
-  color: var(--emerald-800);
-  opacity: 0.9;
-}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+button:focus-visible, input:focus-visible { outline: 3px solid #b79252; outline-offset: 3px; }
+::selection { color: #fff; background: #23634f; }
 
-/* make file inputs look nicer */
-.input-file {
-  transition: all .18s;
+.app-shell {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  isolation: isolate;
+  padding: 0 28px 34px;
+  background: radial-gradient(ellipse at 50% 2%, #fffdf5 0, #f7f5ed 46%, #f1efe5 100%);
 }
-
-/* subtle card border glow */
-.card-glow {
-  box-shadow: 0 6px 18px rgba(5,150,105,0.08);
-  border: 1px solid rgba(5, 150, 105, 0.07);
+.pattern-layer {
+  position: absolute; z-index: -1; inset: 0; pointer-events: none;
+  background-image: url('/patterns/moroccan-flower.png'); background-size: 390px; opacity: .022;
+  mask-image: linear-gradient(to bottom, #000 0%, transparent 76%);
 }
+.ambient { position: absolute; z-index: -1; border-radius: 999px; pointer-events: none; filter: blur(1px); }
+.ambient-one { width: 420px; height: 420px; top: 80px; left: -230px; background: radial-gradient(circle, #e3eadb 0, transparent 70%); }
+.ambient-two { width: 480px; height: 480px; top: 260px; right: -310px; background: radial-gradient(circle, #efe5cf 0, transparent 69%); }
 
-/* pattern overlay helper */
-.pattern-fade {
-  background-image: url('/patterns/moroccan-flower.png');
-  background-repeat: repeat;
-  background-size: 220px;
-  opacity: 1;
+.site-header { width: min(1160px, 100%); height: 82px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(25,59,49,.1); }
+.brand { display: inline-flex; align-items: center; gap: 11px; color: var(--ink); text-decoration: none; }
+.brand-mark { display: grid; place-items: center; width: 40px; height: 40px; color: var(--forest); }
+.brand-mark svg { width: 100%; height: 100%; }
+.brand-copy { display: grid; gap: 1px; }
+.brand-name { font-size: 16px; letter-spacing: -.035em; font-weight: 500; }
+.brand-name b { font-weight: 750; }
+.brand-kicker { color: #8b948b; font-size: 9px; letter-spacing: .14em; text-transform: uppercase; }
+.header-note { display: flex; align-items: center; gap: 9px; color: #7d897f; font-size: 11px; letter-spacing: .015em; }
+.status-dot { width: 7px; height: 7px; border-radius: 50%; background: #7b9b72; box-shadow: 0 0 0 4px rgba(123,155,114,.12); }
+
+.main-layout { width: min(1120px, 100%); margin: 0 auto; }
+.intro-panel { min-height: 355px; display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; padding: 35px 38px 18px; }
+.intro-copy { position: relative; z-index: 1; max-width: 570px; animation: rise-in .7s both; }
+.eyebrow { display: flex; align-items: center; gap: 9px; margin: 0 0 20px; color: #9a7d47; font-size: 9px; font-weight: 700; letter-spacing: .2em; }
+.eyebrow span { display: inline-block; width: 25px; height: 1px; background: #b79252; }
+  h1 { max-width: 560px; margin: 0; color: var(--ink); font-family: "Scheherazade New", Georgia, serif; font-size: clamp(44px, 5.25vw, 61px); line-height: .98; font-weight: 700; letter-spacing: -.035em; }
+h1 em { display: block; color: #8d7547; font-style: normal; }
+.hero-description { max-width: 425px; margin: 21px 0 0; color: #738078; font-size: 14px; line-height: 1.8; }
+.hero-qualities { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 22px; color: #485f54; font-size: 10px; letter-spacing: .025em; }
+.hero-qualities span { display: flex; align-items: center; gap: 8px; }
+.hero-qualities i { color: #b18e53; font-size: 8px; font-style: normal; letter-spacing: .08em; }
+
+.hero-art { position: relative; height: 300px; display: grid; place-items: center; color: #6d866f; }
+.art-orbit { position: absolute; border: 1px solid rgba(77,111,83,.14); border-radius: 50%; }
+.orbit-outer { width: 272px; height: 272px; border-style: dashed; animation: orbit 90s linear infinite; }
+.orbit-inner { width: 222px; height: 222px; border-color: rgba(183,146,82,.25); }
+.art-medallion { width: 200px; height: 200px; filter: drop-shadow(0 12px 18px rgba(32,64,47,.09)); animation: float 7s ease-in-out infinite; }
+.art-medallion svg { width: 100%; height: 100%; }
+.sound-wave { position: absolute; bottom: 26px; display: flex; align-items: center; gap: 4px; height: 24px; opacity: .6; }
+.sound-wave i { display: block; width: 2px; height: 6px; border-radius: 5px; background: #b79252; animation: wave 1.3s ease-in-out infinite alternate; }
+.sound-wave i:nth-child(3n) { animation-delay: -.8s; }.sound-wave i:nth-child(3n + 1) { animation-delay: -.3s; }
+.art-caption { position: absolute; bottom: 2px; color: #8a9388; font-size: 7px; letter-spacing: .22em; }
+.art-star { position: absolute; color: #ba995f; }.star-a { top: 35px; right: 18%; font-size: 17px; }.star-b { left: 17%; bottom: 80px; font-size: 13px; }
+
+.recognition-section { position: relative; z-index: 2; width: min(760px, 100%); margin: 0 auto; }
+.mode-switch { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; padding: 7px; border: 1px solid rgba(23,62,49,.09); border-radius: 17px; background: rgba(255,255,255,.62); box-shadow: 0 8px 30px rgba(29,54,42,.045); backdrop-filter: blur(12px); }
+.mode-tab { min-width: 0; display: flex; align-items: center; gap: 12px; padding: 13px 15px; border: 1px solid transparent; border-radius: 12px; color: #728078; text-align: left; background: transparent; transition: color .25s, background .25s, border-color .25s, transform .25s, box-shadow .25s; }
+.mode-tab:hover { color: var(--ink); background: rgba(255,255,255,.72); transform: translateY(-1px); }
+.mode-tab.active { color: #fff; border-color: rgba(255,255,255,.12); background: linear-gradient(115deg, #204e40, #326651); box-shadow: 0 7px 16px rgba(24,64,49,.17); }
+.mode-icon { display: grid; place-items: center; flex: 0 0 34px; height: 34px; border: 1px solid currentColor; border-radius: 50%; font-size: 19px; line-height: 1; }
+.verse-icon { font-size: 18px; }
+.mode-tab > span:nth-child(2) { display: grid; gap: 2px; }
+.mode-tab b { font-size: 12px; font-weight: 650; }
+.mode-tab small { color: inherit; opacity: .69; font-size: 9px; }
+.tab-arrow { margin-left: auto; opacity: .65; font-size: 12px; }
+.panel-enter { animation: rise-in .35s both; }
+.privacy-note { margin: 12px 0 0; color: #9aa198; text-align: center; font-size: 9px; letter-spacing: .025em; }
+.privacy-note span { margin-right: 4px; color: #b79252; }
+
+.site-footer { display: grid; justify-items: center; gap: 3px; margin: 30px auto 0; color: #889188; text-align: center; font-size: 10px; }
+.footer-ornament { color: #b79252; font-size: 7px; letter-spacing: .3em; }
+.site-footer p { margin: 1px 0 0; color: #536e58; font-family: "Scheherazade New", Georgia, serif; font-size: 22px; line-height: 1.4; }
+.site-footer small { color: #a29579; font-size: 9px; }
+
+/* The same calm surface is shared by both recognition modes and result cards. */
+.studio-card { padding: 25px 28px 26px; border: 1px solid rgba(27,70,52,.1); border-radius: 18px; background: rgba(255,255,255,.89); box-shadow: 0 18px 55px rgba(35,56,41,.09), 0 2px 8px rgba(35,56,41,.035); backdrop-filter: blur(14px); }
+.form-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #eeece4; }
+.form-heading h2 { margin: 0; color: var(--ink); font-family: "Scheherazade New", Georgia, serif; font-size: 29px; line-height: 1.1; }
+.form-heading p { margin: 4px 0 0; color: #89928a; font-size: 10px; }
+.bismillah { color: #9a835a; font-family: "Scheherazade New", Georgia, serif; font-size: 15px; white-space: nowrap; }
+.upload-label { display: block; margin: 0 0 9px; color: #54645a; font-size: 10px; font-weight: 650; letter-spacing: .035em; }
+.file-input { width: 100%; padding: 10px; border: 1px dashed #c9d3c9; border-radius: 10px; color: #6b776e; background: #fafbf7; font-size: 11px; transition: border-color .2s, background .2s; }
+.file-input:hover { border-color: #78937c; background: #f6f8f2; }
+.file-input::file-selector-button { margin-right: 11px; padding: 8px 12px; border: 0; border-radius: 7px; color: #28523e; background: #e7eee4; font: inherit; font-weight: 650; cursor: pointer; }
+.or-divider { display: flex; align-items: center; gap: 12px; margin: 14px 0; color: #a4aaa2; font-size: 9px; }
+.or-divider::before, .or-divider::after { content: ""; flex: 1; height: 1px; background: #eeece4; }
+.record-button, .submit-button { width: 100%; min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 9px; border-radius: 9px; font-size: 11px; font-weight: 650; transition: transform .2s, box-shadow .2s, background .2s; }
+.record-button { border: 1px solid #d9e2d8; color: #315742; background: #f4f7f1; }
+.record-button:hover:not(:disabled) { border-color: #9db5a0; background: #edf3ea; transform: translateY(-1px); }
+.record-button.recording { border-color: #e8bcb1; color: #a04b3c; background: #fff4f0; }
+.record-button.recording:hover { background: #ffebe5; }
+.record-button:disabled, .submit-button:disabled { opacity: .58; cursor: not-allowed; }
+.submit-button:disabled { border-color: #dce5db; color: #718174; background: #e9eee7; box-shadow: none; opacity: 1; }
+.record-indicator { position: relative; width: 8px; height: 8px; border-radius: 50%; background: #729277; }
+.recording .record-indicator { background: #d96553; animation: pulse 1.2s ease-out infinite; }
+.submit-button { margin-top: 9px; border: 1px solid #1c4c3c; color: #fff; background: linear-gradient(110deg, #204c3d, #2e6852); box-shadow: 0 5px 12px rgba(26,77,59,.13); }
+.submit-button:hover:not(:disabled) { transform: translateY(-1px); box-shadow: 0 8px 17px rgba(26,77,59,.2); background: linear-gradient(110deg, #193f32, #285c48); }
+.helper-copy { margin: 9px 0 0; color: #9aa199; text-align: center; font-size: 9px; line-height: 1.6; }
+.live-status { display: flex; align-items: center; gap: 9px; margin-top: 15px; padding: 11px 13px; border: 1px solid #e6e8dc; border-radius: 9px; color: #6d725c; background: #fbfaf4; font-size: 10px; line-height: 1.5; }
+.live-status .record-indicator { flex: 0 0 8px; }
+.audio-player-wrap { margin-top: 18px; padding: 5px 9px; border: 1px solid #e8e9df; border-radius: 10px; background: #fbfcf8; }
+.audio-player-wrap .rhap_container { padding: 5px 0; box-shadow: none; background: transparent; }
+.audio-player-wrap .rhap_main-controls-button { color: #285b45; }
+.audio-player-wrap .rhap_progress-filled { background: #3a7359; }
+.audio-player-wrap .rhap_progress-indicator { background: #b79252; }
+.audio-player-wrap .rhap_time { color: #6c786e; font-size: 10px; }
+
+.result-card { margin-top: 18px; padding: 19px 20px; border: 1px solid #e4e8de; border-radius: 12px; background: linear-gradient(125deg, #fcfdf9, #f6f8f1); animation: rise-in .35s both; }
+.result-topline { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 13px; }
+.result-title { margin: 0; color: var(--ink); font-family: "Scheherazade New", Georgia, serif; font-size: 23px; line-height: 1.2; }
+.result-badge { padding: 5px 8px; border: 1px solid #dbe6d9; border-radius: 99px; color: #476d4e; background: #f0f6ed; font-size: 8px; font-weight: 700; letter-spacing: .04em; }
+.result-badge.uncertain { border-color: #eadfca; color: #947448; background: #faf6ea; }
+.primary-match { display: flex; align-items: center; gap: 13px; padding: 13px 14px; border-radius: 9px; background: #edf3ea; }
+.match-seal { display: grid; flex: 0 0 34px; place-items: center; width: 34px; height: 34px; border: 1px solid rgba(68,104,72,.25); border-radius: 50%; color: #637f5c; font-size: 17px; }
+.match-info { min-width: 0; flex: 1; }
+.match-caption { display: block; margin-bottom: 2px; color: #869087; font-size: 8px; letter-spacing: .09em; text-transform: uppercase; }
+.match-name { color: #244c3a; font-size: 14px; font-weight: 700; }
+.match-score { color: #527255; font-size: 11px; font-variant-numeric: tabular-nums; }
+.score-track { height: 3px; overflow: hidden; margin-top: 10px; border-radius: 10px; background: #dce6d9; }
+.score-fill { height: 100%; border-radius: inherit; background: linear-gradient(90deg, #658a62, #b89a60); }
+.candidate-list { display: grid; gap: 0; margin: 9px 0 0; padding: 0; list-style: none; }
+.candidate-list li { display: flex; justify-content: space-between; gap: 12px; padding: 8px 3px; border-bottom: 1px solid #eeefe9; color: #6f7c72; font-size: 10px; }
+.candidate-list li:last-child { border-bottom: 0; }
+.candidate-list b { color: #52665a; font-variant-numeric: tabular-nums; font-weight: 600; }
+.result-warning { margin: 12px 0 0; color: #927647; font-size: 10px; line-height: 1.6; }
+.arabic-verse { margin: 14px 0 11px; color: #244c3a; font-family: "Scheherazade New", Georgia, serif; font-size: 25px; line-height: 1.8; text-align: right; }
+.verse-meta { color: #77847a; font-size: 10px; line-height: 1.8; }
+.error-card { margin-top: 17px; padding: 13px 15px; border: 1px solid #efd5cd; border-radius: 9px; color: #9a5041; background: #fff7f3; font-size: 11px; line-height: 1.5; animation: rise-in .3s both; }
+.error-card b { display: block; margin-bottom: 3px; color: #914b3f; }
+
+@keyframes rise-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes orbit { to { transform: rotate(360deg); } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+@keyframes wave { from { transform: scaleY(.6); } to { transform: scaleY(1.7); } }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(217,101,83,.3); } 100% { box-shadow: 0 0 0 8px rgba(217,101,83,0); } }
+
+@media (min-width: 900px) {
+  .main-layout { display: grid; grid-template-columns: 1.02fr .98fr; align-items: center; gap: 42px; min-height: 640px; }
+  .intro-panel { position: relative; min-height: 470px; display: block; padding: 45px 0; }
+  .intro-copy { max-width: 520px; }
+  .hero-art { position: absolute; right: -20px; bottom: -20px; width: 275px; height: 275px; opacity: .78; }
+  .orbit-outer { width: 244px; height: 244px; }
+  .orbit-inner { width: 200px; height: 200px; }
+  .art-medallion { width: 180px; height: 180px; }
+  .recognition-section { margin-top: 0; }
+  .studio-card { padding: 25px 30px 26px; }
 }
-
-/* Custom Quranic-themed audio player */
-.rhap-theme-quranic {
-  @apply bg-emerald-50 border border-emerald-200 rounded-xl shadow-md;
+@media (max-width: 700px) {
+  .app-shell { padding: 0 17px 27px; }
+  .site-header { height: 70px; }
+  .header-note { max-width: 138px; font-size: 9px; }
+  .intro-panel { min-height: 0; grid-template-columns: 1fr; padding: 47px 5px 25px; }
+  .intro-copy { max-width: 540px; }
+  .eyebrow { margin-bottom: 16px; font-size: 8px; }
+  h1 { max-width: 460px; font-size: clamp(43px, 11vw, 61px); }
+  .hero-description { margin-top: 15px; font-size: 12px; }
+  .hero-qualities { margin-top: 16px; gap: 14px; font-size: 9px; }
+  .hero-art { position: absolute; top: 82px; right: -80px; width: 230px; height: 230px; opacity: .17; transform: scale(.82); transform-origin: top right; }
+  .recognition-section { width: 100%; }
+  .mode-switch { gap: 4px; padding: 5px; border-radius: 13px; }
+  .mode-tab { gap: 8px; padding: 10px 8px; border-radius: 9px; }
+  .mode-icon { flex-basis: 28px; width: 28px; height: 28px; font-size: 16px; }
+  .mode-tab b { font-size: 10px; }
+  .mode-tab small { font-size: 8px; }
+  .tab-arrow { display: none; }
+  .studio-card { padding: 19px 16px 20px; border-radius: 14px; }
+  .form-heading { align-items: flex-start; margin-bottom: 17px; }
+  .form-heading h2 { font-size: 25px; }
+  .bismillah { font-size: 11px; }
+  .site-footer { margin-top: 24px; }
 }
-
-.rhap-theme-quranic .rhap_main-controls-button {
-  @apply bg-emerald-600 text-white rounded-full shadow-md;
+@media (max-width: 390px) {
+  .header-note { max-width: 106px; text-align: right; line-height: 1.4; }
+  .intro-panel { padding-top: 39px; }
+  .hero-art { right: -115px; opacity: .12; }
+  .mode-tab { gap: 6px; padding: 9px 6px; }
+  .mode-icon { flex-basis: 24px; width: 24px; height: 24px; }
+  .mode-tab small { font-size: 7px; }
+  .bismillah { display: none; }
+  .result-card { padding: 16px 14px; }
 }
-
-.rhap-theme-quranic .rhap_main-controls-button:hover {
-  @apply bg-emerald-700;
-}
-
-.rhap-theme-quranic .rhap_progress-filled {
-  @apply bg-emerald-800;
-}
-
-.rhap-theme-quranic .rhap_progress-bar {
-  @apply bg-emerald-200;
-}
-
-.rhap-theme-quranic .rhap_time {
-  @apply text-emerald-800;
-  font-family: "Scheherazade New", serif;
-}
-
-.rhap-theme-quranic .rhap_volume-bar {
-  @apply bg-emerald-100;
-}
-
-.rhap-theme-quranic .rhap_volume-indicator {
-  @apply bg-emerald-500;
-}
-
-.rhap-theme-quranic .rhap_repeat-button,
-.rhap-theme-quranic .rhap_rewind-button,
-.rhap-theme-quranic .rhap_forward-button {
-  @apply text-emerald-700 hover:text-emerald-900;
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }

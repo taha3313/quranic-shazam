@@ -83,74 +83,74 @@ export default function IdentificationForm() {
   };
 
   return (
-    <div className="bg-white p-8 rounded-2xl card-glow shadow-soft-lg w-full">
+    <div className="studio-card">
       <form onSubmit={handleSubmit}>
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-3xl font-bold text-emerald-800 font-scheherazade">
-            Identify Reciter
-          </h2>
+        <div className="form-heading">
+          <div>
+            <h2>Identify a reciter</h2>
+            <p>Upload a recording or let us listen with you.</p>
+          </div>
           <span className="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ</span>
         </div>
 
         <div className="mb-4">
-          <label htmlFor="audio-upload" className="block text-gray-700 text-sm font-medium mb-2">
-            Upload Audio File
-          </label>
+          <label htmlFor="audio-upload" className="upload-label">Choose an audio recording</label>
           <input
             id="audio-upload"
             type="file"
             accept="audio/*"
             disabled={isRecording || isChecking || loading}
             onChange={handleFileChange}
-            className="w-full px-4 py-2 border rounded-lg bg-white
-                       focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            className="file-input"
           />
         </div>
 
-        <div className="mb-4 text-center text-gray-500">or</div>
+        <div className="or-divider"><span>or listen now</span></div>
 
-        <div className="mb-6">
+        <div className="mb-3">
           <button
             type="button"
             onClick={handleRecordToggle}
             disabled={loading || (isChecking && !isRecording)}
-            className={`w-full px-4 py-3 font-semibold rounded-xl text-white
-              ${isRecording ? 'bg-red-600' : 'bg-emerald-600'}`}
+            className={`record-button${isRecording ? ' recording' : ''}`}
           >
-            {isRecording ? 'Stop Listening' : 'Listen and Identify Reciter'}
+            <span className="record-indicator" aria-hidden="true" />
+            {isRecording ? 'Stop listening' : 'Start live listening'}
           </button>
         </div>
 
         <button
           type="submit"
           disabled={loading || isRecording || isChecking || !file}
-          className="w-full mt-2 bg-blue-700 text-white font-bold py-3 px-4 rounded-xl shadow-md disabled:opacity-60"
+          className="submit-button"
         >
-          {loading || isChecking ? 'Identifying…' : 'Identify Reciter'}
+          {loading || isChecking ? 'Listening for a match…' : 'Find this reciter'}
         </button>
-        <p className="mt-2 text-xs text-gray-400 text-center">
-          Checks every 8 seconds and keeps listening while uncertain, up to 30 seconds.
+        <p className="helper-copy">
+          Live listening checks every few seconds and allows up to 30 seconds for a clear match.
         </p>
       </form>
 
       {isRecording && (
-        <p role="status" className="mt-4 text-amber-700">
-          {liveResult ? 'Still uncertain. Keep reciting; listening for more context…' : 'Listening to the recitation…'}
+        <p role="status" aria-live="polite" className="live-status">
+          <span className="record-indicator" aria-hidden="true" />
+          {isChecking ? 'Listening to your recitation now…' : liveResult ? 'A few more seconds of recitation will help us be sure.' : 'Microphone is on. Recite a few seconds, then stop when ready.'}
         </p>
       )}
       {!isRecording && liveResult && !liveResult.confident && (
-        <p role="status" className="mt-4 text-amber-700">
-          No confident match. Try a clearer recording with more recitation.
+        <p role="status" className="live-status">
+          We found a possible match. Try a clearer or longer passage for more confidence.
         </p>
       )}
 
       {audioURL && (
-        <AudioPlayer
-          src={audioURL}
-          showJumpControls={false}
-          customAdditionalControls={[]}
-          className="mt-6"
-        />
+        <div className="audio-player-wrap">
+          <AudioPlayer
+            src={audioURL}
+            showJumpControls={false}
+            customAdditionalControls={[]}
+          />
+        </div>
       )}
 
       {liveResult && !result && (
