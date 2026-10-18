@@ -73,3 +73,31 @@ jobs:
 
       - name: Build frontend
         run: npm run build
+
+  render-deploy:
+    name: Deploy ${{ matrix.component }} to Render
+    needs: [backend, frontend]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && vars.RENDER_DEPLOY_HOOKS_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - component: frontend
+            hook_secret: RENDER_FRONTEND_DEPLOY_HOOK_URL
+          - component: backend
+            hook_secret: RENDER_BACKEND_DEPLOY_HOOK_URL
+    steps:
+      - name: Check out tested commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+
+      - name: Request deployment of tested commit
+        env:
+          COMPONENT: ${{ matrix.component }}
+          BEFORE_SHA: ${{ github.event.before }}
+          RENDER_DEPLOY_HOOK_URL: ${{ secrets[matrix.hook_secret] }}
+        run: python3 .github/scripts/render_deploy.py
