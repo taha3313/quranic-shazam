@@ -129,6 +129,7 @@ function App() {
         <span className="footer-ornament" aria-hidden="true">✦ ─────── ✦</span>
         <p dir="rtl" lang="ar">وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا</p>
         <span>“And recite the Qur’an with measured recitation.” <small>— Al-Muzzammil 73:4</small></span>
+        <small className="site-credit">Created by <a href="https://tahachelly.com/" target="_blank" rel="noopener noreferrer">Taha Chelly</a></small>
       </footer>
     </div>
   );
