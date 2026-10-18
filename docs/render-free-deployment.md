@@ -24,10 +24,10 @@ for previews and hobby projects rather than production.
 
 ## CI-gated automatic deployment
 
-The preferred configuration is native Render auto-deploy with
-`autoDeployTrigger: checksPass` on both services. Keep both GitHub Actions jobs
-enabled: **Backend tests** and **Frontend checks**. A frontend-only change should
-deploy the site; the API's `backend` root directory excludes that change.
+The active configuration uses a GitHub Actions deploy job with Render deploy hooks.
+It waits for both CI jobs and requests the tested commit SHA. The previous native
+`checksPass` configuration did not trigger a deploy during the recorded verification.
+A frontend-only change deploys the site; the API's `backend` root directory excludes it.
 
 When diagnosing missing deploys, check each service's **Settings > Build &
 Deploy** for the Git credentials, repository, branch, root directory, build
