@@ -8,7 +8,7 @@ services:
     dockerfilePath: ./Dockerfile
     dockerContext: .
     healthCheckPath: /health
-    autoDeployTrigger: checksPass
+    autoDeployTrigger: off
     envVars:
       - key: QD_LOW_MEMORY
         value: "true"
@@ -20,7 +20,7 @@ services:
   - type: web
     name: quranic-shazam-site
     runtime: static
-    autoDeployTrigger: checksPass
+    autoDeployTrigger: off
     rootDir: frontend
     buildCommand: npm ci && npm run build
     staticPublishPath: dist
